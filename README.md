@@ -1,4 +1,4 @@
-<p align="center"><img src="assets/research-banner.png" alt="Concept illustration of a headset and three wearable trackers" width="100%"></p>
+<p align="center"><img src="assets/research-banner.png" alt="AI generated illustration of Steam Frame against a starfield" width="100%"></p>
 
 <h1 align="center">FramePicoTracker</h1>
 <p align="center">An open research handoff for affordable PICO Swift body tracking on Steam Frame.</p>

@@ -26,8 +26,8 @@
   },
   {
     "path": "assets/research-banner.png",
-    "bytes": 1957015,
-    "sha256": "6839c4199a1b0b7dfadb0659a806bc2e7639d1132af4b08806b284014975ef57"
+    "bytes": 2559744,
+    "sha256": "0be5541a8a69cb1fa2e503829d721ef38846b42273ed42387c813e26d4258c1d"
   },
   {
     "path": "BUILD_STATUS.json",
@@ -456,8 +456,8 @@
   },
   {
     "path": "README.md",
-    "bytes": 7959,
-    "sha256": "8e1c758fd8ccea203a7f0cfe7d063cfda1723bb8624b19556084446a9e7da480"
+    "bytes": 7958,
+    "sha256": "9c33fc91690773c4270aca531cd95e2280038723e429c89be3431d3ed11cba60"
   },
   {
     "path": "research/INDEX.md",
@@ -5437,7 +5437,7 @@
   {
     "path": "verification/PUBLICATION_ASSETS.json",
     "bytes": 395,
-    "sha256": "d3eea9bca919caf4f8e3f33bed38ae61a9b52435eb9914156f913732a670a929"
+    "sha256": "4a0287431c92fd754e339fdb7bb8a7cc35df029f7631deb7c1bf2d30e2ec0aae"
   },
   {
     "path": "verification/PUBLICATION_CHANGES.json",
