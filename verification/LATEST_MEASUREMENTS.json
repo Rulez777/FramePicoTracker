@@ -1,0 +1,103 @@
+{
+  "camera-latency-result": {
+    "source_path": "pico:outputs/optical-latency-review/camera-latency-result.json",
+    "source_sha256": "0091b652826ca29e1fcc39df97c1974188f8928759b7a52c061cdca3ef6fdcdb",
+    "frame_count": 1618,
+    "scope": "Actual camera timing only; clock domains reported separately, no optical identity/pose/RF/IMU proof",
+    "error": null,
+    "metrics": {
+      "age_if_raw_ns": {
+        "count": 1618,
+        "median_ms": 66.8381885,
+        "max_ms": 85.131161,
+        "p95_ms": 73.697562,
+        "above_250ms": 0,
+        "negative": 0
+      },
+      "age_if_monotonic_ns": {
+        "count": 1618,
+        "median_ms": -468.0977445,
+        "max_ms": -449.360793,
+        "p95_ms": -461.109441,
+        "above_250ms": 0,
+        "negative": 1618
+      },
+      "queue_delay_ns": {
+        "count": 1618,
+        "median_ms": 1.451384,
+        "max_ms": 9.057055,
+        "p95_ms": 4.861064,
+        "above_250ms": 0,
+        "negative": 0
+      }
+    },
+    "stereo_model_fits": null,
+    "optical_identity_verified": null,
+    "pose_published": null,
+    "cleanup": {
+      "camera_close_returned": true,
+      "watcher_exited": true,
+      "roy_accessed": false,
+      "rf_started": false,
+      "ota_started": false,
+      "led_commands_sent": false
+    }
+  },
+  "passive-stereo-result": {
+    "source_path": "pico:outputs/optical-latency-review/passive-stereo-result.json",
+    "source_sha256": "3de986b08a83a262c212736498a6056fa0a39488a6c2b4083371c364d4eb534f",
+    "frame_count": 900,
+    "scope": "Actual passive stereo model fits and fresh clock/head measurements only; no causal identity, pose publication, RF or IMU proof",
+    "error": null,
+    "metrics": {
+      "queue_delay_ns": {
+        "count": 900,
+        "median_ms": 1.8792755,
+        "max_ms": 6.004372,
+        "p95_ms": 4.778861,
+        "above_250ms": 0,
+        "negative": 0
+      },
+      "age_if_raw_at_intake_ns": {
+        "count": 900,
+        "median_ms": 67.4894885,
+        "max_ms": 88.351313,
+        "p95_ms": 73.776101,
+        "above_250ms": 0,
+        "negative": 0
+      },
+      "geometry_compute_ns": {
+        "count": 900,
+        "median_ms": 9.765291,
+        "max_ms": 24.60589,
+        "p95_ms": 14.258257,
+        "above_250ms": 0,
+        "negative": 0
+      },
+      "age_at_completion_ns": {
+        "count": 900,
+        "median_ms": 77.6228725,
+        "max_ms": 99.39342,
+        "p95_ms": 86.206229,
+        "above_250ms": 0,
+        "negative": 0
+      }
+    },
+    "stereo_model_fits": 0,
+    "optical_identity_verified": 0,
+    "pose_published": 0,
+    "cleanup": {
+      "camera_close_returned": true,
+      "watcher_exited": true,
+      "roy_accessed": false,
+      "rf_started": false,
+      "ota_started": false,
+      "led_commands_sent": false
+    }
+  },
+  "prepared_only_absence_check": {
+    "profile-probe-started.json": false,
+    "profile-clock-evidence.json": false,
+    "profile-stereo-result.json": false
+  }
+}

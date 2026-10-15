@@ -1,0 +1,182 @@
+[
+  {
+    "source_root": "pico",
+    "source_path": "docs/FW189_MODE1_SENSOR_STREAM_AFTER_UART_2026-10-09.md",
+    "source_sha256": "62ef3f6c13604a078d9c026f68df15b921d0ecb8f676194d87eaa3c2278d3370",
+    "original_text_sha256": "e55f941d01c6ed0e9b9189531bc717e603d48495aa39230e4ad602e6f93b24a0",
+    "line_start": 13,
+    "exclusion": "native instruction/listing-like block",
+    "procedure": "Acquire the original privately, reproduce analysis locally, retain explanatory conclusions only."
+  },
+  {
+    "source_root": "pico",
+    "source_path": "docs/PHASE110_STOCK_AND_STRIDE_COMPARISON_2026-10-09.md",
+    "source_sha256": "1aff60a92a4e7ddc95d8e0d59dd5dcb5e6dbfa6bb1e9fc910440bac969ef551d",
+    "original_text_sha256": "95a0b0fa4645b89447180cb4304f1537e246c7e1614c2b11bd8a0d69bf22aa6d",
+    "line_start": 23,
+    "exclusion": "native instruction/listing-like block",
+    "procedure": "Acquire the original privately, reproduce analysis locally, retain explanatory conclusions only."
+  },
+  {
+    "source_root": "pico",
+    "source_path": "docs/PHASE118_119_FULL_6000_PHASE_DISCOVERY_2026-10-09.md",
+    "source_sha256": "2603884e77662c95419ee31bed6af978844eb59ba35c53715f9634d0d86f9a6a",
+    "original_text_sha256": "dfe1d9094a07b45ac53ed204994d2ef6c94ce9ed2e90b28b86b4459124851815",
+    "line_start": 21,
+    "exclusion": "native instruction/listing-like block",
+    "procedure": "Acquire the original privately, reproduce analysis locally, retain explanatory conclusions only."
+  },
+  {
+    "source_root": "pico",
+    "source_path": "docs/PHASE187_SIGNAL_VS_APPLICATION_PROOF_2026-10-10.md",
+    "source_sha256": "4075b0e95f46a0b0e20dfa64e78efdb57124938f433debc62e8596d4b5e22ade",
+    "original_text_sha256": "42f32aa9e2c238d346fe20c06cede06ac573452c2f197ee38c04ee92b471b8b8",
+    "line_start": 7,
+    "exclusion": "native instruction/listing-like block",
+    "procedure": "Acquire the original privately, reproduce analysis locally, retain explanatory conclusions only."
+  },
+  {
+    "source_root": "pico",
+    "source_path": "docs/STATE_FOR_AI_CURRENT_PHASE113_2026-10-09.md",
+    "source_sha256": "1b6864ee316780eb9e888e4cc8149ef730e49cb7ea303ab75348329b1cc906fc",
+    "original_text_sha256": "e0083d972d7a1e469a44768741d62e3e99acc2546baf37956c04088e985535e1",
+    "line_start": 124,
+    "exclusion": "native instruction/listing-like block",
+    "procedure": "Acquire the original privately, reproduce analysis locally, retain explanatory conclusions only."
+  },
+  {
+    "source_root": "pico",
+    "source_path": "docs/frame-swift-multi-and-camera-2026-10-06.md",
+    "source_sha256": "5402f1797b1172a1a781e24d83246f9b4086a31410690339253b5476203a413c",
+    "original_text_sha256": "d307abc24b827d32892337c215627de529947ce2179af748113225f5a0d3784b",
+    "line_start": 70,
+    "exclusion": "native instruction/listing-like block",
+    "procedure": "Acquire the original privately, reproduce analysis locally, retain explanatory conclusions only."
+  },
+  {
+    "source_root": "pico",
+    "source_path": "docs/frame-swift-multi-and-camera-2026-10-06.md",
+    "source_sha256": "5402f1797b1172a1a781e24d83246f9b4086a31410690339253b5476203a413c",
+    "original_text_sha256": "4ab02522830ff06f98c3023bbcad40f5121215419faaa28b8bddf83d323806ad",
+    "line_start": 412,
+    "exclusion": "native instruction/listing-like block",
+    "procedure": "Acquire the original privately, reproduce analysis locally, retain explanatory conclusions only."
+  },
+  {
+    "source_root": "pico",
+    "source_path": "docs/history/context-reset/AGENTS.before-compact-2026-10-11.md",
+    "source_sha256": "3e2247e6de88d72ec6e33ac194427b7eb359cbc612e0caf7b89f795b74eda1d9",
+    "original_text_sha256": "c2da6c351338aa7a52fd68ce830d63994efab81b8e192c9fd25971c1f0268755",
+    "line_start": 1293,
+    "exclusion": "native instruction/listing-like block",
+    "procedure": "Acquire the original privately, reproduce analysis locally, retain explanatory conclusions only."
+  },
+  {
+    "source_root": "pico",
+    "source_path": "docs/onboard-roy-status.md",
+    "source_sha256": "ac99c13f645d21942873f777fc1767d4da19e7ff5657c4be1e99f12c01513eb8",
+    "original_text_sha256": "c3e7f62f1712e9d638bccada37dae8cee1304f3e6b6e6fab197b07c642a47dc7",
+    "line_start": 494,
+    "exclusion": "native instruction/listing-like block",
+    "procedure": "Acquire the original privately, reproduce analysis locally, retain explanatory conclusions only."
+  },
+  {
+    "source_root": "pico",
+    "source_path": "docs/phoenix-esb-progress.md",
+    "source_sha256": "6478b278c4fdc1d18d27eb09a3b83c74a463e391388c461ce61253ee72f65cab",
+    "original_text_sha256": "5e7f96988c48323c392545655897a371055e43fde2ed89c5e3be375a70eac034",
+    "line_start": 107,
+    "exclusion": "native instruction/listing-like block",
+    "procedure": "Acquire the original privately, reproduce analysis locally, retain explanatory conclusions only."
+  },
+  {
+    "source_root": "pico",
+    "source_path": "outputs/phase177/gemini-verbatim.md",
+    "source_sha256": "c7e5e117732148f6ad07832f3a1e3c3ba8e2d1d28c6975aadb4f741826ecdd12",
+    "original_text_sha256": "b4df988d2ed6e814f6383b4ae8bd8d781701cbc05551db12bc23cfd5f0f4ca50",
+    "line_start": 14,
+    "exclusion": "native instruction/listing-like block",
+    "procedure": "Acquire the original privately, reproduce analysis locally, retain explanatory conclusions only."
+  },
+  {
+    "source_root": "pico",
+    "source_path": "outputs/phase177/grok-verbatim.md",
+    "source_sha256": "eeb1b825d428836a21bdc1e919553b42a08e23b0ea73487a11586a31c6ded702",
+    "original_text_sha256": "6816e9c21c2366980baa4dd906ecbd474141b68aef902b0eb4d16207a845e55e",
+    "line_start": 102,
+    "exclusion": "native instruction/listing-like block",
+    "procedure": "Acquire the original privately, reproduce analysis locally, retain explanatory conclusions only."
+  },
+  {
+    "source_root": "pico",
+    "source_path": "outputs/phase177/grok-verbatim.md",
+    "source_sha256": "eeb1b825d428836a21bdc1e919553b42a08e23b0ea73487a11586a31c6ded702",
+    "original_text_sha256": "ff4a93f6315fd3e948c217acacb362508fa72221593fcf82100252014b9b1f8b",
+    "line_start": 114,
+    "exclusion": "native instruction/listing-like block",
+    "procedure": "Acquire the original privately, reproduce analysis locally, retain explanatory conclusions only."
+  },
+  {
+    "source_root": "pico",
+    "source_path": "pico_tracker_steam_frame_research.md",
+    "source_sha256": "19092c81851da405af25ab88b783543cf26b5efd8c55a05c2edb18a7850d777e",
+    "original_text_sha256": "7a67e445ed704838f76aeb71871f7e09ed548fb3f66997f472977b1e6f078ae8",
+    "line_start": 2103,
+    "exclusion": "native instruction/listing-like block",
+    "procedure": "Acquire the original privately, reproduce analysis locally, retain explanatory conclusions only."
+  },
+  {
+    "source_root": "pico",
+    "source_path": "docs/FW189_GRID3000_REVIEW_2026-10-07.md",
+    "source_sha256": "f338c7ad339618a061c3a4b77f3304cca50f150283d1befa154b305fe437ef07",
+    "original_text_sha256": "b4a8a8aac7e2b77a52c81222a1b9cd16e815879dfed151030db959c46a276b0a",
+    "line_start": 80,
+    "exclusion": "native instruction/listing-like block",
+    "procedure": "Acquire the original privately, reproduce analysis locally, retain explanatory conclusions only."
+  },
+  {
+    "source_root": "pico",
+    "source_path": "docs/FW189_ITERATION_03_DUAL_MODE_2026-10-07.md",
+    "source_sha256": "1939d6b4a70e38bd47ad7a316929a56d920a3a22ba170d6f697f8cbf59e52d6f",
+    "original_text_sha256": "b2a0335c1da9ba6eb767f26381e7bc5e3bbbb070baec0d3fa5013d511a1d109a",
+    "line_start": 26,
+    "exclusion": "native instruction/listing-like block",
+    "procedure": "Acquire the original privately, reproduce analysis locally, retain explanatory conclusions only."
+  },
+  {
+    "source_root": "pico",
+    "source_path": "docs/FW189_ITERATION_03_DUAL_MODE_2026-10-07.md",
+    "source_sha256": "1939d6b4a70e38bd47ad7a316929a56d920a3a22ba170d6f697f8cbf59e52d6f",
+    "original_text_sha256": "aa5c340b624a9323e44102e8eb35f577bad04eb59fcbf8800a14cbc831254be9",
+    "line_start": 28,
+    "exclusion": "native instruction/listing-like block",
+    "procedure": "Acquire the original privately, reproduce analysis locally, retain explanatory conclusions only."
+  },
+  {
+    "source_root": "pico",
+    "source_path": "docs/FW189_REMOTE_MODE44_CLAUDE_AUDIT_2026-10-08.md",
+    "source_sha256": "61ea3c439c9254004819a5da6a5c13c2ecc12312b89e13855893a1ecffa3afd7",
+    "original_text_sha256": "874c96bb72164c70d64eb0253a0f84bcf53e4541aa3f36686d942417979f26a4",
+    "line_start": 12,
+    "exclusion": "native instruction/listing-like block",
+    "procedure": "Acquire the original privately, reproduce analysis locally, retain explanatory conclusions only."
+  },
+  {
+    "source_root": "pico",
+    "source_path": "docs/onboard-roy-status.md",
+    "source_sha256": "ac99c13f645d21942873f777fc1767d4da19e7ff5657c4be1e99f12c01513eb8",
+    "original_text_sha256": "8fa9ce21c26345064fab7e79c4e02ac4ae88e2cc3002fb09a155ace5a121e3ed",
+    "line_start": 52,
+    "exclusion": "native instruction/listing-like block",
+    "procedure": "Acquire the original privately, reproduce analysis locally, retain explanatory conclusions only."
+  },
+  {
+    "source_root": "pico",
+    "source_path": "docs/onboard-roy-status.md",
+    "source_sha256": "ac99c13f645d21942873f777fc1767d4da19e7ff5657c4be1e99f12c01513eb8",
+    "original_text_sha256": "b9def040a8ce030a3e339eabdca5809fff3814bf1e61a7c7eee5a0b2c26e557a",
+    "line_start": 310,
+    "exclusion": "native instruction/listing-like block",
+    "procedure": "Acquire the original privately, reproduce analysis locally, retain explanatory conclusions only."
+  }
+]

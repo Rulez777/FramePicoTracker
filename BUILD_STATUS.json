@@ -1,0 +1,18 @@
+{
+  "status": "READY",
+  "do_not_publish": false,
+  "date": "2026-10-15",
+  "distribution_scope": "English documentation, selected project-authored source, metadata, stock-relative differences and offline utilities; no vendor/patched firmware or native listings",
+  "bundled_source_files": 135,
+  "full_build_tested": false,
+  "hardware_actions": false,
+  "stock_diff_variants": 24,
+  "markdown_source_versions": 768,
+  "translated_historical_blocks": 1680,
+  "note": "Selected project authored material licensed for community continuation; exclusions and source export limitations remain explicit. No hardware operation performed.",
+  "publication_prepared": true,
+  "license": "GPL-3.0-or-later; authored material only; see NOTICE.md",
+  "publication_status": "Publication candidate; check GitHub remote for availability",
+  "publication_date": "2026-10-15",
+  "repository": "https://github.com/Rulez777/FramePicoTracker"
+}

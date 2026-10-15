@@ -1,0 +1,162 @@
+{
+  "format": "pico-stock-relative-sparse-diff-v1",
+  "target": "PICO Swift 2.0",
+  "stock_version": "Swift2.0_sv1.89_20241213_b189_app.bin / application FW189",
+  "stock_container_bytes": 193385,
+  "stock_container_sha256": "41bd2d24dd9293e7d17c62ab18acd1001d6085da393123a67d226b28d2132e54",
+  "image_base_va": 4096,
+  "stock_image_bytes": 96532,
+  "stock_image_sha256": "477000fc1fde2b518f51a3a2233dc38714731049093e236d15cfe049cd690a89",
+  "result_image_bytes": 98868,
+  "result_image_sha256": "040b304d33e200785bb04ad4b2c0d8730f75d97e4798691530ac2d79b247376d",
+  "status": "Protected installed baseline in saved evidence; not fresh deployment permission",
+  "changed_original_bytes": 90,
+  "unchanged_stock_bytes_included": 0,
+  "spans": [
+    {
+      "offset": 840,
+      "va": "0x1348",
+      "expected_stock_hex": "50",
+      "replacement_hex": "70"
+    },
+    {
+      "offset": 844,
+      "va": "0x134c",
+      "expected_stock_hex": "50",
+      "replacement_hex": "70"
+    },
+    {
+      "offset": 21012,
+      "va": "0x6214",
+      "expected_stock_hex": "44f6de1441f27720",
+      "replacement_hex": "12f080bb12f092bb"
+    },
+    {
+      "offset": 21258,
+      "va": "0x630a",
+      "expected_stock_hex": "44f6de1041f27721",
+      "replacement_hex": "12f02dbb12f03fbb"
+    },
+    {
+      "offset": 21952,
+      "va": "0x65c0",
+      "expected_stock_hex": "1c70094b",
+      "replacement_hex": "12f0f6bd"
+    },
+    {
+      "offset": 23704,
+      "va": "0x6c98",
+      "expected_stock_hex": "fef7a8fd",
+      "replacement_hex": "12f0bcf9"
+    },
+    {
+      "offset": 23738,
+      "va": "0x6cba",
+      "expected_stock_hex": "d3e90023",
+      "replacement_hex": "11f0a5be"
+    },
+    {
+      "offset": 23748,
+      "va": "0x6cc4",
+      "expected_stock_hex": "d3e90023",
+      "replacement_hex": "11f0b6be"
+    },
+    {
+      "offset": 23774,
+      "va": "0x6cde",
+      "expected_stock_hex": "40f6a760",
+      "replacement_hex": "11f06bbe"
+    },
+    {
+      "offset": 23780,
+      "va": "0x6ce4",
+      "expected_stock_hex": "40f61b50",
+      "replacement_hex": "11f07cbe"
+    },
+    {
+      "offset": 23852,
+      "va": "0x6d2c",
+      "expected_stock_hex": "d3e90023",
+      "replacement_hex": "11f098be"
+    },
+    {
+      "offset": 23862,
+      "va": "0x6d36",
+      "expected_stock_hex": "d3e90023",
+      "replacement_hex": "11f0a9be"
+    },
+    {
+      "offset": 24420,
+      "va": "0x6f64",
+      "expected_stock_hex": "d3e90023",
+      "replacement_hex": "11f0a8bd"
+    },
+    {
+      "offset": 26714,
+      "va": "0x785a",
+      "expected_stock_hex": "1a704b78",
+      "replacement_hex": "11f0cbbc"
+    },
+    {
+      "offset": 27534,
+      "va": "0x7b8e",
+      "expected_stock_hex": "1c600e4b",
+      "replacement_hex": "11f0d1ba"
+    },
+    {
+      "offset": 27618,
+      "va": "0x7be2",
+      "expected_stock_hex": "1a707047",
+      "replacement_hex": "11f0c9ba"
+    },
+    {
+      "offset": 32022,
+      "va": "0x8d16",
+      "expected_stock_hex": "30b58bb0",
+      "replacement_hex": "0ff065bf"
+    },
+    {
+      "offset": 32088,
+      "va": "0x8d58",
+      "expected_stock_hex": "fef7ccfd",
+      "replacement_hex": "10f0cef9"
+    },
+    {
+      "offset": 44262,
+      "va": "0xbce6",
+      "expected_stock_hex": "faf77bf9",
+      "replacement_hex": "0cf04fff"
+    },
+    {
+      "offset": 46060,
+      "va": "0xc3ec",
+      "expected_stock_hex": "f7b5344e",
+      "replacement_hex": "0cf07abb"
+    },
+    {
+      "offset": 46148,
+      "va": "0xc444",
+      "expected_stock_hex": "032a2b80",
+      "replacement_hex": "0cf076bb"
+    },
+    {
+      "offset": 46250,
+      "va": "0xc4aa",
+      "expected_stock_hex": "0120f4e7",
+      "replacement_hex": "0cf057bb"
+    }
+  ],
+  "append_offset": 96532,
+  "appended_authored_difference_hex": "ffffffff0cb4eff30082074b1b78012b0cbf42f6e06444f6de1482f300880cbcdff800f019620000505100200cb4eff30082074b1b78012b0cbf40f6b83041f2772082f300880cbcdff800f01d620000505100200cb4eff30082074b1b78012b0cbf42f6e06044f6de1082f300880cbcdff800f00f630000505100200cb4eff30082074b1b78012b0cbf40f6b83141f2772182f300880cbcdff800f013630000505100200cb4eff30082074b1b78012b0cbf40f2e87040f6a76082f300880cbcdff800f0e36c0000505100200cb4eff30082074b1b78012b0cbf40f25c6040f61b5082f300880cbcdff800f0e96c00005051002003b4eff3008107480078012808bf064bd3e9002381f3008803bcdff804f000bfbf6c000050510020e090010003b4eff3008107480078012808bf064bd3e9002381f3008803bcdff804f000bfc96c000050510020e890010003b4eff3008107480078012808bf064bd3e9002381f3008803bcdff804f000bf316d000050510020e090010003b4eff3008107480078012808bf064bd3e9002381f3008803bcdff804f000bf3b6d000050510020f090010003b4eff3008107480078012808bf064bd3e9002381f3008803bcdff804f000bf696f000050510020e09001000fb4eff300810e4a0023136053609360d360136153619361d3610a4a137053709370d3701371084a138081f300880fbc2de9f740054edff804f000bff1c3000050510020210f0020f21f0020bc0500202b80002c06d1962b02d30120dff80cf0dff80cf0032adff80cf000bf99c400008bc4000049c4000006b4002c08d107490988642904d3962902d2054901220a7006bc0120dff800f099c40000f21f0020505100202de9035045f6e17ce047eff3008111485ff0000cc0f800c0c0f804c0c0f808c0c0f80cc0c0f810c0c0f814c0c0f818c0c0f81cc0084880f800c080f801c080f802c080f803c080f804c081f30088bde80390000050510020210f00202de90f50eff3008c122912d102787e2a40f003824278012a36d0022a34d0032a32d0042a30d0052ac0f0f7810b2a2bd9f3e1182940f0f18102787d2a40f0ed814278022a40f0e981827d012a00f2e581c27d282a00f2e181cd4b1a78837c9a4240f0db81ca4b5a78c37c9a4240f0d581c74b9a78037d9a4240f0cf81c44bda78437d9a4240f0c981bde80f502de9f04188b004466d460f46fe22182f08bffd222a7062786a700226a25daa550136122efad3b74b00269a5d05eb0607ba740136042ef8d327787d2f0cbf18271227b14e182f2ad1eff3108872b6a37deb75ae4a1278002a13d132789a4207d1ab4a1178e07d814202d15278002a05d00133e27db2707370012205e00022727002e00022727002222a76bff35f8f88f310883278aa7507226a761a2170e16278052a64d26278032a36d0042a21d06278022a02d1eff3108872b63278012a0cbf01220022aa756278022a0cbf07220122ea7518216278022a40f052818c4b1a782a765a786a761a21bff35f8f88f3108846e1eff3108872b6864b1a78aa75864b1a78ea75854b1a782a76bff35f8f88f31088192134e133e1eff3108872b6804b1a78aa757f4b1a78ea757f4b1a68002a0cbf002201222a767c4b1a786a767c4b1a78aa767b4b1a78ea767b4b1a782a777a4b1a786a777a4b1a78aa77794b1a78ea77bff35f8f88f31088202108e1eff3108872b6052a6ad0062a00f08680072a00f0a180082a4ad0092a19d00a2a2ed05d4b9a69aa75120aea75120a2a76120a6a76da69aa76120aea76120a2a77120a6a77654b1a78aa77644b1a78ea779ae0514b9a68aa75120aea75120a2a76120a6a76da68aa76120aea76120a2a77120a6a77da78aa775a4b1a78ea7783e0464b1a69aa75120aea75120a2a76120a6a765a69aa76120aea76120a2a77120a6a77414b1a78aa77414b1a78ea776be04d4b1a68aa75120aea75120a2a76120a6a765a68aa76120aea76120a2a77120a6a77454b1a68aa77454b1a68ea7753e02e4b5a68aa75120aea75120a2a76120a6a763f4b1a88c2f38512aa763e4b1a78ea76294b1a782a773c4b1a786a77304b1a78aa77304b1a78ea7735e0384bd3f80425aa75d3f80825ea75d3f810252a76d3f800226a76d3f84825aa76120aea76120a2a77120a6a77d3f80423120caa772c4b1a78ea7717e02b4b1a68aa75120aea75120a2a76120a6a76274b1a68aa76120aea76120a2a77120a6a77244b1a78aa7793f83820ea77bff35f8f88f3108820213ee00000fe0e00205051002040220020210f002041040020a70f0020b01f002042040020a01f0020b41f0020e10f0020b11f0020fc1a0020451d00201c2000206c0600207c060020cc0f0020f61f0020991f002028f5014000f50140489100402e100020080e0020980f002000900040820f0020409500401c010020100e0020284649f26933984708b0bde8f0818cf30088bde80f5030b58bb0dff804f000bf1b8d000070b5eff310852de90f50274e7678002e00d072b6bde80f5045f2ed7398472de90f50eff30084002e35d0002833d11e4e7278012a2fd3022a2bd81c4b1b78002b27d11b4bd3f85035002b24d1194b1b78002b1ed0184b1b78002b1cd1174b01211961d9600021c3f84011c3f84411144b40f200111960013a3270124bb2781a70da7000225a709a7000227270bff35f8f01e000227270bff35f8f85f3108884f30088bde80f5070bd505100204022002000100040100e00206a0f00200080004080e200e0210f002000bf00bf000000000070a74000000000004a9c4000000000003ea1402de90f50eff3008c1146eff3108272b60948816801318160c1600123c37003790133037182f310888cf30088bde80f50dff800f0f5780000505100202de90f50eff3008c1146eff3108272b61c600a4881680131816001610223c37043790133437182f310888cf30088bde80f50034bdff800f0937b00005051002000e100e02de90f50eff3008c1146eff3108272b61970084881680131816041610323c37083790133837182f310888cf30088bde80f507047505100202de90f50eff3008c1146eff3108272b61c700a48816801318160c1610423c37083790133837182f310888cf30088bde80f50034bdff800f0c5650000505100205c0400202de90f50eff3008c1146eff3108272b619700a4881680131816081610523c370c3790133c37182f310888cf30088bde80f504b78dff800f05f78000050510020",
+  "source_aliases": [
+    "outputs/phase176/candidate10-timer-observer/fw189-dual-mode.bin",
+    "outputs/phase176/ota-proposal/image.bin",
+    "outputs/phase182/ota-proposal/image.bin",
+    "outputs/phase185/ota-proposal/image.bin",
+    "outputs/phase188/ota-proposal/image.bin",
+    "outputs/phase189/ota-proposal/image.bin"
+  ],
+  "offline_apply_verified": true,
+  "offline_reverse_verified": true,
+  "hardware_actions_permitted": false
+}

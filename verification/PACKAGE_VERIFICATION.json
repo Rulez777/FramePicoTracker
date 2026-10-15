@@ -1,0 +1,58 @@
+{
+  "verified": true,
+  "files": 1097,
+  "manifested_files": 1095,
+  "bytes": 60798423,
+  "local_links_checked": 44498,
+  "allowlisted_extensions": [
+    ".json",
+    ".md",
+    ".py"
+  ],
+  "firmware_images": 0,
+  "decompilation_or_disassembly_files": 0,
+  "raw_vendor_assets": 0,
+  "hardware_actions": false,
+  "coverage": {
+    "audit_date": "2026-10-15",
+    "inventoried_files": 73717,
+    "inventoried_markdown_versions": 768,
+    "unique_markdown_hashes": 429,
+    "english_source_blocks": 4565,
+    "original_foreign_blocks": 1680,
+    "translated_blocks_included": 1680,
+    "translation_complete": true,
+    "untranslated_or_unmapped_source_paragraphs_including_duplicate_occurrences": 0,
+    "ledger_blocks": 6225,
+    "sensitive_code_or_raw_blocks_excluded": 20,
+    "excluded_code_or_data_segments": 398,
+    "asset_metadata_records": 73717,
+    "source_code_metadata_records": 1064,
+    "original_files_copied": 0,
+    "source_roots": [
+      "brain",
+      "quick-bohr",
+      "sdk-pc",
+      "pico",
+      "archive-20261008",
+      "publication"
+    ],
+    "excluded_inventory_trees": [
+      ".git",
+      "virtual environments",
+      "SDK dependencies",
+      "node_modules",
+      "Unity Library/Temp",
+      "generated conversation transcripts",
+      "linked directories"
+    ],
+    "hardware_access_during_packaging": false,
+    "public_edition_note": "Frozen handoff inventory/translation counts retained as provenance. 54 ledger entries from Hinata reference replace verbatim prose with links to attributed factual digest; IDs and original source locations retained. See PUBLICATION_CHANGES.json."
+  },
+  "errors": [],
+  "manifest_sha256": "5ba20e3596ea74247650291e56506f0840c7ba6e229f50c9232dc6e7b213a403",
+  "completed_utc": "2026-10-15T10:52:59.974834+00:00",
+  "publication_edition": true,
+  "approved_presentation_assets": 2,
+  "full_build_tested": false
+}

@@ -1,0 +1,25 @@
+{
+  "purpose": "Documentation checklist only; not an executable station configuration",
+  "hardware_enabled": false,
+  "pose_valid": false,
+  "device_identity_verified": false,
+  "local_private_paths": {
+    "rights_cleared_project_source": null,
+    "swift_fw189_container": null,
+    "swift_fw189_application": null,
+    "roy_matching_stock_reference": null,
+    "tracker_factory_calibration": null,
+    "frame_factory_calibration": null,
+    "frame_active_calibration": null,
+    "current_boot_clock_evidence": null,
+    "owned_recorded_stereo_inputs": null,
+    "owned_recorded_radio_inputs": null
+  },
+  "tracker_identity": null,
+  "camera_identity_mapping": null,
+  "same_link_mode_proof": null,
+  "fresh_human_readiness": null,
+  "invocation_seal": null,
+  "all_four_actual_restoration_barriers": null,
+  "note": "Unknown is not admitted. Populate privately from authorized source/device evidence; do not distribute the filled form."
+}

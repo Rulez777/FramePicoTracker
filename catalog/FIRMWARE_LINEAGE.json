@@ -1,0 +1,170 @@
+[
+  {
+    "result_sha256": "01f0500d7d5ed07599ff4b1201c1e89e287050b5fda01dedecb124384913e21e",
+    "stock_relative_to": "477000fc1fde2b518f51a3a2233dc38714731049093e236d15cfe049cd690a89",
+    "diff_file": "firmware-diffs/historical-01f0500d7d5e.diff.json",
+    "interpretation": "Historical revision07 remote-mode variants; names alone do not establish approval",
+    "immediate_build_parent": "not inferred from folder order"
+  },
+  {
+    "result_sha256": "040b304d33e200785bb04ad4b2c0d8730f75d97e4798691530ac2d79b247376d",
+    "stock_relative_to": "477000fc1fde2b518f51a3a2233dc38714731049093e236d15cfe049cd690a89",
+    "diff_file": "firmware-diffs/diagnostic10-installed.diff.json",
+    "interpretation": "Protected installed diagnostic10 in saved evidence; never automatic update permission",
+    "immediate_build_parent": "not inferred from folder order"
+  },
+  {
+    "result_sha256": "07918813e82b8253be2af375c053754f9810c5a96be9710412b8546f00cf7266",
+    "stock_relative_to": "477000fc1fde2b518f51a3a2233dc38714731049093e236d15cfe049cd690a89",
+    "diff_file": "firmware-diffs/historical-07918813e82b.diff.json",
+    "interpretation": "Historical revision09 diagnostics branch; follow its exact disposition and activation records",
+    "immediate_build_parent": "not inferred from folder order"
+  },
+  {
+    "result_sha256": "0bc88994a4abf65fd4e535d9da7e40003bb33dfa6efe18da7fda10458f093962",
+    "stock_relative_to": "477000fc1fde2b518f51a3a2233dc38714731049093e236d15cfe049cd690a89",
+    "diff_file": "firmware-diffs/historical-0bc88994a4ab.diff.json",
+    "interpretation": "Historical dual-mode intermediate; inspect source history and known failure disposition",
+    "immediate_build_parent": "not inferred from folder order"
+  },
+  {
+    "result_sha256": "1a810f48a4d1320023c17a261f2a63846c209f5e9bdf0219455a51f917eef792",
+    "stock_relative_to": "477000fc1fde2b518f51a3a2233dc38714731049093e236d15cfe049cd690a89",
+    "diff_file": "firmware-diffs/historical-1a810f48a4d1.diff.json",
+    "interpretation": "Historical dual-mode intermediate; inspect source history and known failure disposition",
+    "immediate_build_parent": "not inferred from folder order"
+  },
+  {
+    "result_sha256": "1e111618677983dfaf9be1a4c875463d63bebf2b21094dd3fcfd4aaf7f557078",
+    "stock_relative_to": "477000fc1fde2b518f51a3a2233dc38714731049093e236d15cfe049cd690a89",
+    "diff_file": "firmware-diffs/historical-1e1116186779.diff.json",
+    "interpretation": "Historical revision08/UART-related candidate; not the protected installed image",
+    "immediate_build_parent": "not inferred from folder order"
+  },
+  {
+    "result_sha256": "23beacdfe9185dbe107fa4e6a810e6646a4eeaf528df05077e0908490eab2451",
+    "stock_relative_to": "477000fc1fde2b518f51a3a2233dc38714731049093e236d15cfe049cd690a89",
+    "diff_file": "firmware-diffs/historical-23beacdfe918.diff.json",
+    "interpretation": "Historical revision09 diagnostics branch; follow its exact disposition and activation records",
+    "immediate_build_parent": "not inferred from folder order"
+  },
+  {
+    "result_sha256": "298d6ebb7caa19b66e9952895efa22c09c531b88b07d0c4439d351dacbf45c65",
+    "stock_relative_to": "477000fc1fde2b518f51a3a2233dc38714731049093e236d15cfe049cd690a89",
+    "diff_file": "firmware-diffs/historical-298d6ebb7caa.diff.json",
+    "interpretation": "Historical revision09 diagnostics branch; follow its exact disposition and activation records",
+    "immediate_build_parent": "not inferred from folder order"
+  },
+  {
+    "result_sha256": "3957a3da605d9f3613fcb2a19c75c528e293437c9264448eda2c9a5e798669e9",
+    "stock_relative_to": "477000fc1fde2b518f51a3a2233dc38714731049093e236d15cfe049cd690a89",
+    "diff_file": "firmware-diffs/historical-3957a3da605d.diff.json",
+    "interpretation": "Historical revision07 remote-mode variants; names alone do not establish approval",
+    "immediate_build_parent": "not inferred from folder order"
+  },
+  {
+    "result_sha256": "395ce84b3b807af0156845ce51cd8f956daee48959d35956ef2cc70d014fd14f",
+    "stock_relative_to": "477000fc1fde2b518f51a3a2233dc38714731049093e236d15cfe049cd690a89",
+    "diff_file": "firmware-diffs/historical-395ce84b3b80.diff.json",
+    "interpretation": "Historical final iteration05 handshake image; host policy later changed independently",
+    "immediate_build_parent": "not inferred from folder order"
+  },
+  {
+    "result_sha256": "40941b346f12db9d1385433b45a635500bb553487769d1819a87e3844db356d5",
+    "stock_relative_to": "477000fc1fde2b518f51a3a2233dc38714731049093e236d15cfe049cd690a89",
+    "diff_file": "firmware-diffs/historical-40941b346f12.diff.json",
+    "interpretation": "Historical revision08/UART-related candidate; not the protected installed image",
+    "immediate_build_parent": "not inferred from folder order"
+  },
+  {
+    "result_sha256": "501dc5105d97e175afb2ff1f23b97b635ada5aa29ff6cf8287f667a0cc745aa5",
+    "stock_relative_to": "477000fc1fde2b518f51a3a2233dc38714731049093e236d15cfe049cd690a89",
+    "diff_file": "firmware-diffs/historical-501dc5105d97.diff.json",
+    "interpretation": "Historical dual-mode intermediate; inspect source history and known failure disposition",
+    "immediate_build_parent": "not inferred from folder order"
+  },
+  {
+    "result_sha256": "6a82a89206a609fdce92a3de764882ce53f79f0360b925bebe1ce7853cde6a0d",
+    "stock_relative_to": "477000fc1fde2b518f51a3a2233dc38714731049093e236d15cfe049cd690a89",
+    "diff_file": "firmware-diffs/historical-6a82a89206a6.diff.json",
+    "interpretation": "Historical grid-only timing/RC branch; later dual-mode/observer work is separate",
+    "immediate_build_parent": "not inferred from folder order"
+  },
+  {
+    "result_sha256": "6c702e51c22f7521ae5a00b13550557a32baf72e19822cb6df6f26b092992eb6",
+    "stock_relative_to": "477000fc1fde2b518f51a3a2233dc38714731049093e236d15cfe049cd690a89",
+    "diff_file": "firmware-diffs/historical-6c702e51c22f.diff.json",
+    "interpretation": "Historical revision07 remote-mode variants; names alone do not establish approval",
+    "immediate_build_parent": "not inferred from folder order"
+  },
+  {
+    "result_sha256": "6d1424d7202b80e94bda23bb941eb35b07631b1e695417dbd3e4851f3d53f2a6",
+    "stock_relative_to": "477000fc1fde2b518f51a3a2233dc38714731049093e236d15cfe049cd690a89",
+    "diff_file": "firmware-diffs/historical-6d1424d7202b.diff.json",
+    "interpretation": "Historical dual-mode intermediate; inspect source history and known failure disposition",
+    "immediate_build_parent": "not inferred from folder order"
+  },
+  {
+    "result_sha256": "73136c55167113b100f4921d2078d5ff58c28addcd188c2bee5ccbb76fa5aa4c",
+    "stock_relative_to": "477000fc1fde2b518f51a3a2233dc38714731049093e236d15cfe049cd690a89",
+    "diff_file": "firmware-diffs/historical-73136c551671.diff.json",
+    "interpretation": "Historical revision07 remote-mode variants; names alone do not establish approval",
+    "immediate_build_parent": "not inferred from folder order"
+  },
+  {
+    "result_sha256": "749e9e46ecb20327124d115bfe7d14b3dd42bb288bd0f3b43b9b486afb9165aa",
+    "stock_relative_to": "477000fc1fde2b518f51a3a2233dc38714731049093e236d15cfe049cd690a89",
+    "diff_file": "firmware-diffs/historical-749e9e46ecb2.diff.json",
+    "interpretation": "Historical revision07 remote-mode variants; names alone do not establish approval",
+    "immediate_build_parent": "not inferred from folder order"
+  },
+  {
+    "result_sha256": "7c21f8bb57de3ea952c794963f58dac61e7cbe28f9943f6e54d0b796e36ee036",
+    "stock_relative_to": "477000fc1fde2b518f51a3a2233dc38714731049093e236d15cfe049cd690a89",
+    "diff_file": "firmware-diffs/historical-7c21f8bb57de.diff.json",
+    "interpretation": "Historical revision07 remote-mode variants; names alone do not establish approval",
+    "immediate_build_parent": "not inferred from folder order"
+  },
+  {
+    "result_sha256": "7d921ddfca7941f2d5835e18ffb6300fc7793b430b964de6a56105373547cd41",
+    "stock_relative_to": "477000fc1fde2b518f51a3a2233dc38714731049093e236d15cfe049cd690a89",
+    "diff_file": "firmware-diffs/candidate11-not-installed.diff.json",
+    "interpretation": "Uninstalled short-producer candidate11; do not replace protected diagnostic10",
+    "immediate_build_parent": "not inferred from folder order"
+  },
+  {
+    "result_sha256": "833e4bba667889efe41d82d7175282d412609129d6be382c2de5f74ca98fc41e",
+    "stock_relative_to": "477000fc1fde2b518f51a3a2233dc38714731049093e236d15cfe049cd690a89",
+    "diff_file": "firmware-diffs/historical-833e4bba6678.diff.json",
+    "interpretation": "Rejected or superseded intermediate; keep for negative-result history",
+    "immediate_build_parent": "not inferred from folder order"
+  },
+  {
+    "result_sha256": "b996f95b873c0597a2be39d99b9ea45e7eef187b3fa85f9ffcec09d2a4797378",
+    "stock_relative_to": "477000fc1fde2b518f51a3a2233dc38714731049093e236d15cfe049cd690a89",
+    "diff_file": "firmware-diffs/historical-b996f95b873c.diff.json",
+    "interpretation": "Historical revision07 remote-mode variants; names alone do not establish approval",
+    "immediate_build_parent": "not inferred from folder order"
+  },
+  {
+    "result_sha256": "c5158c9f26f8bf5fedbea1d4c497fd651d1188fac11b8bd1bf3389132a064c0e",
+    "stock_relative_to": "477000fc1fde2b518f51a3a2233dc38714731049093e236d15cfe049cd690a89",
+    "diff_file": "firmware-diffs/historical-c5158c9f26f8.diff.json",
+    "interpretation": "Historical dual-mode intermediate; inspect source history and known failure disposition",
+    "immediate_build_parent": "not inferred from folder order"
+  },
+  {
+    "result_sha256": "d5bd1cca8d24359011c331249f07feb8109b092047e7aee3b9fe478bac5e0695",
+    "stock_relative_to": "477000fc1fde2b518f51a3a2233dc38714731049093e236d15cfe049cd690a89",
+    "diff_file": "firmware-diffs/historical-d5bd1cca8d24.diff.json",
+    "interpretation": "Rejected or superseded intermediate; keep for negative-result history",
+    "immediate_build_parent": "not inferred from folder order"
+  },
+  {
+    "result_sha256": "e4752f78e0d50c333eedcb19780b689a011d64c7c984194533e84bd1d673e3ba",
+    "stock_relative_to": "477000fc1fde2b518f51a3a2233dc38714731049093e236d15cfe049cd690a89",
+    "diff_file": "firmware-diffs/historical-e4752f78e0d5.diff.json",
+    "interpretation": "Rejected or superseded intermediate; keep for negative-result history",
+    "immediate_build_parent": "not inferred from folder order"
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-15",
+  "changes": [
+    {
+      "active_source": "pico:AGENTS.md",
+      "pre_annotation_sha256": "6551a83697a5a2302c09e8e42930c62c002d66c9d15dd9b149163db391ca5026",
+      "exact_preserved_backup": "pico:docs/history/handoff-20261015/AGENTS.before-handoff.md",
+      "backup_sha256": "6551a83697a5a2302c09e8e42930c62c002d66c9d15dd9b149163db391ca5026",
+      "updated_source_sha256": "51e59b942beaaf6ec00ebe53d6e2c51c86f9d60f24b98de05ef360545ed71ef6",
+      "change": "English handoff pointer/status correction prepended; previous contents preserved byte-for-byte in backup; no implementation or runtime change"
+    },
+    {
+      "active_source": "pico:docs/CURRENT_WORK.md",
+      "pre_annotation_sha256": "2ebe00a478bc306ab256f822593de97655d10065a45a2fdcbe2c1b728ef6db47",
+      "exact_preserved_backup": "pico:docs/history/handoff-20261015/CURRENT_WORK.before-handoff.md",
+      "backup_sha256": "2ebe00a478bc306ab256f822593de97655d10065a45a2fdcbe2c1b728ef6db47",
+      "updated_source_sha256": "382e577df25f4f1d49131633b7720d87e111d64cd4a6ffbe9fc7fc10fbe01d4d",
+      "change": "English handoff pointer/status correction prepended; previous contents preserved byte-for-byte in backup; no implementation or runtime change"
+    }
+  ],
+  "device_actions": false
+}

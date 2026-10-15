@@ -1,0 +1,15 @@
+{
+  "source_files": 135,
+  "python_syntax_files": 99,
+  "calibration_defaults_rejected": true,
+  "explicit_synthetic_geometry_accepted": true,
+  "test_method": "AST-extracted dataclass guard checks with stdlib stubs; full module import not tested because audit interpreter lacks numpy",
+  "synthetic_test_only": true,
+  "hardware_actions": false,
+  "full_build_tested": false,
+  "unconditional_compile_blocks": [
+    "pc/radio/ram/roy_ram_rx.c",
+    "pc/radio/ram/roy_ram_station_link.c",
+    "pc/radio/ram/roy_ram_station_three.c"
+  ]
+}

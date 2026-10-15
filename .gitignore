@@ -1,0 +1,22 @@
+# Keep private assets and generated outputs outside this repository.
+__pycache__/
+*.pyc
+.venv/
+venv/
+build/
+dist/
+.deps/
+*.bin
+*.elf
+*.so
+*.dll
+*.exe
+*.zip
+*.tar
+*.gz
+*.mp4
+*.h264
+*.log
+.env
+*.pem
+*.key

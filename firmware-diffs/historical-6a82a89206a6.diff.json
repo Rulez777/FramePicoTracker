@@ -1,0 +1,86 @@
+{
+  "format": "pico-stock-relative-sparse-diff-v1",
+  "target": "PICO Swift 2.0",
+  "stock_version": "Swift2.0_sv1.89_20241213_b189_app.bin / application FW189",
+  "stock_container_bytes": 193385,
+  "stock_container_sha256": "41bd2d24dd9293e7d17c62ab18acd1001d6085da393123a67d226b28d2132e54",
+  "image_base_va": 4096,
+  "stock_image_bytes": 96532,
+  "stock_image_sha256": "477000fc1fde2b518f51a3a2233dc38714731049093e236d15cfe049cd690a89",
+  "result_image_bytes": 96532,
+  "result_image_sha256": "6a82a89206a609fdce92a3de764882ce53f79f0360b925bebe1ce7853cde6a0d",
+  "status": "Historical/offline candidate; not approved for installation",
+  "changed_original_bytes": 30,
+  "unchanged_stock_bytes_included": 0,
+  "spans": [
+    {
+      "offset": 21012,
+      "va": "0x6214",
+      "expected_stock_hex": "44",
+      "replacement_hex": "42"
+    },
+    {
+      "offset": 21014,
+      "va": "0x6216",
+      "expected_stock_hex": "de1441f27720",
+      "replacement_hex": "e06440f6b830"
+    },
+    {
+      "offset": 21258,
+      "va": "0x630a",
+      "expected_stock_hex": "44",
+      "replacement_hex": "42"
+    },
+    {
+      "offset": 21260,
+      "va": "0x630c",
+      "expected_stock_hex": "de1041f27721",
+      "replacement_hex": "e06040f6b831"
+    },
+    {
+      "offset": 23775,
+      "va": "0x6cdf",
+      "expected_stock_hex": "f6a760",
+      "replacement_hex": "f2e870"
+    },
+    {
+      "offset": 23781,
+      "va": "0x6ce5",
+      "expected_stock_hex": "f61b50",
+      "replacement_hex": "f25c60"
+    },
+    {
+      "offset": 23876,
+      "va": "0x6d44",
+      "expected_stock_hex": "8077b2",
+      "replacement_hex": "0070a7"
+    },
+    {
+      "offset": 23885,
+      "va": "0x6d4d",
+      "expected_stock_hex": "a4ab",
+      "replacement_hex": "4a9c"
+    },
+    {
+      "offset": 23893,
+      "va": "0x6d55",
+      "expected_stock_hex": "bdae",
+      "replacement_hex": "3ea1"
+    },
+    {
+      "offset": 24452,
+      "va": "0x6f84",
+      "expected_stock_hex": "8077b2",
+      "replacement_hex": "0070a7"
+    }
+  ],
+  "append_offset": 96532,
+  "appended_authored_difference_hex": "",
+  "source_aliases": [
+    "outputs/fw189-grid3000-rc1-20261007/firmware/fw189-valve-grid-3000.bin",
+    "outputs/tracker-grid3000-20261007/fw189-valve-grid-3000.bin"
+  ],
+  "offline_apply_verified": true,
+  "offline_reverse_verified": true,
+  "hardware_actions_permitted": false
+}

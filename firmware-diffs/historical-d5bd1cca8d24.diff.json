@@ -1,0 +1,157 @@
+{
+  "format": "pico-stock-relative-sparse-diff-v1",
+  "target": "PICO Swift 2.0",
+  "stock_version": "Swift2.0_sv1.89_20241213_b189_app.bin / application FW189",
+  "stock_container_bytes": 193385,
+  "stock_container_sha256": "41bd2d24dd9293e7d17c62ab18acd1001d6085da393123a67d226b28d2132e54",
+  "image_base_va": 4096,
+  "stock_image_bytes": 96532,
+  "stock_image_sha256": "477000fc1fde2b518f51a3a2233dc38714731049093e236d15cfe049cd690a89",
+  "result_image_bytes": 98496,
+  "result_image_sha256": "d5bd1cca8d24359011c331249f07feb8109b092047e7aee3b9fe478bac5e0695",
+  "status": "Historical/offline candidate; not approved for installation",
+  "changed_original_bytes": 90,
+  "unchanged_stock_bytes_included": 0,
+  "spans": [
+    {
+      "offset": 840,
+      "va": "0x1348",
+      "expected_stock_hex": "50",
+      "replacement_hex": "58"
+    },
+    {
+      "offset": 844,
+      "va": "0x134c",
+      "expected_stock_hex": "50",
+      "replacement_hex": "58"
+    },
+    {
+      "offset": 21012,
+      "va": "0x6214",
+      "expected_stock_hex": "44f6de1441f27720",
+      "replacement_hex": "12f080bb12f092bb"
+    },
+    {
+      "offset": 21258,
+      "va": "0x630a",
+      "expected_stock_hex": "44f6de1041f27721",
+      "replacement_hex": "12f02dbb12f03fbb"
+    },
+    {
+      "offset": 21952,
+      "va": "0x65c0",
+      "expected_stock_hex": "1c70094b",
+      "replacement_hex": "12f050bd"
+    },
+    {
+      "offset": 23704,
+      "va": "0x6c98",
+      "expected_stock_hex": "fef7a8fd",
+      "replacement_hex": "12f036f9"
+    },
+    {
+      "offset": 23738,
+      "va": "0x6cba",
+      "expected_stock_hex": "d3e90023",
+      "replacement_hex": "11f0a5be"
+    },
+    {
+      "offset": 23748,
+      "va": "0x6cc4",
+      "expected_stock_hex": "d3e90023",
+      "replacement_hex": "11f0b6be"
+    },
+    {
+      "offset": 23774,
+      "va": "0x6cde",
+      "expected_stock_hex": "40f6a760",
+      "replacement_hex": "11f06bbe"
+    },
+    {
+      "offset": 23780,
+      "va": "0x6ce4",
+      "expected_stock_hex": "40f61b50",
+      "replacement_hex": "11f07cbe"
+    },
+    {
+      "offset": 23852,
+      "va": "0x6d2c",
+      "expected_stock_hex": "d3e90023",
+      "replacement_hex": "11f098be"
+    },
+    {
+      "offset": 23862,
+      "va": "0x6d36",
+      "expected_stock_hex": "d3e90023",
+      "replacement_hex": "11f0a9be"
+    },
+    {
+      "offset": 24420,
+      "va": "0x6f64",
+      "expected_stock_hex": "d3e90023",
+      "replacement_hex": "11f0a8bd"
+    },
+    {
+      "offset": 26464,
+      "va": "0x7760",
+      "expected_stock_hex": "b0f5a27f",
+      "replacement_hex": "11f096bc"
+    },
+    {
+      "offset": 27472,
+      "va": "0x7b50",
+      "expected_stock_hex": "37b5174d",
+      "replacement_hex": "11f05cba"
+    },
+    {
+      "offset": 27604,
+      "va": "0x7bd4",
+      "expected_stock_hex": "044b1b69",
+      "replacement_hex": "11f030ba"
+    },
+    {
+      "offset": 32022,
+      "va": "0x8d16",
+      "expected_stock_hex": "30b58bb0",
+      "replacement_hex": "0ff053bf"
+    },
+    {
+      "offset": 32088,
+      "va": "0x8d58",
+      "expected_stock_hex": "fef7ccfd",
+      "replacement_hex": "10f046f9"
+    },
+    {
+      "offset": 44262,
+      "va": "0xbce6",
+      "expected_stock_hex": "faf77bf9",
+      "replacement_hex": "0cf049ff"
+    },
+    {
+      "offset": 46060,
+      "va": "0xc3ec",
+      "expected_stock_hex": "f7b5344e",
+      "replacement_hex": "0cf07abb"
+    },
+    {
+      "offset": 46148,
+      "va": "0xc444",
+      "expected_stock_hex": "032a2b80",
+      "replacement_hex": "0cf070bb"
+    },
+    {
+      "offset": 46250,
+      "va": "0xc4aa",
+      "expected_stock_hex": "0120f4e7",
+      "replacement_hex": "0cf051bb"
+    }
+  ],
+  "append_offset": 96532,
+  "appended_authored_difference_hex": "ffffffff0cb4eff30082074b1b78012b0cbf42f6e06444f6de1482f300880cbcdff800f019620000505100200cb4eff30082074b1b78012b0cbf40f6b83041f2772082f300880cbcdff800f01d620000505100200cb4eff30082074b1b78012b0cbf42f6e06044f6de1082f300880cbcdff800f00f630000505100200cb4eff30082074b1b78012b0cbf40f6b83141f2772182f300880cbcdff800f013630000505100200cb4eff30082074b1b78012b0cbf40f2e87040f6a76082f300880cbcdff800f0e36c0000505100200cb4eff30082074b1b78012b0cbf40f25c6040f61b5082f300880cbcdff800f0e96c00005051002003b4eff3008107480078012808bf064bd3e9002381f3008803bcdff804f000bfbf6c000050510020d08f010003b4eff3008107480078012808bf064bd3e9002381f3008803bcdff804f000bfc96c000050510020d88f010003b4eff3008107480078012808bf064bd3e9002381f3008803bcdff804f000bf316d000050510020d08f010003b4eff3008107480078012808bf064bd3e9002381f3008803bcdff804f000bf3b6d000050510020e08f010003b4eff3008107480078012808bf064bd3e9002381f3008803bcdff804f000bf696f000050510020d08f01000fb4eff300810b4a0023136053600a4a137053709370d3701371084a138081f300880fbc2de9f740054edff804f000bff1c3000050510020210f0020f21f0020bc0500202b80002c06d1962b02d30120dff80cf0dff80cf0032adff80cf000bf99c400008bc4000049c4000006b4002c08d107490988642904d3962902d2054901220a7006bc0120dff800f099c40000f21f0020505100202de9035045f6e17ce047eff300810b485ff0000cc0f800c0c0f804c0084880f800c080f801c080f802c080f803c080f804c081f30088bde80390000050510020210f00202de90f50eff3008c122912d102787e2a40f08f814278012a36d0022a34d0032a32d0042a30d0052ac0f08381082a2bd97fe1182940f07d8102787d2a40f079814278022a40f07581827d012a00f27181c27d282a00f26d81964b1a78837c9a4240f06781934b5a78c37c9a4240f06181904b9a78037d9a4240f05b818d4bda78437d9a4240f05581bde80f502de9f04188b004466d460f46fe22182f08bffd222a7062786a700226a25daa550136122efad3804b00269a5d05eb0607ba740136042ef8d327787d2f0cbf182712277a4e182f2ad1eff3108872b6a37deb75774a1278002a13d132789a4207d1744a1178e07d814202d15278002a05d00133e27db2707370012205e00022727002e00022727002222a76bff35f8f88f310883278aa7507226a761a21fce06278052a64d26278032a36d0042a21d06278022a02d1eff3108872b63278012a0cbf01220022aa756278022a0cbf07220122ea7518216278022a40f0de80554b1a782a765a786a761a21bff35f8f88f31088d2e0eff3108872b64f4b1a78aa754f4b1a78ea754e4b1a782a76bff35f8f88f310881921c0e0bfe0eff3108872b6494b1a78aa75484b1a78ea75484b1a68002a0cbf002201222a76454b1a786a76454b1a78aa76444b1a78ea76444b1a782a77434b1a786a77434b1a78aa77424b1a78ea77bff35f8f88f31088202194e0eff3108872b6052a11d0062a28d0072a3fd03a4b1a68c5f816205a68c5f81a20384b1a68aa77374b1a68ea773fe0234b5a68c5f81620344b1a88c2f38512aa76334b1a78ea76214b1a782a77314b1a786a77284b1a78aa77284b1a78ea7726e02d4bd3f80425aa75d3f80825ea75d3f810252a76d3f800226a76d3f84825c5f81a20d3f80423120caa77234b1a78ea770de0224b1a68c5f81620214b1a68c5f81a20204b1a78aa7793f83820ea77bff35f8f88f31088202137e0fe0e00205051002040220020210f002041040020a70f0020b01f002042040020a01f0020b41f0020e10f0020b11f0020fc1a0020451d00201c2000206c0600207c06002028f5014000f50140489100402e100020080e0020980f002000900040820f0020409500401c010020100e0020284649f26933984708b0bde8f0818cf30088bde80f5030b58bb0dff804f000bf1b8d000070b5eff310852de90f50274e7678002e00d072b6bde80f5045f2ed7398472de90f50eff30084002e35d0002833d11e4e7278012a2fd3022a2bd81c4b1b78002b27d11b4bd3f85035002b24d1194b1b78002b1ed0184b1b78002b1cd1174b01211961d9600021c3f84011c3f84411144b40f200111960013a3270124bb2781a70da7000225a709a7000227270bff35f8f01e000227270bff35f8f85f3108884f30088bde80f5070bd505100204022002000100040100e00206a0f00200080004080e200e0210f0020000000000070a74000000000004a9c4000000000003ea1402de90f50eff3008c05480179013101718cf30088bde80f50dff800f0f5780000505100202de90f50eff3008c06484179013141718cf30088bde80f5037b5034ddff800f0557b000050510020800f00202de90f50eff3008c06488179013181718cf30088bde80f50034b1b69dff800f0d97b000050510020800f00202de90f50eff3008c06488179013181718cf30088bde80f501c70034bdff800f0c5650000505100205c0400202de90f50eff3008cb0f5a47f03d10748c1790131c1718cf30088bde80f50b0f5a27fdff804f000bf6577000050510020",
+  "source_aliases": [
+    "outputs/phase176/candidate10-initial-unaligned-history/fw189-dual-mode.bin"
+  ],
+  "offline_apply_verified": true,
+  "offline_reverse_verified": true,
+  "hardware_actions_permitted": false
+}

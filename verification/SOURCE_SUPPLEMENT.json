@@ -1,0 +1,2313 @@
+{
+  "included": [
+    {
+      "path": "pc/calibrate.py",
+      "source_root": "pico",
+      "original_path": "pc/calibrate.py",
+      "original_sha256": "2d50955d412d4328d3187eea965cfb3594122a7723b8b2d2f57528000c1383e2",
+      "bundled_sha256": "3b2109716077128ac57cc90205a8249170dca7f171aca00cc33222d40a11000f",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/calibration.py",
+      "source_root": "pico",
+      "original_path": "pc/calibration.py",
+      "original_sha256": "788d0f99cf139e31c8b2bbb8cc6cfbc2bb1bd383a8ff763b06000687df6a4d95",
+      "bundled_sha256": "93c7f65b7d3a7a63bb7d9fa6d3549ae4545e9084e8fc3e5f0d74163f10d10a3e",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/coords.py",
+      "source_root": "pico",
+      "original_path": "pc/coords.py",
+      "original_sha256": "ca8f8dd98c086bcbfefe5ddcad2ea24b86bc2cadd455344db8200b157c57639d",
+      "bundled_sha256": "f0e9a3d8528a0217be59ac40c75712a79c992a11ac26a3eb20a664ac5c80cb75",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/driver/openvr_tracker.py",
+      "source_root": "pico",
+      "original_path": "pc/driver/openvr_tracker.py",
+      "original_sha256": "84b9748dfadc1191f7c33528facaceae62e58b9c1531b8ec5b91576aac021cc5",
+      "bundled_sha256": "9deb9719615c67d4a11e1bf84e40f9ed18687aad49624bb3c8b16519240a3cf8",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/driver/pico_esb_signature.py",
+      "source_root": "pico",
+      "original_path": "pc/driver/pico_esb_signature.py",
+      "original_sha256": "6d97662c6eb8f36217a183ca573e63d706d6c320f49c1732c9dfd35691675fcb",
+      "bundled_sha256": "b68dbabcbd76ed8e13e69e721b270aa73359146b9672df12e654e1cf46f3fc19",
+      "changes": [
+        "3 private serial/address literals replaced with deliberately non-working placeholder; configure and review before use",
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/driver/pico_tracker_daemon.py",
+      "source_root": "pico",
+      "original_path": "pc/driver/pico_tracker_daemon.py",
+      "original_sha256": "f4642ff8c00ef170eb5ce5e4083ff03eb93e378f55a44d2332f44932294fa8ed",
+      "bundled_sha256": "0219e1d075eed84f7f5e0e398fdb91b5c57e1d7a4e530ce4606bd48447848b45",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/driver/pose_frame.py",
+      "source_root": "pico",
+      "original_path": "pc/driver/pose_frame.py",
+      "original_sha256": "f2d3399b74023f8344c8b69fbcbebc0c5d6591fb77c5980d330b1453045bc4f3",
+      "bundled_sha256": "b3bc3f0c9d017ddfcbdd48d8920aa20afb94cc268538f133b9b3235909223163",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/driver/steamvr_driver/driver.vrdrivermanifest",
+      "source_root": "pico",
+      "original_path": "pc/driver/steamvr_driver/driver.vrdrivermanifest",
+      "original_sha256": "0679865f6505853f5e1d732efb1766eec60b85f719a66e3407bacc50cd47c76a",
+      "bundled_sha256": "0679865f6505853f5e1d732efb1766eec60b85f719a66e3407bacc50cd47c76a",
+      "changes": [],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/driver/steamvr_driver/src/driver_pico_tracker.cpp",
+      "source_root": "pico",
+      "original_path": "pc/driver/steamvr_driver/src/driver_pico_tracker.cpp",
+      "original_sha256": "d0a666fc57fe543723c868e16c9d61dfb7d561304289f355d550b701f5417de7",
+      "bundled_sha256": "6119b3c48d122d5c4759a595a510b9bbd04c419cc1d2062e62e0fd2e97a2daee",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/driver/steamvr_driver/src/pose_wire.h",
+      "source_root": "pico",
+      "original_path": "pc/driver/steamvr_driver/src/pose_wire.h",
+      "original_sha256": "bd75e6d628d6e6e10f70a25b915460341a3429a01d6059d13b7d8d7c90386de4",
+      "bundled_sha256": "1ed36c40de74d187a350ad0bffd3098b31fe65103f580efaf6a68192f7efb2d5",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/frame_app/device_monitor.cpp",
+      "source_root": "pico",
+      "original_path": "pc/frame_app/device_monitor.cpp",
+      "original_sha256": "df11018246af139f979fc92ab191c561a8218096ee85539072ab80594d9ee290",
+      "bundled_sha256": "a33225532b10383d53e380ce2edc8d46c79cd4d4546552ddc894bb1c0dffcaf0",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/frame_app/frame-pico-api.service",
+      "source_root": "pico",
+      "original_path": "pc/frame_app/frame-pico-api.service",
+      "original_sha256": "1b936c218d49c707868a713e3819df6283800aa64132de4a7a32e47a5e0f718d",
+      "bundled_sha256": "9b1fe942eda14f4ef0950094f8611d438e3100065fe9b5568d21f5ce3bdd0c1d",
+      "changes": [],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/frame_app/frame-pico-game.service",
+      "source_root": "pico",
+      "original_path": "pc/frame_app/frame-pico-game.service",
+      "original_sha256": "b6600517edb1bcf10231ead0da25e799ce37f722575352970fae58df4a0f31a5",
+      "bundled_sha256": "b6600517edb1bcf10231ead0da25e799ce37f722575352970fae58df4a0f31a5",
+      "changes": [],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/frame_app/frame-pico-radio.service",
+      "source_root": "pico",
+      "original_path": "pc/frame_app/frame-pico-radio.service",
+      "original_sha256": "270d7910246d3b7a2efa095df5d15aa58d199e432c87d7101686829f355151b2",
+      "bundled_sha256": "270d7910246d3b7a2efa095df5d15aa58d199e432c87d7101686829f355151b2",
+      "changes": [],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/frame_app/frame-pico-service.service",
+      "source_root": "pico",
+      "original_path": "pc/frame_app/frame-pico-service.service",
+      "original_sha256": "2929646510825afecc20e986709caa7d0538a00c1ebb1bac2a7f5f86e1fcace6",
+      "bundled_sha256": "2929646510825afecc20e986709caa7d0538a00c1ebb1bac2a7f5f86e1fcace6",
+      "changes": [],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/frame_app/FramePicoTracker.desktop",
+      "source_root": "pico",
+      "original_path": "pc/frame_app/FramePicoTracker.desktop",
+      "original_sha256": "e4b9758dc08b1d21c11c3262685fd7ba4ff047de9534d3781fb678f9871fecdb",
+      "bundled_sha256": "e4b9758dc08b1d21c11c3262685fd7ba4ff047de9534d3781fb678f9871fecdb",
+      "changes": [],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/frame_app/install_release.sh",
+      "source_root": "pico",
+      "original_path": "pc/frame_app/install_release.sh",
+      "original_sha256": "b70f1ca87f8d707ac3875aa6ff9bb9b4b027d445fb925141a7340ef22b9c1697",
+      "bundled_sha256": "975bd19f7b62743cde4c7b2ac5758a1d94432723711640c3b392d27021d88dc1",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/frame_app/main.cpp",
+      "source_root": "pico",
+      "original_path": "pc/frame_app/main.cpp",
+      "original_sha256": "f4802ab88b738a3a87d524734c92c8c167d29d29f616e0d8fee98152b1d308d0",
+      "bundled_sha256": "de8428b4fcc69d13f2ad1913d15b7ebfd84c45f55b2a36782a3566a550c67956",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/frame_app/tracking_watch.cpp",
+      "source_root": "pico",
+      "original_path": "pc/frame_app/tracking_watch.cpp",
+      "original_sha256": "84623524b76050576936b937db4d89ea32197a6c3c0ae288a02af0aba39799ea",
+      "bundled_sha256": "dcd04c6b90c554c39ea6b7c6944771954e95f373bda35a5e061c31d1316c5b92",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/main.py",
+      "source_root": "pico",
+      "original_path": "pc/main.py",
+      "original_sha256": "aff346707f57dfb8c89f4f7a8175c6b842605fc2a72475f6ec507cf92406a33e",
+      "bundled_sha256": "ccbcaac371bd5f963fffe347c41417896a0f2c59fb281d2e1dbbaf1292781ad5",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/optical/__init__.py",
+      "source_root": "pico",
+      "original_path": "pc/optical/__init__.py",
+      "original_sha256": "c8cca7d2063c75ab7cf01c1772fd34e0d2558d6b128e005818c3e052da78c82e",
+      "bundled_sha256": "8de0c8eb06423502d8d838b9ec87bb371a9f6cd60bccf6fc9d5c48c6e7938daf",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/optical/bench_optics.py",
+      "source_root": "pico",
+      "original_path": "pc/optical/bench_optics.py",
+      "original_sha256": "a90f7ee960b79947416606f8d4483b1f7ce866e9338eaa6237fcda940596ad93",
+      "bundled_sha256": "846f745c354c0455f1ff03d9cedd784ec0ede36b777fae910fffaa3105caebaa",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/optical/blob_detector.py",
+      "source_root": "pico",
+      "original_path": "pc/optical/blob_detector.py",
+      "original_sha256": "3ecbcf6597173292001cce030e3bf6a6259790d1d69bad5e7854e3e9e619902f",
+      "bundled_sha256": "efbe81de3c97d465a5a99832123f36e662889ec734c02ffccc253a1c12672327",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/optical/bounded_phase_scan.py",
+      "source_root": "pico",
+      "original_path": "pc/optical/bounded_phase_scan.py",
+      "original_sha256": "0b812bd758ce8d5275ab8be0fad2c22325cfac4ca0101270e5ec1c63e2040956",
+      "bundled_sha256": "352a389665f42c55cf4d367e33de49f6cf08c0c5eb66b4918eb28b69709a4bbd",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/optical/calibration_snapshot.py",
+      "source_root": "pico",
+      "original_path": "pc/optical/calibration_snapshot.py",
+      "original_sha256": "7584d92fcb9b6e91d2de1b0784e09c00b6908ea3e2045f050eabd679ab9f1e26",
+      "bundled_sha256": "26610c2988034c60fa61f591b8862140e5fbf38451c916d2cd856a25c35214dd",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/optical/camera_stream.py",
+      "source_root": "pico",
+      "original_path": "pc/optical/camera_stream.py",
+      "original_sha256": "9145e10794dce9fffa2c43abf283fa361dccede6fca3623bd855d16795c00494",
+      "bundled_sha256": "0bbc1d372b5f1c0afcdef3dd7abcbedc8519d62e0497e96d8c640bde7c5deb0e",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/optical/constellation.py",
+      "source_root": "pico",
+      "original_path": "pc/optical/constellation.py",
+      "original_sha256": "3027e45519256959071b481df94f9b29eecd1dd23309da0a46c8c22d76653844",
+      "bundled_sha256": "6de29ab56f070600a4099adee7247e4b0f330fb6fe452cd58e4bb787c5746cc3",
+      "changes": [
+        "Removed all embedded factory LED coordinates and normals. Default model construction raises; explicit recipient calibration is required. Original mathematical classes retained.",
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/optical/distortion.py",
+      "source_root": "pico",
+      "original_path": "pc/optical/distortion.py",
+      "original_sha256": "28ef96aaa281ba69cf64aa5ba31acec73b6e64f0605043d5323e11183c10ac38",
+      "bundled_sha256": "9c44df6672ac9f57a5f2ac290a9b80dd14640745952d0d592d9590a00dd03617",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/optical/exposure_schedule.py",
+      "source_root": "pico",
+      "original_path": "pc/optical/exposure_schedule.py",
+      "original_sha256": "79cdb82be172671aeeecb1cf46419c24c43641b25d6019c5f6e4029396585956",
+      "bundled_sha256": "a926edc8ff44eb4ac93d591344488ed99f949398c67c45be464e4cdb9a3ce1d3",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/optical/frame_camera_model.py",
+      "source_root": "pico",
+      "original_path": "pc/optical/frame_camera_model.py",
+      "original_sha256": "fae349123ec9fe3539019aa752fef63d9d334dd41f12697f5ed534819b60c244",
+      "bundled_sha256": "e4e59eac5e015e3991071bda8a3efac1d746d080eeebcc604a545ddfd68a8eb5",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/optical/frame_camera_rig.py",
+      "source_root": "pico",
+      "original_path": "pc/optical/frame_camera_rig.py",
+      "original_sha256": "86d4ed7801dfdee0db6fd2e9406c5d80adb449b7addd58df750dd6573e894b3b",
+      "bundled_sha256": "94facb7d0bd1010251c8e08c7b734db36d27179ce3e92bf8a61a9000fab216e2",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/optical/fusion_ekf.py",
+      "source_root": "pico",
+      "original_path": "pc/optical/fusion_ekf.py",
+      "original_sha256": "50771f69d1d0e466f0880c42e45ef1adf8fd4f31baa3c88ba6959453cb7c9df6",
+      "bundled_sha256": "2b3c0855437275e8e713637120976c130a75981b220d9f3405713d3bb0b23240",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/optical/h264_timestamp_mux.py",
+      "source_root": "pico",
+      "original_path": "pc/optical/h264_timestamp_mux.py",
+      "original_sha256": "feb773303d35caf9fb27d6cfca188b5df450b7007dbeb731d3d7eb1786cfa3b9",
+      "bundled_sha256": "0555a10b6e13c77559cd2958878e0ab209aca7d972a14ecc8a480c5525e14e2c",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/optical/imu_calibration.py",
+      "source_root": "pico",
+      "original_path": "pc/optical/imu_calibration.py",
+      "original_sha256": "7b408c76abe0831fc20e5f5f7575226cdae3c8e5b1b4d602556aa0d38996793f",
+      "bundled_sha256": "09108601cf51221ab3ffe8533bb51826c26904f289cfb38095a184b1cb7cdfdb",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/optical/imu_orientation.py",
+      "source_root": "pico",
+      "original_path": "pc/optical/imu_orientation.py",
+      "original_sha256": "c089fed28f62d6defb9c3909f3cf8dbfb71290a0faf4101d9b2412350c394dba",
+      "bundled_sha256": "c6375933339dbf9f478c7fb03de78e884fe63b7ae0d39d389b9737abf269a468",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/optical/kb_spline.py",
+      "source_root": "pico",
+      "original_path": "pc/optical/kb_spline.py",
+      "original_sha256": "cd62aeb52fa3b1d95ec598b8bb446a4d3858a6fcf89c1de695622ebb65feaf56",
+      "bundled_sha256": "129aae30cf3773b4560567ad7fb0b87fbd4930b6e0869a5706ed45ce11291519",
+      "changes": [
+        "Removed numeric camera calibration defaults; explicit recipient values required through fail-closed field factories",
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/optical/live_decode.py",
+      "source_root": "pico",
+      "original_path": "pc/optical/live_decode.py",
+      "original_sha256": "d3eb8a26cb3b46762d19fa2da32e99558ab5ed7eeed9f9e6ff2b6df484865e3e",
+      "bundled_sha256": "ff128904fe55d643070a848769ef69099e367151df6db2377df98f0a0fbff478",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/optical/live_source.py",
+      "source_root": "pico",
+      "original_path": "pc/optical/live_source.py",
+      "original_sha256": "f64f4b440d8f9a87b0aeeee112297019f3b56f7986488327b3f4d79fb5678cd1",
+      "bundled_sha256": "2ed4335dc53b247d2841bc107ffc9e69c8b9cd6663be52a6b4ebbcada02a31b5",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/optical/measured_pipeline.py",
+      "source_root": "pico",
+      "original_path": "pc/optical/measured_pipeline.py",
+      "original_sha256": "68f09e7c608b943a3160ed9fcd577f7de690a474e715da905c25073d5b3b0e9b",
+      "bundled_sha256": "08094f7c73d2ca4ebe9230878669f8a60c9ed6165ee5c68e14538778bf1f5b07",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/optical/measurement_clock.py",
+      "source_root": "pico",
+      "original_path": "pc/optical/measurement_clock.py",
+      "original_sha256": "493397675aae464195cdaa65927b5dadecc9ca16adefc9f0ba81da357b5b2162",
+      "bundled_sha256": "385b62cc70e8c0bec34b0a78323986ebc669fe93dc765287a20b0c6a1fac5e04",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/optical/phase_search.py",
+      "source_root": "pico",
+      "original_path": "pc/optical/phase_search.py",
+      "original_sha256": "e034c4f53fd48fa552824be1b878c0c074604f1ae5ddcc0ee93e3269bd4e1b38",
+      "bundled_sha256": "1553ae747eb5d34ea8538af36a5d50cb0062606d871e889dd207fff1b026e9e4",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/optical/pico_factory_calibration.py",
+      "source_root": "pico",
+      "original_path": "pc/optical/pico_factory_calibration.py",
+      "original_sha256": "6f597568b4ae739f262dfd3ae1a546c1e3565dc39381b663208e9f98e7c58024",
+      "bundled_sha256": "efdc5cf4ae87b9eef047f70ee3b70c18c7e025683084d96e52217a583c4d907d",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/optical/pnp_solver.py",
+      "source_root": "pico",
+      "original_path": "pc/optical/pnp_solver.py",
+      "original_sha256": "a7856a0f33353d955a91b908ed0d4a258d3a18c666976caf273eb6f15c7657ef",
+      "bundled_sha256": "f0ec0d6f9be4c5b8636ef2bef3d982995929837d312bb93dde400f8c5b70a438",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/optical/ray_pose_solver.py",
+      "source_root": "pico",
+      "original_path": "pc/optical/ray_pose_solver.py",
+      "original_sha256": "373d710233d1e42389994000a1b0fe0dee8cb0ae63efa037539a79b499acc20d",
+      "bundled_sha256": "faea7d7e7d38ecc1591f5ce4fddf5b1076757f7112353d20cb3bdf1d14a0f75d",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/optical/sparse_imu_calibration.py",
+      "source_root": "pico",
+      "original_path": "pc/optical/sparse_imu_calibration.py",
+      "original_sha256": "ab8ada89c638bcbdd3996ee5c19eb2ce3e4eeefb4d96940707db49c1dea3d060",
+      "bundled_sha256": "b3722144de7b3dfd6a2858350496e629c735ce4fe27a147a9711030a6f7a4cd2",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/optical/station_optics.py",
+      "source_root": "pico",
+      "original_path": "pc/optical/station_optics.py",
+      "original_sha256": "5e5b2bc36f75b4f0cc2e7c0bed152304b2405312da84dd1abd361a9022fa65fc",
+      "bundled_sha256": "c3d8dce26fab485b6d2f940b4611c755b6bdc202c0fbe148a816198e5ed7cc61",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/optical/steam_frame_tracker.py",
+      "source_root": "pico",
+      "original_path": "pc/optical/steam_frame_tracker.py",
+      "original_sha256": "6c7aeed3d67cb38bef523eb8122a73f609565e0141034dcbd768547e5f6e0304",
+      "bundled_sha256": "61aebf327c9df222f1e7e7ec120cd858727bd6223e6a2c83483adaaf42b24cdf",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/optical/stereo_pnp.py",
+      "source_root": "pico",
+      "original_path": "pc/optical/stereo_pnp.py",
+      "original_sha256": "8a9df93889722bc09dc880c91a6f4fea43e1d8329e4788de92430f08c976456c",
+      "bundled_sha256": "b19a16fd51da366298651e9ad68bfff74a8e0879219fdf6a9207356cc0f688da",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/optical/temporal_identity.py",
+      "source_root": "pico",
+      "original_path": "pc/optical/temporal_identity.py",
+      "original_sha256": "833464f15af45740d9f5241d4b417dcc80c860c7b0fdb4f1acc12df60b6591bd",
+      "bundled_sha256": "1b555f654f07925d85abe91612ba70120284d7bec3290fe7d3844e7065243cff",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/protocol.py",
+      "source_root": "pico",
+      "original_path": "pc/protocol.py",
+      "original_sha256": "cbc31d9817e729d4935353cae68a57d589dfd000ddd60a1bc261ef7ee0c56273",
+      "bundled_sha256": "115d5e60154d4fa121415e647d60ab5caffe2aeb39894b387e028dbc7bd218ae",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/append_section.py",
+      "source_root": "pico",
+      "original_path": "pc/radio/append_section.py",
+      "original_sha256": "4ed1ae19653ccd10e54de5d888271f15619609d21b9ace7d72aff027a4116743",
+      "bundled_sha256": "b47f1adcd71060c6f1c379479d2d792dcffa538f1e05cb1f749fe3fc12adb09e",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/esb_packet.py",
+      "source_root": "pico",
+      "original_path": "pc/radio/esb_packet.py",
+      "original_sha256": "020718c0b61d0dc59b5cc4da193307e95484a3e7f9e57d05af90ac461dd115cd",
+      "bundled_sha256": "688664f5f51931d420774935de97d91197584e9743a893cf031bdcc8e89d0c1b",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/firmware_template/pico_tracker_radio_rx.c",
+      "source_root": "pico",
+      "original_path": "pc/radio/firmware_template/pico_tracker_radio_rx.c",
+      "original_sha256": "ad2d832ac37f79f78573fc9e82a1d528bae0440aeb97e3b8a11729f137663f15",
+      "bundled_sha256": "9d2a795e5a21d633f53e0c845ecc6e7ca1ef4a0ff7ebc33002124674a3871d74",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/firmware_template/pico_tracker_radio_rx.h",
+      "source_root": "pico",
+      "original_path": "pc/radio/firmware_template/pico_tracker_radio_rx.h",
+      "original_sha256": "5b894b4bb02791c96fa1c872be0f1f87346b1ea63248d8c7dccb64d5775d2550",
+      "bundled_sha256": "7c84c965b2d580759eb8ae9cc6276d8bbf4b60fbc4b9de8511f7732829e61ece",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/frame_app_control.py",
+      "source_root": "pico",
+      "original_path": "pc/radio/frame_app_control.py",
+      "original_sha256": "311e65e4d707606188f3b31b0d21c7fde65ce9089213abb27f413fa49505284a",
+      "bundled_sha256": "8a56af59b39e5f9f51d05732ad2162d326aec953252255c541f91632eb28eb08",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/frame_camera_probe.cpp",
+      "source_root": "pico",
+      "original_path": "pc/radio/frame_camera_probe.cpp",
+      "original_sha256": "92754c23483db4fc46e2261da01ecce14a26287fc524bb1ba1dd7e20714ccdc2",
+      "bundled_sha256": "9e2d01f4ae06ab3a93a275572a245690884617d41cfbc0291450053f2fdcc39d",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/frame_camera_recording_setting.cpp",
+      "source_root": "pico",
+      "original_path": "pc/radio/frame_camera_recording_setting.cpp",
+      "original_sha256": "55a12fe165766d00ed257d2f43fab7fcc4f0bf1e582373f15f8dcdd974337b0a",
+      "bundled_sha256": "fa9c8f6d0af22307458db3ced57716355f16530204f0ae9061370e9b30c3cfe1",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/frame_dataset_capture.py",
+      "source_root": "pico",
+      "original_path": "pc/radio/frame_dataset_capture.py",
+      "original_sha256": "8e2a34406a6820bd645886c4320c1ca66fba6481074de816773797215a26c4d2",
+      "bundled_sha256": "725cbd71740bf46a5058696bc5df9dc7213ea79e6a154bc4a2435bbe5aada77e",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/frame_debug_agent.py",
+      "source_root": "pico",
+      "original_path": "pc/radio/frame_debug_agent.py",
+      "original_sha256": "095cfbca947cb0621ebe7759ad62696fbb5e8267aa738165c3e8b13b5406ac84",
+      "bundled_sha256": "6f92559b8e3711b6e8509c676603ca0c59fa8db5b1a9b0725f4b5a4ce42b666d",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/frame_debug_client.py",
+      "source_root": "pico",
+      "original_path": "pc/radio/frame_debug_client.py",
+      "original_sha256": "2004d292c9d23fce3858edcd583da50b0f7c9b9271af1117a2e337a8c67abf08",
+      "bundled_sha256": "5ad6371ff3791c3d784cfbbdc236bae3032d49c0bcfdff53e5665d719ffcab18",
+      "changes": [
+        "1 private serial/address literals replaced with deliberately non-working placeholder; configure and review before use",
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/frame_ir_scan.py",
+      "source_root": "pico",
+      "original_path": "pc/radio/frame_ir_scan.py",
+      "original_sha256": "87a8c78c61191c5cde0e2a9bef7e08f40b2b08d7630ada17fd70d83f97b71953",
+      "bundled_sha256": "0cf65c3f3edc21db25ad7bf396e457bc5b4bafd476ea7577b52b356b00d7620a",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/frame_live_camera.py",
+      "source_root": "pico",
+      "original_path": "pc/radio/frame_live_camera.py",
+      "original_sha256": "c04f1836a0a98c76f86b60ab4d364bbdc3b37e1a15ca6f16cb31919620f1069b",
+      "bundled_sha256": "77e08338256b0ae4645961eeab87bcef7f391c6c85f0d5901b96c0155ddd7857",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/frame_mode_handover.py",
+      "source_root": "pico",
+      "original_path": "pc/radio/frame_mode_handover.py",
+      "original_sha256": "6ac036a42021aa8242d78568ba6223f1899422b051f3bde6ee0668dd7729117d",
+      "bundled_sha256": "1635eace825a35183ab269e409ea14f0f551fe7f800052acc49e660782a13c06",
+      "changes": [
+        "1 known private chip literals replaced with non-working placeholder; existing comparisons retained",
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/frame_occ_extract.py",
+      "source_root": "pico",
+      "original_path": "pc/radio/frame_occ_extract.py",
+      "original_sha256": "c156ec40a19f89acaa9797f4de29eff1829d9b24ae38bfc9f1a6704b70c65af6",
+      "bundled_sha256": "1843aec38b68a01617556ddc1e58affcacb245f89fb1c2f75681611b3c44df72",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/frame_occ_live.py",
+      "source_root": "pico",
+      "original_path": "pc/radio/frame_occ_live.py",
+      "original_sha256": "46e09288f3e3c1a659416bc995492eb214526f047b40c8f4f15786f0385df028",
+      "bundled_sha256": "0424e78fca31927b8f148d9fd43841b9cc791aaf4b79929d3f33135129c90d93",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/frame_occ_tail.py",
+      "source_root": "pico",
+      "original_path": "pc/radio/frame_occ_tail.py",
+      "original_sha256": "55a1b29fd3ed62d1788faf377a90b3625274bd350e45417d76d11e4a6a0d8331",
+      "bundled_sha256": "888dd7b2accd422d1dcd273f601f571f687503c17f048cbf49a358b371acb661",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/frame_profile_owner.py",
+      "source_root": "pico",
+      "original_path": "pc/radio/frame_profile_owner.py",
+      "original_sha256": "351e3657043bc65a5f69a5849f40a788024154830c6c62e1b159a455bb0268c4",
+      "bundled_sha256": "a907adc38251fb0fe46d089fd4badacfb7095bd784337687c91de52dde0b8737",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/frame_profile_status.py",
+      "source_root": "pico",
+      "original_path": "pc/radio/frame_profile_status.py",
+      "original_sha256": "67009dd8662d48b32c9116aec73e174d8e1c86e4a2359099f85cd06b19722cd2",
+      "bundled_sha256": "2e2b65d4e4ebb40fa442fa2364513107a4be2c54ef1063d7b86dbebd06fbeef7",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/frame_profile_worker.py",
+      "source_root": "pico",
+      "original_path": "pc/radio/frame_profile_worker.py",
+      "original_sha256": "2ee4b54e336712052c25c3df25c5c6a3772083ca0d79bee47472d47f1af66070",
+      "bundled_sha256": "c32fdb7244962d4ff8b5ccb4ab6d7bf5ab69c8617bb1e9c17606c21a24e72424",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/frame_telemetry_trace.py",
+      "source_root": "pico",
+      "original_path": "pc/radio/frame_telemetry_trace.py",
+      "original_sha256": "fc941da9d7ba4406343ccd15a975ccc0d8f92c0aecceb572d5a36fea2e791c5c",
+      "bundled_sha256": "34beafe3ad5b44c003a9533fc1cae3e1b75429d6b41a39b48ad980df714b5718",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/inspect_occ_metadata.py",
+      "source_root": "pico",
+      "original_path": "pc/radio/inspect_occ_metadata.py",
+      "original_sha256": "1848b861d95f1a0271cb5f52e392b731255b76deeec3b05c45f7a3c952d62a68",
+      "bundled_sha256": "f4d3ee07a83050beb7a3eb7ae63fd9c92d46160415b1cbb0a2dab48a259ceaa9",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/nrf_radio_bridge.py",
+      "source_root": "pico",
+      "original_path": "pc/radio/nrf_radio_bridge.py",
+      "original_sha256": "8606095f5824f59ab07c591e7caa77c5c3e54b2a8c28b3d09657410bc35c8230",
+      "bundled_sha256": "b8a5ea1fd12b008378247e59c659604eaee30466e6847a7d8f86d98ec6e58bfe",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/pico_channel_read.c",
+      "source_root": "pico",
+      "original_path": "pc/radio/pico_channel_read.c",
+      "original_sha256": "397f55fbe1897460eb99c67404ddbfcaa457f057f6aa8a45f0bf94e0ca89df64",
+      "bundled_sha256": "3445bf4c0b17e36ea2c0fd4b4ace95d6119512e6214b43005793bcceab72679b",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/pico_ext_identity_read.c",
+      "source_root": "pico",
+      "original_path": "pc/radio/pico_ext_identity_read.c",
+      "original_sha256": "bb215fbb9e82675665de4487fd124f2337e16a95a7aab169925623f3533bf2a1",
+      "bundled_sha256": "18091105da1650cfd5d26ae0747c4cdb4c104f16484fd409a8197b76db9b7ee5",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/pico_full_diag.c",
+      "source_root": "pico",
+      "original_path": "pc/radio/pico_full_diag.c",
+      "original_sha256": "3aa4bef392447e5ca6671463c11fa2d46e8032f03a8c6db7d524ac7b0c4f089d",
+      "bundled_sha256": "7f5da1ee854b39bd60bd028b05757e2486651b3f93580ee219cc295e029e3364",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/pico_identity_read.c",
+      "source_root": "pico",
+      "original_path": "pc/radio/pico_identity_read.c",
+      "original_sha256": "041e899b398e3c951c2da5f6ebb246b97b05c11f78a8abdc542a3cbd3ff952da",
+      "bundled_sha256": "a5edbd72d78e789e6f8659378aaa6ac8401e5b3528db706a2dc8b9299a503ee7",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/pico_pxr_test.c",
+      "source_root": "pico",
+      "original_path": "pc/radio/pico_pxr_test.c",
+      "original_sha256": "a84490236b50b8932e980397a165b652a56d0b893ebaeb465527ea0b8fa20787",
+      "bundled_sha256": "ec4035f0e7a7d33c113f6e8e4551b52608f61a5bde1ee340435f578040fcb1a0",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/pico_raw_status_read.c",
+      "source_root": "pico",
+      "original_path": "pc/radio/pico_raw_status_read.c",
+      "original_sha256": "04b0bdfe66d5a354dc8e68cf6dc4c883af02701a34a537ab63335adfafaf87b0",
+      "bundled_sha256": "49d2b2f32f9e3672625e5627190c56241f3b0434769b3d244cfc73b28db5d6d5",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/pico_station_read.c",
+      "source_root": "pico",
+      "original_path": "pc/radio/pico_station_read.c",
+      "original_sha256": "a6c2c5aef91a1e97f4791ff0cdb9a5a4947f1055a7182d9a028cd92572cfba0b",
+      "bundled_sha256": "bd1e6ca30a350142a527d7958432c5f7911b6f49bb19ebf72a0578f9eee2add8",
+      "changes": [
+        "2 private serial/address literals replaced with deliberately non-working placeholder; configure and review before use",
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/pico_swift_probe.py",
+      "source_root": "pico",
+      "original_path": "pc/radio/pico_swift_probe.py",
+      "original_sha256": "75c4e93c94a3cca5c4147bf419078e6bed6c6f36158e202c5647fd4343777605",
+      "bundled_sha256": "4e20a8d6c55e1a20314978cda178ba7ea43b14259ec5a59157615ffb94622459",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/pico_tracker_diag2.c",
+      "source_root": "pico",
+      "original_path": "pc/radio/pico_tracker_diag2.c",
+      "original_sha256": "6daf2e01724424a7c6e0e0b40052b6dc88d23987ce50e49e739b5645ee9d5150",
+      "bundled_sha256": "03eb1680cd88f78e7903abac1d5c55277650567b799975c749132f1b7fc28e63",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/pico_tracker_mode_read.c",
+      "source_root": "pico",
+      "original_path": "pc/radio/pico_tracker_mode_read.c",
+      "original_sha256": "8e56d36dec2c1dbe20cbea2698ac22ab2aff43ddc6de9d787165b806bf719e30",
+      "bundled_sha256": "739aefb424d02be865e5c3972d4bb9a6210ce1f0e74ad8a095ae761594c03832",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/ram/ble_phase.py",
+      "source_root": "pico",
+      "original_path": "pc/radio/ram/ble_phase.py",
+      "original_sha256": "8428b8f42c7ad8f9e5be92937992d3f4ad15806849ab2e3fb35af59b88bc7337",
+      "bundled_sha256": "7228729e4fca538d51aef63593e128961d619ad5c1bca2f853bc4829ce2c011b",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/ram/build_station.py",
+      "source_root": "pico",
+      "original_path": "pc/radio/ram/build_station.py",
+      "original_sha256": "0458c7aa94ace4cfd484c4991f5b8cb7352dfcc7af202baf7bfd3fadd59ba617",
+      "bundled_sha256": "644b7c79c797cbe8a477a5be18d61586b91c75ef1d9ebfbe5651f2b6b3f47267",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/ram/controller_baseline.py",
+      "source_root": "pico",
+      "original_path": "pc/radio/ram/controller_baseline.py",
+      "original_sha256": "89a3c738b39b785dcb393895ece6cdc2c910c0d2f3f6b44b5dcc0a371310c3e7",
+      "bundled_sha256": "2a06033f12f2a8ea58b8ec6f17184f6de20dbca5b55fed96873230a644b5ffaa",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/ram/controller_guard.py",
+      "source_root": "pico",
+      "original_path": "pc/radio/ram/controller_guard.py",
+      "original_sha256": "0af5bbe52258ca47638d0efd953d7c33003d52dfca169647ed5d4e7688b90e14",
+      "bundled_sha256": "9d95124e0de4734759222a39b0346088c74085f900e7f2da8d78126b3a5c986d",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/ram/ownership.py",
+      "source_root": "pico",
+      "original_path": "pc/radio/ram/ownership.py",
+      "original_sha256": "2af14ba54432b1e9f78408019c1c56d999a1f0d51c84ad01c5def628b1565e2f",
+      "bundled_sha256": "c96c6339b42ea6ff2e8d30a788b573ef110be0c6cdfc841f881dbc5cea623700",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/ram/peer_engine.py",
+      "source_root": "pico",
+      "original_path": "pc/radio/ram/peer_engine.py",
+      "original_sha256": "332f4ba36a1a3728b57e33345ea99b1a9a5478c0ff22c087f8090c9ba5ccf107",
+      "bundled_sha256": "ef623adb2c32e5e35a8667b3132d9e2a0f859b69076c1194786533b8e468f48c",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/ram/poll_window_sweep.py",
+      "source_root": "pico",
+      "original_path": "pc/radio/ram/poll_window_sweep.py",
+      "original_sha256": "30d1a6778b6f1eac7b07de5913409ae906e0999e1259c8648a344122c567f320",
+      "bundled_sha256": "a5d5acbcbddf084c7106f34765e982905e95057b68bb0d177ea7c907d8cc6e01",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/ram/roy_passive_probe.py",
+      "source_root": "pico",
+      "original_path": "pc/radio/ram/roy_passive_probe.py",
+      "original_sha256": "9de1caff9c0ad1b077f8221409ef4a85df4aaf41675133557b4f423b27c8b70b",
+      "bundled_sha256": "766c9161f5125aa18f621d7396c32b7edfff5f133c4f36d8f994ff407a8e6755",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/ram/roy_ram_loader.py",
+      "source_root": "pico",
+      "original_path": "pc/radio/ram/roy_ram_loader.py",
+      "original_sha256": "0c20c35c7c66584c75b715a54c162c71952bb831f9874d6c77a0a39170dbf66d",
+      "bundled_sha256": "54a13b6c84b3db1d01a298a0331fb32a9642a1c2ca08e32fb33411d19de88079",
+      "changes": [
+        "2 known private chip literals replaced with non-working placeholder; existing comparisons retained",
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/ram/roy_ram_recover.py",
+      "source_root": "pico",
+      "original_path": "pc/radio/ram/roy_ram_recover.py",
+      "original_sha256": "6a4685366b4f000df6dd885bb91fcb248f1e9a911f783116e10c3e450e22a952",
+      "bundled_sha256": "ad86765560b919d2675814385fa4b6a9f866bf64880efd5bc4d8e73b9f80ab7c",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/ram/roy_ram_rx.c",
+      "source_root": "pico",
+      "original_path": "pc/radio/ram/roy_ram_rx.c",
+      "original_sha256": "5339ff845fe37239dad6635481d6312ff40673d185be215fd158d79eb8aadfb2",
+      "bundled_sha256": "1580d118519a75909acd45c11e1043c9a7ee70007f0a441cbbc87c78a7ef9ec6",
+      "changes": [
+        "Historical embedded identity byte arrays replaced with zeros; unconditional compile error prevents use until reviewed configuration refactor",
+        "2 known private chip literals replaced with non-working placeholder; existing comparisons retained",
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/ram/roy_ram_rx.ld",
+      "source_root": "pico",
+      "original_path": "pc/radio/ram/roy_ram_rx.ld",
+      "original_sha256": "d0ab128f2462988b32ece34c54043d51910bee307520b1239422d44394f5c8e6",
+      "bundled_sha256": "8b4497ae2ce6679834e3a8b8bc7169cea8d68960b49a8589672ae687d4ab11bc",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/ram/roy_ram_station_link.c",
+      "source_root": "pico",
+      "original_path": "pc/radio/ram/roy_ram_station_link.c",
+      "original_sha256": "aa39166341883b42f57112165e206c4a757158d2611081822962109f8d837a7c",
+      "bundled_sha256": "1d4389e251eaaa67733df44e33eea8d92e148525b14fe4f52d13106cfd9df8c9",
+      "changes": [
+        "Historical embedded identity byte arrays replaced with zeros; unconditional compile error prevents use until reviewed configuration refactor",
+        "2 known private chip literals replaced with non-working placeholder; existing comparisons retained",
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/ram/roy_ram_station_service27.c",
+      "source_root": "pico",
+      "original_path": "pc/radio/ram/roy_ram_station_service27.c",
+      "original_sha256": "f1b51111114e5bf8f41ec9ad525c6d5be669441b0ed05f53633c7b1150dec642",
+      "bundled_sha256": "835bcac2619503e293543a70e9f4fc0328cc90ee1e65e58bc14b00facd2057a0",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/ram/roy_ram_station_service36.c",
+      "source_root": "pico",
+      "original_path": "pc/radio/ram/roy_ram_station_service36.c",
+      "original_sha256": "b7412c8fa68658be1d829eef2cf7cc62b79da3a805619c31b29ad28460425ab4",
+      "bundled_sha256": "bc973a84a533225f17173098aff4ef6f9c344ccda2d1b494015f3714a10ed5d0",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/ram/roy_ram_station_service38.c",
+      "source_root": "pico",
+      "original_path": "pc/radio/ram/roy_ram_station_service38.c",
+      "original_sha256": "73360563d7acb7083221b281f4bf9de8497aa1b49125c9198da5e24a8513209d",
+      "bundled_sha256": "66c34805f711bde196ce01332b0e1d115a7beb9fb70a8315d59105d3d0c7a04c",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/ram/roy_ram_station_three.c",
+      "source_root": "pico",
+      "original_path": "pc/radio/ram/roy_ram_station_three.c",
+      "original_sha256": "d1cf34394f7019e243df52dd152a232ce928be4feb0c8647fb789b1daec826b5",
+      "bundled_sha256": "a626acb9dc37e81648a786c20f1769d153149832a1ef80cc1bbc12bfd6acd985",
+      "changes": [
+        "Historical embedded identity byte arrays replaced with zeros; unconditional compile error prevents use until reviewed configuration refactor",
+        "2 known private chip literals replaced with non-working placeholder; existing comparisons retained",
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/ram/roy_ram_station_v4.c",
+      "source_root": "pico",
+      "original_path": "pc/radio/ram/roy_ram_station_v4.c",
+      "original_sha256": "0e318f1433b033e5f7f104cbd2a2a50e503216d303ccfa5774f95b3645c6aea7",
+      "bundled_sha256": "c1bfc8e4a112efbb3ce04093013283c3f5a00ae3315acd5a10280fef203e4c73",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/ram/roy_rtt_console.py",
+      "source_root": "pico",
+      "original_path": "pc/radio/ram/roy_rtt_console.py",
+      "original_sha256": "86127a633cf5fd224901cc6664d3bad129d74c1312b07df1624d2e94dcb92a1a",
+      "bundled_sha256": "2b055ed8370b8bc805d2ab42008f31d9f0fbca1a4ee3c2a128b56b2ca37cf631",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/ram/short_phase90.py",
+      "source_root": "pico",
+      "original_path": "pc/radio/ram/short_phase90.py",
+      "original_sha256": "87bba556a42ff57294fc08c14c5ea0a5d8835cd8f238ba1ddced5dee2c2ad885",
+      "bundled_sha256": "6449e271333e1cc1918a585bd2b689d6e566beceeee4e2e78b23fe9325aa961d",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/ram/station_runtime.py",
+      "source_root": "pico",
+      "original_path": "pc/radio/ram/station_runtime.py",
+      "original_sha256": "5a800e2cad03f688d939cdc331574a260f90902685c22a326bb70a35b0c3a07e",
+      "bundled_sha256": "70fd1d350f348d2a530442b394242671b14b24e1f80f6af791d997fbc5f842f3",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/ram/station_v4_runtime.py",
+      "source_root": "pico",
+      "original_path": "pc/radio/ram/station_v4_runtime.py",
+      "original_sha256": "cfd77f6dd55060427f71b1a797b3af8da149696812211a93943fd5661c80f7f0",
+      "bundled_sha256": "2d4e3c2ebf8015d02cb3e51a10dd817eb17d87e32c57ae61e2bef6727697ff46",
+      "changes": [
+        "1 known private chip literals replaced with non-working placeholder; existing comparisons retained",
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/ram/swd_radio_probe.py",
+      "source_root": "pico",
+      "original_path": "pc/radio/ram/swd_radio_probe.py",
+      "original_sha256": "600961861ed455bb6de4a98365509b6f567d3f0fc132759d4f194b1ca24a195f",
+      "bundled_sha256": "e79ccdc49ff64ea71c66b2de77f6b7edbbe366418b284aba61a1ae83cf8463e0",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/ram/swd_read_probe.py",
+      "source_root": "pico",
+      "original_path": "pc/radio/ram/swd_read_probe.py",
+      "original_sha256": "8d67dfdf6a4f0a7e4a8c2b1cd608c69622d6663a3f1636f64aa63cd3e2afa6d3",
+      "bundled_sha256": "8aae0a34526517730ff789b7cdbdd12f327ab164f35212be19e03181a730613f",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/ram/timed_module_capability.py",
+      "source_root": "pico",
+      "original_path": "pc/radio/ram/timed_module_capability.py",
+      "original_sha256": "95c307ed5de630a6031cd0a2fc346389dbf0471048e327e4d36cef3a09587b54",
+      "bundled_sha256": "0e38e243d7c72fd9d1dd1dbdc6cc1de6026c9ee1998cc3d67eed41e5766fe907",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/ram/tracker_ota_runtime.py",
+      "source_root": "pico",
+      "original_path": "pc/radio/ram/tracker_ota_runtime.py",
+      "original_sha256": "689f52631c54f8013956d298e6dc321a607d7cfaf273c24e7fcc8910137382a0",
+      "bundled_sha256": "0fdc2b69c735ca5bc95b63666dead8a857882ada65fc5ca6704f025d6d32f601",
+      "changes": [
+        "1 private serial/address literals replaced with deliberately non-working placeholder; configure and review before use",
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/roy_probe.py",
+      "source_root": "pico",
+      "original_path": "pc/radio/roy_probe.py",
+      "original_sha256": "d3589d45abc67592638bf7aa6702db67e9e7a0f5149353bceac86f4da42bdff7",
+      "bundled_sha256": "0561d339c843a2d62037cfab204ceb449c695e5b71b5baedba4e19e61327ea55",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/swift_channel_mask.py",
+      "source_root": "pico",
+      "original_path": "pc/radio/swift_channel_mask.py",
+      "original_sha256": "2943c1de664066cf76f4bf654f8ca2c64e56d17a71521929bb051644fd151033",
+      "bundled_sha256": "202f37e90d759b136260612a6d483fbdad25c1720ff6167737080c665095173c",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/swift_command_stream.py",
+      "source_root": "pico",
+      "original_path": "pc/radio/swift_command_stream.py",
+      "original_sha256": "f52af0fa9fad884627344de6e31e3ca96c7e1dae69b6b3dc173760ee0adbae8a",
+      "bundled_sha256": "6a7e3db3f8b55fc5d0dd815b4877b1db60c4c9e8856c3bab874ff4bf78cd8ee3",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/swift_identity_audit.py",
+      "source_root": "pico",
+      "original_path": "pc/radio/swift_identity_audit.py",
+      "original_sha256": "88d649e3463a114758588e89dbf3cbd6debf2a40b8e37c4b13e1819317221a5d",
+      "bundled_sha256": "e06442e7d8680d815ab207c1e0b4324138e0f42f53c42b87b615150f1ccdfd78",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/swift_ir_command.py",
+      "source_root": "pico",
+      "original_path": "pc/radio/swift_ir_command.py",
+      "original_sha256": "107c3fcdd33f47d57aa1aea1072a5d151964f542227b59f79026432f413cfff3",
+      "bundled_sha256": "b8ce0e31e33d99d52548b1ac5f89dfa43f5bad80192f9b7e86435827a019d704",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/swift_light_sync.py",
+      "source_root": "pico",
+      "original_path": "pc/radio/swift_light_sync.py",
+      "original_sha256": "009161b2a10263d64f9e6fb5ef46bbfba816280be8432438b8b243b8bc2942d5",
+      "bundled_sha256": "51dcf8ea239aaa89d47e5fba13f36e225baabefa63a6a2e5908502091a4e4283",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/swift_product_info.py",
+      "source_root": "pico",
+      "original_path": "pc/radio/swift_product_info.py",
+      "original_sha256": "36ef15c476a37633eaca75b1be95d409d841275ec7faf7ef59c296716be1afef",
+      "bundled_sha256": "e8731b87967d8e0a714e64bfc50939cef59e898a8da9e6391be4197e93e85909",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/swift_records.py",
+      "source_root": "pico",
+      "original_path": "pc/radio/swift_records.py",
+      "original_sha256": "f2067681039c8a9a0f0a6ffe484e3ee7ed393dc8756238bc97b1327b4211686e",
+      "bundled_sha256": "97419ce3505f21b525f01a4415ec5a705af12587442958a58bbd96a472f93fe6",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/swift_telemetry.py",
+      "source_root": "pico",
+      "original_path": "pc/radio/swift_telemetry.py",
+      "original_sha256": "c0dc6063d2f8f87c8d6b1ac134013ef9db37bad494013130c1af00c293e46d6b",
+      "bundled_sha256": "f55a3cfc24cf8c5967e3856cc338a2548531f88ac11562097720ba58511a0f12",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/tracker_dual_mode_boot43.py",
+      "source_root": "pico",
+      "original_path": "pc/radio/tracker_dual_mode_boot43.py",
+      "original_sha256": "d0528c0785b22e320434db95705e7710afccd8819b7194e4320b916d0b23022a",
+      "bundled_sha256": "d8f9961d4dc47830a69f026212ffeef10ed1f5eea9c3f2f04cf69f5ef785788f",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/tracker_dual_mode_patch.py",
+      "source_root": "pico",
+      "original_path": "pc/radio/tracker_dual_mode_patch.py",
+      "original_sha256": "17a540463036701dbda1d542d504f57a7052a2f816ce810d8b9ed27f37d83f87",
+      "bundled_sha256": "63cb88e9ef9fdd2d5b12f7edf9fa8579085a0324963b0d72cb8cf9b7dbbf6e91",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/tracker_dual_mode_remote44.py",
+      "source_root": "pico",
+      "original_path": "pc/radio/tracker_dual_mode_remote44.py",
+      "original_sha256": "968d80ba56b051b126886d1fe16046db482a4c88b841c4dd7f2545d9f52f7799",
+      "bundled_sha256": "88850b6d3178b193808e47ed7e393ba7d6ba0f0a84a64b2c5151073153b68531",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/tracker_grid_patch.py",
+      "source_root": "pico",
+      "original_path": "pc/radio/tracker_grid_patch.py",
+      "original_sha256": "973491875c989fb712b8d047f21b010132a469ae7408ca4cc342ec66a28d8dea",
+      "bundled_sha256": "38c818d963171c54699e3148e16e6955624facc845b9d5da29e2639160b7f319",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/tracker_image_audit.py",
+      "source_root": "pico",
+      "original_path": "pc/radio/tracker_image_audit.py",
+      "original_sha256": "5368002f65a13cdfe7f07a7719fec841aad12896dbe086d444ddfa7204b47a1b",
+      "bundled_sha256": "6e1a6c13b86149bcd413edc05fd412c82de6bca34472849e0ee25f4729b9c82a",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/tracker_ota.py",
+      "source_root": "pico",
+      "original_path": "pc/radio/tracker_ota.py",
+      "original_sha256": "08d4fc51a2319f73808af18c23156a1097e9fe37164e82ac79aaf72f0e7abca8",
+      "bundled_sha256": "070ef3fc218023efe3b649c283da4491392383e31c6dc542b425b749d3fda16f",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/tracker_ota_fork_prepare.py",
+      "source_root": "pico",
+      "original_path": "pc/radio/tracker_ota_fork_prepare.py",
+      "original_sha256": "643ddccf3e4ea340d4a5c48ce15cf501c0256d98eda31705268d63c961c20463",
+      "bundled_sha256": "7aacf252618ffef7d85ed1dbdf38a4682f07b07c10748091ac6a1e15cef1b29c",
+      "changes": [
+        "1 known private chip literals replaced with non-working placeholder; existing comparisons retained",
+        "1 private serial/address literals replaced with deliberately non-working placeholder; configure and review before use",
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/tracker_ota_prepare.py",
+      "source_root": "pico",
+      "original_path": "pc/radio/tracker_ota_prepare.py",
+      "original_sha256": "7b9d189f35b4ff6dbcb2a8cc717eebab00db345facf67df9cc0d523359b18e92",
+      "bundled_sha256": "417adc1e3dff612bbb28639eea9e62295792d988f1df827cb90615c8fbe4f8ae",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/tracker_ota_readiness.py",
+      "source_root": "pico",
+      "original_path": "pc/radio/tracker_ota_readiness.py",
+      "original_sha256": "aa101d77ca1ce6705bf5d9044787e5caebacf84405fbde6ec5cc41679b247ffe",
+      "bundled_sha256": "fe96c123834b4bf7c173f17109df51dc909398aba111cd7e8d4a6c76edb4ecfd",
+      "changes": [
+        "1 known private chip literals replaced with non-working placeholder; existing comparisons retained",
+        "1 private serial/address literals replaced with deliberately non-working placeholder; configure and review before use",
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/radio/tracker_ota_transfer_audit.py",
+      "source_root": "pico",
+      "original_path": "pc/radio/tracker_ota_transfer_audit.py",
+      "original_sha256": "36de6695534cfacd94264b51b1435b8052e6cfe42746258a80fb5b25f6496248",
+      "bundled_sha256": "b3de026e7f84fb5cf85f09e99547f2e877fd540afa30031ae75e6d2e661bfbcd",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/receiver.py",
+      "source_root": "pico",
+      "original_path": "pc/receiver.py",
+      "original_sha256": "0a1e37412e8261d1abddc5c0ce30900b8e3569b2565d8fd02dd005d4482ee220",
+      "bundled_sha256": "649648d917f5b8cd3cc7ff95b89560551124bd76a5f6ffaf195ce04aaf254b4a",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/requirements.txt",
+      "source_root": "pico",
+      "original_path": "pc/requirements.txt",
+      "original_sha256": "6bcafba9e091db690b63890b3d76acffb5dbfb1b0b09ba93bee30f4b75a18953",
+      "bundled_sha256": "6bcafba9e091db690b63890b3d76acffb5dbfb1b0b09ba93bee30f4b75a18953",
+      "changes": [],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/run_optical.py",
+      "source_root": "pico",
+      "original_path": "pc/run_optical.py",
+      "original_sha256": "d6a005fa9247ab63e393a2256a145c7fe008928405709110661b7cbaa023bd91",
+      "bundled_sha256": "61c084a1acbd287749fb3e1baa631349365dedd289969eb81f76037da9d0e762",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/tracker_ctl.py",
+      "source_root": "pico",
+      "original_path": "pc/tracker_ctl.py",
+      "original_sha256": "0d0b47fe21e840de252b6419de14b678f51ecbe87316029ec3749aa0c259e086",
+      "bundled_sha256": "05a2844241e464f6a42e155fd30b294bb699393d7637834ef9d8ec12bdf9f238",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/vmt_client.py",
+      "source_root": "pico",
+      "original_path": "pc/vmt_client.py",
+      "original_sha256": "b38939f9c1d5b685608f3daeb172c3a9020fbe1cbfa50dfc5a24646455a97d26",
+      "bundled_sha256": "ffc74649c3666936267e8ca7d3a9832075c7b11018b599b672e3373649b8f67e",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "scripts/build_frame_app.sh",
+      "source_root": "publication",
+      "original_path": "scripts/build_frame_app.sh",
+      "original_sha256": "47f16d10f4558f452b610bafe755c214e76930b625f412796dda1be1fabe0fb2",
+      "bundled_sha256": "80973e3dea97a7a9a0bef1cf593a847a3e3ad8e5b37b8b09f6568d48976a15c8",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "scripts/prepare_overlay_dependency.py",
+      "source_root": "publication",
+      "original_path": "scripts/prepare_overlay_dependency.py",
+      "original_sha256": "a031256d5b6b1db48c3f18921a6fabd5acc4525d77a44f7a3b182329c073cb15",
+      "bundled_sha256": "e99ab95d8ef5ce45493bbbd25b3c76ac1d2953b45746558050b241ada98abc95",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "historical-original210/roy_ram_station_v4.c",
+      "source_root": "pico",
+      "original_path": "outputs/phase210/roy_ram_station_v4.c",
+      "original_sha256": "3db4e36a99648cca4c1f4af175a694b3bc0d8b769cd18ea7f3d56c177385163f",
+      "bundled_sha256": "c7dd4f7d1c3500ba39473e7abe4cbfae4190d117d3b4c8eee3d62b649719bbf3",
+      "changes": [
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+      ],
+      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    }
+  ],
+  "excluded": [
+    {
+      "source_root": "pico",
+      "path": "pc/frame_app/README.md",
+      "reason": "Not an allowlisted implementation source format"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/libpvrtrackingservice.so",
+      "reason": "Not an allowlisted implementation source format"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/libstationclient.pxr.so",
+      "reason": "Not an allowlisted implementation source format"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/libstationopticsservice.so",
+      "reason": "Not an allowlisted implementation source format"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/libstationopticsservice.syms.elf",
+      "reason": "Not an allowlisted implementation source format"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/libtrackerclient.pxr.so",
+      "reason": "Not an allowlisted implementation source format"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/libtrackingclient.pxr.so",
+      "reason": "Not an allowlisted implementation source format"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/radio/elf_method_disasm.py",
+      "reason": "Captured payload fixtures or binary-analysis/listing utility; obtain private original only when needed"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/radio/libpvrtrackingservice.so",
+      "reason": "Not an allowlisted implementation source format"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/radio/libstationclient.pxr.so",
+      "reason": "Not an allowlisted implementation source format"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/radio/libstationopticsservice.so",
+      "reason": "Not an allowlisted implementation source format"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/radio/PhoenixSta.bin",
+      "reason": "Not an allowlisted implementation source format"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/radio/pico_full_diag",
+      "reason": "Not an allowlisted implementation source format"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/radio/pico_pxr_test",
+      "reason": "Not an allowlisted implementation source format"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/radio/pico_tracker_diag2",
+      "reason": "Not an allowlisted implementation source format"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/radio/stationclient_test",
+      "reason": "Not an allowlisted implementation source format"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/radio/Swift2.0_sv1.89_20241213_b189_app.bin",
+      "reason": "Not an allowlisted implementation source format"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/radio/swift_capture_decode.py",
+      "reason": "Captured payload fixtures or binary-analysis/listing utility; obtain private original only when needed"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/radio/swift_fw_disasm.py",
+      "reason": "Captured payload fixtures or binary-analysis/listing utility; obtain private original only when needed"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/radio/swift_partial_crc.py",
+      "reason": "Captured payload fixtures or binary-analysis/listing utility; obtain private original only when needed"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/radio/test_compile",
+      "reason": "Not an allowlisted implementation source format"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/radio/update_doc.py",
+      "reason": "Captured payload fixtures or binary-analysis/listing utility; obtain private original only when needed"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/stationclient_test",
+      "reason": "Not an allowlisted implementation source format"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/audit_live_camera_clock.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/conftest.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/debug_assoc.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/debug_assoc2.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/debug_assoc3.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/debug_assoc4.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/debug_assoc5.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/debug_assoc6.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/fw189_emulator.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/fw189_queue_emulator.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/fw189_rx_emulator33.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/ota_fault_harness.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/pose_wire_check.cpp",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/roy_capture_ack36.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_associate_robust.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_ble_native_probe74.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_ble_native_sampler74.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_ble_native_sampler77.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_ble_phase.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_boot_counter43.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_calibration.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_capture_ack36.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_capture_ack38.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_coexist_deadline28.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_coexist_late_end78.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_coexist_observer90.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_coexist_phase66.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_controller_guard.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_coords.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_dense_batch83.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_dense_frame81.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_distortion.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_driver_interpreter.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_esb_packet.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_fine_poll88.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_frame_app_control.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_frame_camera_model.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_frame_debug_api.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_frame_mode_handover.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_frame_occ_live.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_frame_profile_owner.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_frame_profile_status.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_frame_profile_worker.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_frame_telemetry_trace.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_fusion_imu_gaps.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_fw189_activation_boundary.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_fw189_dual_mode.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_fw189_dual_mode_v2.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_fw189_dual_review.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_fw189_fresh_application_start.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_fw189_mode_review07.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_fw189_native_queue.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_fw189_readiness.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_fw189_timer_units.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_imu_calibration.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_imu_orientation.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_integration_abi4.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_kb_spline.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_live_source_cleanup.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_measured_pose_math.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_measurement_clock.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_mode_query_readonly79.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_optical.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_optics_speed.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_ota_candidate45.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_ota_fault29.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_ota_pause31.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_ota_prepare30.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_ota_response_poll33.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_ota_risk31.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_ota_transfer_audit29.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_peer_engine.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_phase_search.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_pico_swift_probe.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_pipeline_safety.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_protocol.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_radio_bridge.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_remote_mode44.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_rev07_rtc84.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_roy_abi4_deadline.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_roy_probe.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_roy_ram_loader.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_scheduler_admission37.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_service_deadline27.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_service_grid_native_request.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_service_retry27.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_service_retry79.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_short_callback90c.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_short_exchange90.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_short_phase90.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_station_clock_measure.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_station_runtime.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_stereo_pnp.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_swift_bootstrap_record.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_swift_capture_decode.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_swift_channel_mask.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_swift_command_stream.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_swift_hardware_capture.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_swift_identity_audit.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_swift_ir_command.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_swift_light_sync.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_swift_negotiation_candidate.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_swift_partial_crc.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_swift_record_run.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_swift_telemetry.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_temporal_identity.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_tracker_grid_patch.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_tracker_ota.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_tracker_ota_runtime.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/test_tracker_ota_stock_reflash.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/validate_frame_offline.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tests/validate_timestamp_decode.py",
+      "reason": "Historical tests may embed captured device packets and calibration; not bulk-exported without fixture-by-fixture review"
+    },
+    {
+      "source_root": "pico",
+      "path": "pc/tracker_test",
+      "reason": "Not an allowlisted implementation source format"
+    }
+  ],
+  "scope": "Text implementation source only. Original binaries, calibration, captures and tests with unreviewed fixtures are excluded. Source packaging is not hardware approval.",
+  "not_a_clean_machine_build": true
+}

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=FramePicoTracker
+Comment=PICO tracker diagnostics in the SteamVR dashboard
+Exec=/home/steamos/.local/bin/FramePicoTracker
+Icon=applications-engineering
+Terminal=false
+Categories=Utility;

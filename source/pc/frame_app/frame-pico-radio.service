@@ -1,0 +1,16 @@
+[Unit]
+Description=Frame Pico Tracker RAM-only radio service
+
+[Service]
+Type=simple
+WorkingDirectory=/home/steamos/pico-ram-work
+Environment=PYTHONPATH=/home/steamos/pico-ram-work/release
+ExecStart=/home/steamos/pico-ram-work/venv/bin/python release/radio/ram/roy_ram_loader.py --stock stock.bin --module release/roy_station.elf --out radio-service.json --log radio-service-openocd.log --run --station-v4 --station-service --tracking-watch /home/steamos/pico-ram-work/release/tracking_watch --live-state radio-live.json --peer-registry radio-peers.json --station-config station-config.json --station-three --station-sequence --station-handover --station-offer --swift-poll --poll-noop --poll-bootstrap --poll-identity --poll-fast-rx --native-shell --reserve-mpu --repeat-host --profile bootstrap205.profile.json --duration 0 --slot-us 600 --interval-us 6000 --steady-interval-us 6000 --mpsl-priority 0
+KillMode=process
+TimeoutStopSec=15
+SendSIGKILL=no
+Restart=no
+RestartSec=1
+
+[Install]
+WantedBy=default.target

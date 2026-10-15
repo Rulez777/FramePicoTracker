@@ -1,0 +1,2390 @@
+[
+  {
+    "source_id": "D0011",
+    "line_start": 45,
+    "line_end": 47,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0011",
+    "line_start": 51,
+    "line_end": 53,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0018",
+    "line_start": 40,
+    "line_end": 42,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0021",
+    "line_start": 88,
+    "line_end": 90,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0021",
+    "line_start": 219,
+    "line_end": 222,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0022",
+    "line_start": 107,
+    "line_end": 129,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0033",
+    "line_start": 48,
+    "line_end": 54,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0033",
+    "line_start": 62,
+    "line_end": 66,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0036",
+    "line_start": 11,
+    "line_end": 16,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0037",
+    "line_start": 20,
+    "line_end": 42,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0037",
+    "line_start": 75,
+    "line_end": 79,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0037",
+    "line_start": 84,
+    "line_end": 88,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0037",
+    "line_start": 114,
+    "line_end": 136,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0037",
+    "line_start": 238,
+    "line_end": 245,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0037",
+    "line_start": 285,
+    "line_end": 287,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0037",
+    "line_start": 292,
+    "line_end": 294,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0037",
+    "line_start": 297,
+    "line_end": 299,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0037",
+    "line_start": 304,
+    "line_end": 306,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0037",
+    "line_start": 311,
+    "line_end": 318,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0037",
+    "line_start": 320,
+    "line_end": 322,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0038",
+    "line_start": 16,
+    "line_end": 52,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0038",
+    "line_start": 142,
+    "line_end": 150,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0038",
+    "line_start": 191,
+    "line_end": 194,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0038",
+    "line_start": 197,
+    "line_end": 200,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0038",
+    "line_start": 203,
+    "line_end": 206,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0038",
+    "line_start": 225,
+    "line_end": 247,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0038",
+    "line_start": 365,
+    "line_end": 389,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0038",
+    "line_start": 441,
+    "line_end": 455,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0039",
+    "line_start": 37,
+    "line_end": 41,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0039",
+    "line_start": 80,
+    "line_end": 83,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0039",
+    "line_start": 113,
+    "line_end": 115,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0039",
+    "line_start": 119,
+    "line_end": 121,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0039",
+    "line_start": 125,
+    "line_end": 129,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0039",
+    "line_start": 391,
+    "line_end": 393,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0039",
+    "line_start": 1274,
+    "line_end": 1296,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0039",
+    "line_start": 1376,
+    "line_end": 1389,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0040",
+    "line_start": 362,
+    "line_end": 366,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0040",
+    "line_start": 405,
+    "line_end": 408,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0040",
+    "line_start": 438,
+    "line_end": 440,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0040",
+    "line_start": 444,
+    "line_end": 446,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0040",
+    "line_start": 450,
+    "line_end": 454,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0040",
+    "line_start": 716,
+    "line_end": 718,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0040",
+    "line_start": 1622,
+    "line_end": 1644,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0040",
+    "line_start": 1837,
+    "line_end": 1844,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0045",
+    "line_start": 11,
+    "line_end": 16,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0046",
+    "line_start": 61,
+    "line_end": 66,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0046",
+    "line_start": 105,
+    "line_end": 110,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0046",
+    "line_start": 120,
+    "line_end": 123,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0046",
+    "line_start": 151,
+    "line_end": 155,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0046",
+    "line_start": 171,
+    "line_end": 175,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0046",
+    "line_start": 193,
+    "line_end": 199,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0046",
+    "line_start": 217,
+    "line_end": 221,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0046",
+    "line_start": 239,
+    "line_end": 244,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0046",
+    "line_start": 250,
+    "line_end": 258,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0046",
+    "line_start": 274,
+    "line_end": 277,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0046",
+    "line_start": 295,
+    "line_end": 299,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0046",
+    "line_start": 343,
+    "line_end": 349,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0046",
+    "line_start": 390,
+    "line_end": 406,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0046",
+    "line_start": 421,
+    "line_end": 423,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0046",
+    "line_start": 461,
+    "line_end": 552,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0046",
+    "line_start": 558,
+    "line_end": 569,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0046",
+    "line_start": 577,
+    "line_end": 672,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0046",
+    "line_start": 676,
+    "line_end": 734,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0046",
+    "line_start": 738,
+    "line_end": 901,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0046",
+    "line_start": 905,
+    "line_end": 964,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0046",
+    "line_start": 968,
+    "line_end": 1119,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0046",
+    "line_start": 1123,
+    "line_end": 1149,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0046",
+    "line_start": 1153,
+    "line_end": 1189,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0046",
+    "line_start": 1193,
+    "line_end": 1452,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0046",
+    "line_start": 1456,
+    "line_end": 1670,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0046",
+    "line_start": 1674,
+    "line_end": 1777,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0046",
+    "line_start": 1781,
+    "line_end": 1922,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0046",
+    "line_start": 1926,
+    "line_end": 2013,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0046",
+    "line_start": 2017,
+    "line_end": 2071,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0046",
+    "line_start": 2075,
+    "line_end": 2171,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0046",
+    "line_start": 2179,
+    "line_end": 2263,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0046",
+    "line_start": 2267,
+    "line_end": 2334,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0046",
+    "line_start": 2338,
+    "line_end": 2420,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0046",
+    "line_start": 2424,
+    "line_end": 2511,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0046",
+    "line_start": 2515,
+    "line_end": 2538,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0046",
+    "line_start": 2542,
+    "line_end": 2576,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0046",
+    "line_start": 2580,
+    "line_end": 2671,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0046",
+    "line_start": 2679,
+    "line_end": 2717,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0046",
+    "line_start": 2721,
+    "line_end": 2768,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0046",
+    "line_start": 2772,
+    "line_end": 2816,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0046",
+    "line_start": 2820,
+    "line_end": 2890,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0046",
+    "line_start": 2894,
+    "line_end": 2910,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0046",
+    "line_start": 2914,
+    "line_end": 3009,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0046",
+    "line_start": 3013,
+    "line_end": 3018,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0046",
+    "line_start": 3022,
+    "line_end": 3044,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0046",
+    "line_start": 3048,
+    "line_end": 3051,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0046",
+    "line_start": 3055,
+    "line_end": 3123,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0046",
+    "line_start": 3127,
+    "line_end": 3216,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0046",
+    "line_start": 3220,
+    "line_end": 3324,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0046",
+    "line_start": 3328,
+    "line_end": 3387,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0046",
+    "line_start": 3391,
+    "line_end": 3534,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0046",
+    "line_start": 3538,
+    "line_end": 3555,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0046",
+    "line_start": 3559,
+    "line_end": 3650,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0046",
+    "line_start": 3654,
+    "line_end": 3703,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0046",
+    "line_start": 3707,
+    "line_end": 3717,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0046",
+    "line_start": 3721,
+    "line_end": 3731,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0046",
+    "line_start": 3737,
+    "line_end": 3751,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0047",
+    "line_start": 9,
+    "line_end": 14,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0047",
+    "line_start": 62,
+    "line_end": 68,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0047",
+    "line_start": 99,
+    "line_end": 105,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0047",
+    "line_start": 109,
+    "line_end": 113,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0047",
+    "line_start": 121,
+    "line_end": 124,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0047",
+    "line_start": 149,
+    "line_end": 153,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0047",
+    "line_start": 161,
+    "line_end": 164,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0047",
+    "line_start": 192,
+    "line_end": 197,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0047",
+    "line_start": 207,
+    "line_end": 210,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0048",
+    "line_start": 5,
+    "line_end": 10,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0048",
+    "line_start": 114,
+    "line_end": 116,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0049",
+    "line_start": 90,
+    "line_end": 93,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0053",
+    "line_start": 45,
+    "line_end": 47,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0053",
+    "line_start": 51,
+    "line_end": 53,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0067",
+    "line_start": 40,
+    "line_end": 42,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0068",
+    "line_start": 87,
+    "line_end": 90,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0073",
+    "line_start": 107,
+    "line_end": 129,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0077",
+    "line_start": 150,
+    "line_end": 152,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0089",
+    "line_start": 8,
+    "line_end": 11,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0089",
+    "line_start": 15,
+    "line_end": 17,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0097",
+    "line_start": 28,
+    "line_end": 31,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0097",
+    "line_start": 61,
+    "line_end": 63,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0097",
+    "line_start": 67,
+    "line_end": 69,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0097",
+    "line_start": 73,
+    "line_end": 77,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0101",
+    "line_start": 18,
+    "line_end": 40,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0101",
+    "line_start": 79,
+    "line_end": 83,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0101",
+    "line_start": 88,
+    "line_end": 92,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0101",
+    "line_start": 116,
+    "line_end": 138,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0102",
+    "line_start": 35,
+    "line_end": 57,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0102",
+    "line_start": 90,
+    "line_end": 94,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0102",
+    "line_start": 99,
+    "line_end": 103,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0102",
+    "line_start": 129,
+    "line_end": 151,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0102",
+    "line_start": 253,
+    "line_end": 260,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0102",
+    "line_start": 300,
+    "line_end": 302,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0102",
+    "line_start": 307,
+    "line_end": 309,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0102",
+    "line_start": 312,
+    "line_end": 314,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0102",
+    "line_start": 319,
+    "line_end": 321,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0102",
+    "line_start": 326,
+    "line_end": 333,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0102",
+    "line_start": 335,
+    "line_end": 337,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0113",
+    "line_start": 11,
+    "line_end": 18,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0113",
+    "line_start": 24,
+    "line_end": 26,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0113",
+    "line_start": 32,
+    "line_end": 34,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0113",
+    "line_start": 61,
+    "line_end": 65,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0113",
+    "line_start": 79,
+    "line_end": 82,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0113",
+    "line_start": 114,
+    "line_end": 118,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0113",
+    "line_start": 172,
+    "line_end": 178,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0114",
+    "line_start": 56,
+    "line_end": 63,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0114",
+    "line_start": 193,
+    "line_end": 198,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0114",
+    "line_start": 210,
+    "line_end": 212,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0129",
+    "line_start": 45,
+    "line_end": 47,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0129",
+    "line_start": 51,
+    "line_end": 53,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0133",
+    "line_start": 11,
+    "line_end": 16,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0134",
+    "line_start": 9,
+    "line_end": 14,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0134",
+    "line_start": 62,
+    "line_end": 68,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0134",
+    "line_start": 99,
+    "line_end": 105,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0134",
+    "line_start": 109,
+    "line_end": 113,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0134",
+    "line_start": 121,
+    "line_end": 124,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0134",
+    "line_start": 149,
+    "line_end": 153,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0134",
+    "line_start": 161,
+    "line_end": 164,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0134",
+    "line_start": 192,
+    "line_end": 197,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0134",
+    "line_start": 207,
+    "line_end": 210,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0135",
+    "line_start": 5,
+    "line_end": 10,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0135",
+    "line_start": 114,
+    "line_end": 116,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0137",
+    "line_start": 87,
+    "line_end": 90,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0139",
+    "line_start": 57,
+    "line_end": 59,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0139",
+    "line_start": 62,
+    "line_end": 64,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0139",
+    "line_start": 67,
+    "line_end": 69,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0139",
+    "line_start": 76,
+    "line_end": 80,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0139",
+    "line_start": 88,
+    "line_end": 226,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0139",
+    "line_start": 230,
+    "line_end": 244,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0141",
+    "line_start": 4,
+    "line_end": 6,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0141",
+    "line_start": 8,
+    "line_end": 10,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0141",
+    "line_start": 147,
+    "line_end": 149,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0142",
+    "line_start": 71,
+    "line_end": 77,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0146",
+    "line_start": 88,
+    "line_end": 90,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0146",
+    "line_start": 219,
+    "line_end": 222,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0147",
+    "line_start": 362,
+    "line_end": 366,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0147",
+    "line_start": 405,
+    "line_end": 408,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0147",
+    "line_start": 438,
+    "line_end": 440,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0147",
+    "line_start": 444,
+    "line_end": 446,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0147",
+    "line_start": 450,
+    "line_end": 454,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0147",
+    "line_start": 716,
+    "line_end": 718,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0147",
+    "line_start": 1622,
+    "line_end": 1644,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0147",
+    "line_start": 1837,
+    "line_end": 1844,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0148",
+    "line_start": 24,
+    "line_end": 35,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0148",
+    "line_start": 53,
+    "line_end": 57,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0149",
+    "line_start": 20,
+    "line_end": 42,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0149",
+    "line_start": 75,
+    "line_end": 79,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0149",
+    "line_start": 84,
+    "line_end": 88,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0149",
+    "line_start": 114,
+    "line_end": 136,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0149",
+    "line_start": 238,
+    "line_end": 245,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0149",
+    "line_start": 285,
+    "line_end": 287,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0149",
+    "line_start": 292,
+    "line_end": 294,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0149",
+    "line_start": 297,
+    "line_end": 299,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0149",
+    "line_start": 304,
+    "line_end": 306,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0149",
+    "line_start": 311,
+    "line_end": 318,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0149",
+    "line_start": 320,
+    "line_end": 322,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0150",
+    "line_start": 16,
+    "line_end": 52,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0150",
+    "line_start": 142,
+    "line_end": 150,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0150",
+    "line_start": 191,
+    "line_end": 194,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0150",
+    "line_start": 197,
+    "line_end": 200,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0150",
+    "line_start": 203,
+    "line_end": 206,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0150",
+    "line_start": 225,
+    "line_end": 247,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0150",
+    "line_start": 365,
+    "line_end": 389,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0150",
+    "line_start": 441,
+    "line_end": 455,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0151",
+    "line_start": 37,
+    "line_end": 41,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0151",
+    "line_start": 80,
+    "line_end": 83,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0151",
+    "line_start": 113,
+    "line_end": 115,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0151",
+    "line_start": 119,
+    "line_end": 121,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0151",
+    "line_start": 125,
+    "line_end": 129,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0151",
+    "line_start": 391,
+    "line_end": 393,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0151",
+    "line_start": 1274,
+    "line_end": 1296,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0151",
+    "line_start": 1376,
+    "line_end": 1389,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0152",
+    "line_start": 362,
+    "line_end": 366,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0152",
+    "line_start": 405,
+    "line_end": 408,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0152",
+    "line_start": 438,
+    "line_end": 440,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0152",
+    "line_start": 444,
+    "line_end": 446,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0152",
+    "line_start": 450,
+    "line_end": 454,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0152",
+    "line_start": 716,
+    "line_end": 718,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0152",
+    "line_start": 1622,
+    "line_end": 1644,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0152",
+    "line_start": 1837,
+    "line_end": 1844,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0154",
+    "line_start": 11,
+    "line_end": 16,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0161",
+    "line_start": 34,
+    "line_end": 38,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0161",
+    "line_start": 44,
+    "line_end": 51,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0161",
+    "line_start": 57,
+    "line_end": 60,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0162",
+    "line_start": 13,
+    "line_end": 23,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0164",
+    "line_start": 47,
+    "line_end": 52,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0169",
+    "line_start": 11,
+    "line_end": 16,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0170",
+    "line_start": 61,
+    "line_end": 66,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0170",
+    "line_start": 105,
+    "line_end": 110,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0170",
+    "line_start": 120,
+    "line_end": 123,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0170",
+    "line_start": 151,
+    "line_end": 155,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0170",
+    "line_start": 171,
+    "line_end": 175,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0170",
+    "line_start": 193,
+    "line_end": 199,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0170",
+    "line_start": 217,
+    "line_end": 221,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0170",
+    "line_start": 239,
+    "line_end": 244,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0170",
+    "line_start": 250,
+    "line_end": 258,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0170",
+    "line_start": 274,
+    "line_end": 277,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0170",
+    "line_start": 295,
+    "line_end": 299,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0170",
+    "line_start": 343,
+    "line_end": 349,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0170",
+    "line_start": 390,
+    "line_end": 406,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0170",
+    "line_start": 421,
+    "line_end": 423,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0170",
+    "line_start": 461,
+    "line_end": 552,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0170",
+    "line_start": 558,
+    "line_end": 569,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0170",
+    "line_start": 577,
+    "line_end": 672,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0170",
+    "line_start": 676,
+    "line_end": 734,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0170",
+    "line_start": 738,
+    "line_end": 901,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0170",
+    "line_start": 905,
+    "line_end": 964,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0170",
+    "line_start": 968,
+    "line_end": 1119,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0170",
+    "line_start": 1123,
+    "line_end": 1149,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0170",
+    "line_start": 1153,
+    "line_end": 1189,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0170",
+    "line_start": 1193,
+    "line_end": 1452,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0170",
+    "line_start": 1456,
+    "line_end": 1670,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0170",
+    "line_start": 1674,
+    "line_end": 1777,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0170",
+    "line_start": 1781,
+    "line_end": 1922,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0170",
+    "line_start": 1926,
+    "line_end": 2013,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0170",
+    "line_start": 2017,
+    "line_end": 2071,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0170",
+    "line_start": 2075,
+    "line_end": 2171,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0170",
+    "line_start": 2179,
+    "line_end": 2263,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0170",
+    "line_start": 2267,
+    "line_end": 2334,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0170",
+    "line_start": 2338,
+    "line_end": 2420,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0170",
+    "line_start": 2424,
+    "line_end": 2511,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0170",
+    "line_start": 2515,
+    "line_end": 2538,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0170",
+    "line_start": 2542,
+    "line_end": 2576,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0170",
+    "line_start": 2580,
+    "line_end": 2671,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0170",
+    "line_start": 2679,
+    "line_end": 2717,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0170",
+    "line_start": 2721,
+    "line_end": 2768,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0170",
+    "line_start": 2772,
+    "line_end": 2816,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0170",
+    "line_start": 2820,
+    "line_end": 2890,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0170",
+    "line_start": 2894,
+    "line_end": 2910,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0170",
+    "line_start": 2914,
+    "line_end": 3009,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0170",
+    "line_start": 3013,
+    "line_end": 3018,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0170",
+    "line_start": 3022,
+    "line_end": 3044,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0170",
+    "line_start": 3048,
+    "line_end": 3051,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0170",
+    "line_start": 3055,
+    "line_end": 3123,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0170",
+    "line_start": 3127,
+    "line_end": 3216,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0170",
+    "line_start": 3220,
+    "line_end": 3324,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0170",
+    "line_start": 3328,
+    "line_end": 3387,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0170",
+    "line_start": 3391,
+    "line_end": 3534,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0170",
+    "line_start": 3538,
+    "line_end": 3555,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0170",
+    "line_start": 3559,
+    "line_end": 3650,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0170",
+    "line_start": 3654,
+    "line_end": 3703,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0170",
+    "line_start": 3707,
+    "line_end": 3717,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0170",
+    "line_start": 3721,
+    "line_end": 3731,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0170",
+    "line_start": 3737,
+    "line_end": 3751,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0171",
+    "line_start": 9,
+    "line_end": 14,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0171",
+    "line_start": 62,
+    "line_end": 68,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0171",
+    "line_start": 99,
+    "line_end": 105,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0171",
+    "line_start": 109,
+    "line_end": 113,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0171",
+    "line_start": 121,
+    "line_end": 124,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0171",
+    "line_start": 149,
+    "line_end": 153,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0171",
+    "line_start": 161,
+    "line_end": 164,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0171",
+    "line_start": 192,
+    "line_end": 197,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0171",
+    "line_start": 207,
+    "line_end": 210,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0172",
+    "line_start": 5,
+    "line_end": 10,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0172",
+    "line_start": 114,
+    "line_end": 116,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0173",
+    "line_start": 90,
+    "line_end": 93,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0177",
+    "line_start": 45,
+    "line_end": 47,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0177",
+    "line_start": 51,
+    "line_end": 53,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0191",
+    "line_start": 40,
+    "line_end": 42,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0193",
+    "line_start": 87,
+    "line_end": 90,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0194",
+    "line_start": 155,
+    "line_end": 157,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0253",
+    "line_start": 9,
+    "line_end": 24,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0253",
+    "line_start": 28,
+    "line_end": 45,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0253",
+    "line_start": 63,
+    "line_end": 79,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0359",
+    "line_start": 107,
+    "line_end": 129,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0381",
+    "line_start": 150,
+    "line_end": 152,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0394",
+    "line_start": 8,
+    "line_end": 11,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0394",
+    "line_start": 15,
+    "line_end": 17,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0480",
+    "line_start": 28,
+    "line_end": 31,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0480",
+    "line_start": 61,
+    "line_end": 63,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0480",
+    "line_start": 67,
+    "line_end": 69,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0480",
+    "line_start": 73,
+    "line_end": 77,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0484",
+    "line_start": 18,
+    "line_end": 40,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0484",
+    "line_start": 79,
+    "line_end": 83,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0484",
+    "line_start": 88,
+    "line_end": 92,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0484",
+    "line_start": 116,
+    "line_end": 138,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0485",
+    "line_start": 35,
+    "line_end": 57,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0485",
+    "line_start": 90,
+    "line_end": 94,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0485",
+    "line_start": 99,
+    "line_end": 103,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0485",
+    "line_start": 129,
+    "line_end": 151,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0485",
+    "line_start": 253,
+    "line_end": 260,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0485",
+    "line_start": 300,
+    "line_end": 302,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0485",
+    "line_start": 307,
+    "line_end": 309,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0485",
+    "line_start": 312,
+    "line_end": 314,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0485",
+    "line_start": 319,
+    "line_end": 321,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0485",
+    "line_start": 326,
+    "line_end": 333,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0485",
+    "line_start": 335,
+    "line_end": 337,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0496",
+    "line_start": 11,
+    "line_end": 18,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0496",
+    "line_start": 24,
+    "line_end": 26,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0496",
+    "line_start": 32,
+    "line_end": 34,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0496",
+    "line_start": 61,
+    "line_end": 65,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0496",
+    "line_start": 79,
+    "line_end": 82,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0496",
+    "line_start": 114,
+    "line_end": 118,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0496",
+    "line_start": 172,
+    "line_end": 178,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0497",
+    "line_start": 56,
+    "line_end": 63,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0497",
+    "line_start": 193,
+    "line_end": 198,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0497",
+    "line_start": 210,
+    "line_end": 212,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0512",
+    "line_start": 45,
+    "line_end": 47,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0512",
+    "line_start": 51,
+    "line_end": 53,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0516",
+    "line_start": 11,
+    "line_end": 16,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0517",
+    "line_start": 9,
+    "line_end": 14,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0517",
+    "line_start": 62,
+    "line_end": 68,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0517",
+    "line_start": 99,
+    "line_end": 105,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0517",
+    "line_start": 109,
+    "line_end": 113,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0517",
+    "line_start": 121,
+    "line_end": 124,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0517",
+    "line_start": 149,
+    "line_end": 153,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0517",
+    "line_start": 161,
+    "line_end": 164,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0517",
+    "line_start": 192,
+    "line_end": 197,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0517",
+    "line_start": 207,
+    "line_end": 210,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0518",
+    "line_start": 5,
+    "line_end": 10,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0518",
+    "line_start": 114,
+    "line_end": 116,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0520",
+    "line_start": 87,
+    "line_end": 90,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0522",
+    "line_start": 57,
+    "line_end": 59,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0522",
+    "line_start": 62,
+    "line_end": 64,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0522",
+    "line_start": 67,
+    "line_end": 69,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0522",
+    "line_start": 76,
+    "line_end": 80,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0522",
+    "line_start": 88,
+    "line_end": 226,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0522",
+    "line_start": 230,
+    "line_end": 244,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0591",
+    "line_start": 56,
+    "line_end": 61,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0591",
+    "line_start": 71,
+    "line_end": 74,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0596",
+    "line_start": 9,
+    "line_end": 24,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0596",
+    "line_start": 28,
+    "line_end": 45,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0596",
+    "line_start": 63,
+    "line_end": 79,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0618",
+    "line_start": 46,
+    "line_end": 57,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0618",
+    "line_start": 109,
+    "line_end": 120,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0619",
+    "line_start": 11,
+    "line_end": 14,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0619",
+    "line_start": 18,
+    "line_end": 22,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0619",
+    "line_start": 26,
+    "line_end": 35,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0619",
+    "line_start": 43,
+    "line_end": 49,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0619",
+    "line_start": 57,
+    "line_end": 63,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0619",
+    "line_start": 75,
+    "line_end": 83,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0622",
+    "line_start": 21,
+    "line_end": 23,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0622",
+    "line_start": 49,
+    "line_end": 53,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0622",
+    "line_start": 62,
+    "line_end": 65,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0622",
+    "line_start": 83,
+    "line_end": 94,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0622",
+    "line_start": 144,
+    "line_end": 147,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0730",
+    "line_start": 47,
+    "line_end": 52,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0751",
+    "line_start": 4,
+    "line_end": 6,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0751",
+    "line_start": 8,
+    "line_end": 10,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0751",
+    "line_start": 147,
+    "line_end": 149,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0752",
+    "line_start": 71,
+    "line_end": 77,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0760",
+    "line_start": 88,
+    "line_end": 90,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0760",
+    "line_start": 219,
+    "line_end": 222,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0761",
+    "line_start": 362,
+    "line_end": 366,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0761",
+    "line_start": 405,
+    "line_end": 408,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0761",
+    "line_start": 438,
+    "line_end": 440,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0761",
+    "line_start": 444,
+    "line_end": 446,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0761",
+    "line_start": 450,
+    "line_end": 454,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0761",
+    "line_start": 716,
+    "line_end": 718,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0761",
+    "line_start": 1622,
+    "line_end": 1644,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0761",
+    "line_start": 1837,
+    "line_end": 1844,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0762",
+    "line_start": 24,
+    "line_end": 35,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0762",
+    "line_start": 53,
+    "line_end": 57,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0765",
+    "line_start": 48,
+    "line_end": 54,
+    "reason": "code/data fence deliberately not redistributed"
+  },
+  {
+    "source_id": "D0765",
+    "line_start": 62,
+    "line_end": 66,
+    "reason": "code/data fence deliberately not redistributed"
+  }
+]

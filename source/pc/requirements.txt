@@ -1,0 +1,4 @@
+numpy>=1.26.0
+python-osc>=1.8.0
+openvr>=2.0.0
+pytest>=8.0.0

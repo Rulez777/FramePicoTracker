@@ -1,0 +1,127 @@
+{
+  "format": "pico-stock-relative-sparse-diff-v1",
+  "target": "PICO Swift 2.0",
+  "stock_version": "Swift2.0_sv1.89_20241213_b189_app.bin / application FW189",
+  "stock_container_bytes": 193385,
+  "stock_container_sha256": "41bd2d24dd9293e7d17c62ab18acd1001d6085da393123a67d226b28d2132e54",
+  "image_base_va": 4096,
+  "stock_image_bytes": 96532,
+  "stock_image_sha256": "477000fc1fde2b518f51a3a2233dc38714731049093e236d15cfe049cd690a89",
+  "result_image_bytes": 97680,
+  "result_image_sha256": "749e9e46ecb20327124d115bfe7d14b3dd42bb288bd0f3b43b9b486afb9165aa",
+  "status": "Historical/offline candidate; not approved for installation",
+  "changed_original_bytes": 70,
+  "unchanged_stock_bytes_included": 0,
+  "spans": [
+    {
+      "offset": 840,
+      "va": "0x1348",
+      "expected_stock_hex": "50",
+      "replacement_hex": "58"
+    },
+    {
+      "offset": 844,
+      "va": "0x134c",
+      "expected_stock_hex": "50",
+      "replacement_hex": "58"
+    },
+    {
+      "offset": 21012,
+      "va": "0x6214",
+      "expected_stock_hex": "44f6de1441f27720",
+      "replacement_hex": "12f080bb12f092bb"
+    },
+    {
+      "offset": 21258,
+      "va": "0x630a",
+      "expected_stock_hex": "44f6de1041f27721",
+      "replacement_hex": "12f02dbb12f03fbb"
+    },
+    {
+      "offset": 23704,
+      "va": "0x6c98",
+      "expected_stock_hex": "fef7a8fd",
+      "replacement_hex": "12f016f8"
+    },
+    {
+      "offset": 23738,
+      "va": "0x6cba",
+      "expected_stock_hex": "d3e90023",
+      "replacement_hex": "11f0a5be"
+    },
+    {
+      "offset": 23748,
+      "va": "0x6cc4",
+      "expected_stock_hex": "d3e90023",
+      "replacement_hex": "11f0b6be"
+    },
+    {
+      "offset": 23774,
+      "va": "0x6cde",
+      "expected_stock_hex": "40f6a760",
+      "replacement_hex": "11f06bbe"
+    },
+    {
+      "offset": 23780,
+      "va": "0x6ce4",
+      "expected_stock_hex": "40f61b50",
+      "replacement_hex": "11f07cbe"
+    },
+    {
+      "offset": 23852,
+      "va": "0x6d2c",
+      "expected_stock_hex": "d3e90023",
+      "replacement_hex": "11f098be"
+    },
+    {
+      "offset": 23862,
+      "va": "0x6d36",
+      "expected_stock_hex": "d3e90023",
+      "replacement_hex": "11f0a9be"
+    },
+    {
+      "offset": 24420,
+      "va": "0x6f64",
+      "expected_stock_hex": "d3e90023",
+      "replacement_hex": "11f0a8bd"
+    },
+    {
+      "offset": 32022,
+      "va": "0x8d16",
+      "expected_stock_hex": "30b58bb0",
+      "replacement_hex": "0ff03dbf"
+    },
+    {
+      "offset": 44262,
+      "va": "0xbce6",
+      "expected_stock_hex": "faf77bf9",
+      "replacement_hex": "0cf041ff"
+    },
+    {
+      "offset": 46060,
+      "va": "0xc3ec",
+      "expected_stock_hex": "f7b5344e",
+      "replacement_hex": "0cf07abb"
+    },
+    {
+      "offset": 46148,
+      "va": "0xc444",
+      "expected_stock_hex": "032a2b80",
+      "replacement_hex": "0cf068bb"
+    },
+    {
+      "offset": 46250,
+      "va": "0xc4aa",
+      "expected_stock_hex": "0120f4e7",
+      "replacement_hex": "0cf049bb"
+    }
+  ],
+  "append_offset": 96532,
+  "appended_authored_difference_hex": "ffffffff0cb4eff30082074b1b78012b0cbf42f6e06444f6de1482f300880cbcdff800f019620000505100200cb4eff30082074b1b78012b0cbf40f6b83041f2772082f300880cbcdff800f01d620000505100200cb4eff30082074b1b78012b0cbf42f6e06044f6de1082f300880cbcdff800f00f630000505100200cb4eff30082074b1b78012b0cbf40f6b83141f2772182f300880cbcdff800f013630000505100200cb4eff30082074b1b78012b0cbf40f2e87040f6a76082f300880cbcdff800f0e36c0000505100200cb4eff30082074b1b78012b0cbf40f25c6040f61b5082f300880cbcdff800f0e96c00005051002003b4eff3008107480078012808bf064bd3e9002381f3008803bcdff804f000bfbf6c000050510020788d010003b4eff3008107480078012808bf064bd3e9002381f3008803bcdff804f000bfc96c000050510020808d010003b4eff3008107480078012808bf064bd3e9002381f3008803bcdff804f000bf316d000050510020788d010003b4eff3008107480078012808bf064bd3e9002381f3008803bcdff804f000bf3b6d000050510020888d010003b4eff3008107480078012808bf064bd3e9002381f3008803bcdff804f000bf696f000050510020788d01000fb4eff30081084a002313705370074a138081f300880fbc2de9f740044edff804f000bff1c3000050510020f21f0020bc0500202b80002c06d1962b02d30120dff80cf0dff80cf0032adff80cf000bf99c400008bc4000049c4000006b4002c08d107490988642904d3962902d2054901220a7006bc0120dff800f099c40000f21f0020505100202de9035045f6e17ce047eff3008105485ff0000c80f800c080f801c081f30088bde80390505100202de90f50eff3008c122908d102787e2a7fd14278012a21d0022a1fd079e0172977d102787d2a74d14278022a71d1827d012a6ed83c4b1a78837c9a4269d13a4b5a78c37c9a4264d1374b9a78037d9a425fd1354bda78437d9a425ad1bde80f502de9f04188b004466d460f46fe22172f08bffd222a7062786a700226a25daa550136122efad3284b00269a5d05eb0607ba740136042ef8d327787d2f0cbf17271227224e172f20d1eff3108872b6a37deb751f4a1278002a09d132789a4203d001337370012205e00022727002e00022727002222a76bff35f8f88f310883278aa7507226a761a210ce03278012a0cbf01220022aa756278022a0cbf07220122ea751821284649f26933984708b0bde8f0818cf30088bde80f5030b58bb0dff804f000bf1b8d0000fe0e0020505100204022002070b545f2ed7398472de90f50eff30084eff3108572b61e4e7278012a2fd3022a2bd81c4b1b78002b27d11b4bd3f85035002b24d1194b1b78002b1ed0184b5b7c002b1ad0174b1b78002b18d1164b01211961d9600021c3f84011c3f84411134b40f200111960013a327000227270bff35f8f46f2e523984701e000227270bff35f8f85f3108884f30088bde80f5070bd505100204022002000100040100e0020d00f00206a0f00200080004080e200e0000000000070a74000000000004a9c4000000000003ea140",
+  "source_aliases": [
+    "outputs/remote44/candidate07-final/fw189-dual-mode.bin"
+  ],
+  "offline_apply_verified": true,
+  "offline_reverse_verified": true,
+  "hardware_actions_permitted": false
+}

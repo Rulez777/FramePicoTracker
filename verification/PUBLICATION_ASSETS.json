@@ -1,0 +1,12 @@
+[
+  {
+    "path": "assets/author-avatar.png",
+    "sha256": "35cf96eab1664118e69c2f08ee1931bc62ccce7e604bbe86f00c8aa8674b9e10",
+    "purpose": "user-approved author identity screenshot"
+  },
+  {
+    "path": "assets/research-banner.png",
+    "sha256": "6839c4199a1b0b7dfadb0659a806bc2e7639d1132af4b08806b284014975ef57",
+    "purpose": "AI-generated conceptual banner; no hardware evidence"
+  }
+]

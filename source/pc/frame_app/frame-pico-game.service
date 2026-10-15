@@ -1,0 +1,11 @@
+[Unit]
+Description=Frame Pico game radio owner (mode 1)
+
+[Service]
+Type=simple
+WorkingDirectory=/home/steamos/pico-ram-work
+ExecStart=/home/steamos/pico-ram-work/venv/bin/python /home/steamos/pico-ram-work/frame_profile_worker.py --root /home/steamos/pico-ram-work --profile game
+KillMode=process
+TimeoutStopSec=infinity
+SendSIGKILL=no
+Restart=no

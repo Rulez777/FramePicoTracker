@@ -1,0 +1,11 @@
+# Source supplement review boundaries
+
+The lead reviewed the component inventory, provenance markers, embedded-data sites and packaging transformations. Automated checks cover UTF-8/Python syntax, private serial/address patterns, long encoded payloads, binary signatures, source manifest membership and hashes. Vendor trees, binary assets, cached builds and unreviewed historical test fixtures were not copied.
+
+An independent Grok 4.7 Medium review covered seven Roy C sources, the Roy loader, three top-level native UI C++ sources and 29 optics Python modules through pattern searches and targeted line reads. It found no pasted vendor function bodies or embedded machine-code image in that scope. It distinguished fixed-address calls and handwritten assembly from copied vendor implementations. It did not compare binaries or read every solver line. This is a source-text review, not legal certification, a full build, a hardware test or proof that every historical file is first-party.
+
+Additional findings were resolved: camera spline numeric defaults were removed and now require explicit calibration; known chip literals were replaced by non-working placeholders; three legacy C candidates with embedded identity packets have redacted bytes and an unconditional compile-time error. The current game/service C variants and frozen original210 remain separate files. Protocol constants and native addresses remain compatibility metadata. A radiobit-derived profile comment and published mathematical algorithms remain provenance caveats; no broad open-source license is asserted.
+
+Two concrete issues were corrected before inclusion: private factory LED geometry was removed with fail-closed construction, and private identity/address literals were replaced with explicit non-working placeholders without removing comparison gates. Original files remain unchanged.
+
+Known limits: broad requirements are not lockfiles; third-party overlay/OpenVR and vendor runtime inputs are separately acquired; the native build script needs json-c linkage review; test fixtures and several captured-payload/binary-analysis utilities remain listed exclusions. Missing implementation dependencies must be resolved explicitly in the separate development checkout.

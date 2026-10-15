@@ -1,0 +1,159 @@
+{
+  "diffs": [
+    {
+      "diff": "candidate11-not-installed.diff.json",
+      "exact_forward_and_reverse": true,
+      "wrong_stock_rejected": true,
+      "wrong_result_rejected": true
+    },
+    {
+      "diff": "diagnostic10-installed.diff.json",
+      "exact_forward_and_reverse": true,
+      "wrong_stock_rejected": true,
+      "wrong_result_rejected": true
+    },
+    {
+      "diff": "historical-01f0500d7d5e.diff.json",
+      "exact_forward_and_reverse": true,
+      "wrong_stock_rejected": true,
+      "wrong_result_rejected": true
+    },
+    {
+      "diff": "historical-07918813e82b.diff.json",
+      "exact_forward_and_reverse": true,
+      "wrong_stock_rejected": true,
+      "wrong_result_rejected": true
+    },
+    {
+      "diff": "historical-0bc88994a4ab.diff.json",
+      "exact_forward_and_reverse": true,
+      "wrong_stock_rejected": true,
+      "wrong_result_rejected": true
+    },
+    {
+      "diff": "historical-1a810f48a4d1.diff.json",
+      "exact_forward_and_reverse": true,
+      "wrong_stock_rejected": true,
+      "wrong_result_rejected": true
+    },
+    {
+      "diff": "historical-1e1116186779.diff.json",
+      "exact_forward_and_reverse": true,
+      "wrong_stock_rejected": true,
+      "wrong_result_rejected": true
+    },
+    {
+      "diff": "historical-23beacdfe918.diff.json",
+      "exact_forward_and_reverse": true,
+      "wrong_stock_rejected": true,
+      "wrong_result_rejected": true
+    },
+    {
+      "diff": "historical-298d6ebb7caa.diff.json",
+      "exact_forward_and_reverse": true,
+      "wrong_stock_rejected": true,
+      "wrong_result_rejected": true
+    },
+    {
+      "diff": "historical-3957a3da605d.diff.json",
+      "exact_forward_and_reverse": true,
+      "wrong_stock_rejected": true,
+      "wrong_result_rejected": true
+    },
+    {
+      "diff": "historical-395ce84b3b80.diff.json",
+      "exact_forward_and_reverse": true,
+      "wrong_stock_rejected": true,
+      "wrong_result_rejected": true
+    },
+    {
+      "diff": "historical-40941b346f12.diff.json",
+      "exact_forward_and_reverse": true,
+      "wrong_stock_rejected": true,
+      "wrong_result_rejected": true
+    },
+    {
+      "diff": "historical-501dc5105d97.diff.json",
+      "exact_forward_and_reverse": true,
+      "wrong_stock_rejected": true,
+      "wrong_result_rejected": true
+    },
+    {
+      "diff": "historical-6a82a89206a6.diff.json",
+      "exact_forward_and_reverse": true,
+      "wrong_stock_rejected": true,
+      "wrong_result_rejected": true
+    },
+    {
+      "diff": "historical-6c702e51c22f.diff.json",
+      "exact_forward_and_reverse": true,
+      "wrong_stock_rejected": true,
+      "wrong_result_rejected": true
+    },
+    {
+      "diff": "historical-6d1424d7202b.diff.json",
+      "exact_forward_and_reverse": true,
+      "wrong_stock_rejected": true,
+      "wrong_result_rejected": true
+    },
+    {
+      "diff": "historical-73136c551671.diff.json",
+      "exact_forward_and_reverse": true,
+      "wrong_stock_rejected": true,
+      "wrong_result_rejected": true
+    },
+    {
+      "diff": "historical-749e9e46ecb2.diff.json",
+      "exact_forward_and_reverse": true,
+      "wrong_stock_rejected": true,
+      "wrong_result_rejected": true
+    },
+    {
+      "diff": "historical-7c21f8bb57de.diff.json",
+      "exact_forward_and_reverse": true,
+      "wrong_stock_rejected": true,
+      "wrong_result_rejected": true
+    },
+    {
+      "diff": "historical-833e4bba6678.diff.json",
+      "exact_forward_and_reverse": true,
+      "wrong_stock_rejected": true,
+      "wrong_result_rejected": true
+    },
+    {
+      "diff": "historical-b996f95b873c.diff.json",
+      "exact_forward_and_reverse": true,
+      "wrong_stock_rejected": true,
+      "wrong_result_rejected": true
+    },
+    {
+      "diff": "historical-c5158c9f26f8.diff.json",
+      "exact_forward_and_reverse": true,
+      "wrong_stock_rejected": true,
+      "wrong_result_rejected": true
+    },
+    {
+      "diff": "historical-d5bd1cca8d24.diff.json",
+      "exact_forward_and_reverse": true,
+      "wrong_stock_rejected": true,
+      "wrong_result_rejected": true
+    },
+    {
+      "diff": "historical-e4752f78e0d5.diff.json",
+      "exact_forward_and_reverse": true,
+      "wrong_stock_rejected": true,
+      "wrong_result_rejected": true
+    }
+  ],
+  "package_contained_image_output_rejected": true,
+  "stock_container_verified_without_output": {
+    "container_verified": true,
+    "identical_applications": true,
+    "application_bytes": 96532,
+    "application_sha256": "477000fc1fde2b518f51a3a2233dc38714731049093e236d15cfe049cd690a89",
+    "output_written": false,
+    "device_actions": false
+  },
+  "hardware_actions": false,
+  "project_tests_rerun": false
+}

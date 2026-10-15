@@ -1,0 +1,136 @@
+{
+  "format": "pico-stock-relative-sparse-diff-v1",
+  "target": "PICO Swift 2.0",
+  "stock_version": "Swift2.0_sv1.89_20241213_b189_app.bin / application FW189",
+  "stock_container_bytes": 193385,
+  "stock_container_sha256": "41bd2d24dd9293e7d17c62ab18acd1001d6085da393123a67d226b28d2132e54",
+  "image_base_va": 4096,
+  "stock_image_bytes": 96532,
+  "stock_image_sha256": "477000fc1fde2b518f51a3a2233dc38714731049093e236d15cfe049cd690a89",
+  "result_image_bytes": 97320,
+  "result_image_sha256": "395ce84b3b807af0156845ce51cd8f956daee48959d35956ef2cc70d014fd14f",
+  "status": "Historical/offline candidate; not approved for installation",
+  "changed_original_bytes": 66,
+  "unchanged_stock_bytes_included": 0,
+  "spans": [
+    {
+      "offset": 840,
+      "va": "0x1348",
+      "expected_stock_hex": "50",
+      "replacement_hex": "58"
+    },
+    {
+      "offset": 844,
+      "va": "0x134c",
+      "expected_stock_hex": "50",
+      "replacement_hex": "58"
+    },
+    {
+      "offset": 21012,
+      "va": "0x6214",
+      "expected_stock_hex": "44f6de1441f27720",
+      "replacement_hex": "12f080bb12f092bb"
+    },
+    {
+      "offset": 21258,
+      "va": "0x630a",
+      "expected_stock_hex": "44f6de1041f27721",
+      "replacement_hex": "12f02dbb12f03fbb"
+    },
+    {
+      "offset": 23738,
+      "va": "0x6cba",
+      "expected_stock_hex": "d3e90023",
+      "replacement_hex": "11f0a5be"
+    },
+    {
+      "offset": 23748,
+      "va": "0x6cc4",
+      "expected_stock_hex": "d3e90023",
+      "replacement_hex": "11f0b6be"
+    },
+    {
+      "offset": 23774,
+      "va": "0x6cde",
+      "expected_stock_hex": "40f6a760",
+      "replacement_hex": "11f06bbe"
+    },
+    {
+      "offset": 23780,
+      "va": "0x6ce4",
+      "expected_stock_hex": "40f61b50",
+      "replacement_hex": "11f07cbe"
+    },
+    {
+      "offset": 23852,
+      "va": "0x6d2c",
+      "expected_stock_hex": "d3e90023",
+      "replacement_hex": "11f098be"
+    },
+    {
+      "offset": 23862,
+      "va": "0x6d36",
+      "expected_stock_hex": "d3e90023",
+      "replacement_hex": "11f0a9be"
+    },
+    {
+      "offset": 24420,
+      "va": "0x6f64",
+      "expected_stock_hex": "d3e90023",
+      "replacement_hex": "11f0a8bd"
+    },
+    {
+      "offset": 32022,
+      "va": "0x8d16",
+      "expected_stock_hex": "30b58bb0",
+      "replacement_hex": "0ff035bf"
+    },
+    {
+      "offset": 44262,
+      "va": "0xbce6",
+      "expected_stock_hex": "faf77bf9",
+      "replacement_hex": "0cf03bff"
+    },
+    {
+      "offset": 46060,
+      "va": "0xc3ec",
+      "expected_stock_hex": "f7b5344e",
+      "replacement_hex": "0cf07abb"
+    },
+    {
+      "offset": 46148,
+      "va": "0xc444",
+      "expected_stock_hex": "032a2b80",
+      "replacement_hex": "0cf062bb"
+    },
+    {
+      "offset": 46250,
+      "va": "0xc4aa",
+      "expected_stock_hex": "0120f4e7",
+      "replacement_hex": "0cf043bb"
+    }
+  ],
+  "append_offset": 96532,
+  "appended_authored_difference_hex": "ffffffff0cb4eff30082074b1b78012b0cbf42f6e06444f6de1482f300880cbcdff800f019620000505100200cb4eff30082074b1b78012b0cbf40f6b83041f2772082f300880cbcdff800f01d620000505100200cb4eff30082074b1b78012b0cbf42f6e06044f6de1082f300880cbcdff800f00f630000505100200cb4eff30082074b1b78012b0cbf40f6b83141f2772182f300880cbcdff800f013630000505100200cb4eff30082074b1b78012b0cbf40f2e87040f6a76082f300880cbcdff800f0e36c0000505100200cb4eff30082074b1b78012b0cbf40f25c6040f61b5082f300880cbcdff800f0e96c00005051002003b4eff3008107480078012808bf064bd3e9002381f3008803bcdff804f000bfbf6c000050510020108c010003b4eff3008107480078012808bf064bd3e9002381f3008803bcdff804f000bfc96c000050510020188c010003b4eff3008107480078012808bf064bd3e9002381f3008803bcdff804f000bf316d000050510020108c010003b4eff3008107480078012808bf064bd3e9002381f3008803bcdff804f000bf3b6d000050510020208c010003b4eff3008107480078012808bf064bd3e9002381f3008803bcdff804f000bf696f000050510020108c01000fb4eff30081064a0023137081f300880fbc2de9f740034edff800f0f1c3000050510020bc0500202b80002c06d1962b02d30120dff80cf0dff80cf0032adff80cf000bf99c400008bc4000049c4000006b4002c08d107490988642904d3962902d2054901220a7006bc0120dff800f099c40000f21f0020505100202de9035045f6e17ce047eff3008104485ff0000c80f800c081f30088bde80390505100202de90f50eff3008c12292ed102787e2a2bd14278012a28d1bde80f5070b586b004466d46fe222a7001226a700226a25daa550136122efad3114c0026a25d05eb06039a740136042ef8d30e4b1a78012a0cbf01220022aa750122ea752846182149f26933984706b070bd8cf30088bde80f5030b58bb0dff804f000bf1b8d0000fe0e00205051002000bf00bf000000000070a74000000000004a9c4000000000003ea140",
+  "source_aliases": [
+    "outputs/fw189-dual-mode-iter05-final-20261007/fw189-dual-mode.bin",
+    "outputs/fw189-dual-mode-iter05-repro-20261007/fw189-dual-mode.bin",
+    "outputs/fw189-dual-mode-iter05-review-20261007/outputs/fw189-dual-mode-iter05-final-20261007/fw189-dual-mode.bin",
+    "outputs/fw189-dual-mode-iter05b-20261007/fw189-dual-mode.bin",
+    "outputs/ota-prepare30/package/image.bin",
+    "outputs/ota31/final-capture/job/image.bin",
+    "outputs/ota31/job/image.bin",
+    "outputs/ota32/capture/job/image.bin",
+    "outputs/ota33/capture/job/image.bin",
+    "outputs/ota33/capture/live-job/image.bin",
+    "outputs/ota33/package/image.bin",
+    "outputs/ota34/capture/job/image.bin",
+    "outputs/ota35/capture/job/image.bin",
+    "outputs/ota37/attempt/job/image.bin",
+    "outputs/ota38/attempt/job/image.bin",
+    "outputs/ota39/attempt/job/image.bin"
+  ],
+  "offline_apply_verified": true,
+  "offline_reverse_verified": true,
+  "hardware_actions_permitted": false
+}
