@@ -28,6 +28,6 @@ The original third party prose is not relicensed here. Public ledger entries ori
 
 AI assistants were used for coding, research organization, translation and review. Their output was treated as work to inspect, not independent hardware proof. Grok and Gemini performed bounded reviews; the exact limits are recorded in `verification/`.
 
-The overlay depends on frame-mic-tuner at the recorded revision and retains its upstream MIT terms when acquired. OpenVR and other dependencies keep their own licenses. They are not bundled here. Published geometry and filtering methods are research foundations, not claims of inventing those algorithms.
+The current dashboard uses a project authored OpenVR and OpenGL/EGL wrapper. It does not fetch or compile frame-mic-tuner code. Earlier research snapshots used that upstream overlay helper; those historical references remain part of the provenance. OpenVR and system dependencies retain their own licenses and are acquired separately. Published geometry and filtering methods are research foundations, not claims of inventing those algorithms.
 
 The banner is AI generated editorial artwork. The avatar screenshot was provided by L8OLOOE to identify the author, with no transfer of rights to any underlying avatar model or other creator assets.

@@ -11919,7 +11919,7 @@
     "ownership": "Not legally adjudicated by path; request rights-cleared source from owner",
     "selected_source_export_bundled": true,
     "bundled_path": "source/pc/frame_app/main.cpp",
-    "bundled_sha256": "de8428b4fcc69d13f2ad1913d15b7ebfd84c45f55b2a36782a3566a550c67956",
+    "bundled_sha256": "e4b144e3a2de3501e70dbd1467c3a326f975cd9fc1a7cc6debbdde8e8f70ad2a",
     "export_changes": [
       "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
     ]

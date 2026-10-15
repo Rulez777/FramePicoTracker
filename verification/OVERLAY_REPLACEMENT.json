@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-15",
+  "removed_build_dependency": "frame-mic-tuner",
+  "replacement": "project authored OpenVR/EGL desktop OpenGL overlay",
+  "compile": {
+    "target": "aarch64-linux-gnu",
+    "compiler": "Zig 0.13.0 clang C++17",
+    "flags": [
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c"
+    ],
+    "object_sha256": "d1166c30add6a7848081c6b7ba9129d37bff057dcd5780c63ebac927fdd5a37b",
+    "object_bundled": false,
+    "header_sources": [
+      "official Valve OpenVR header, private local copy",
+      "Khronos EGL-Registry",
+      "Khronos OpenGL-Registry"
+    ],
+    "passed": true
+  },
+  "full_application_link_tested": false,
+  "frame_runtime_tested": false,
+  "hardware_actions": false,
+  "required_runtime_checks": [
+    "EGL context and SteamVR GPU compatibility",
+    "dashboard render and orientation",
+    "pointer coordinates and clicks",
+    "close and SteamVR quit",
+    "thumbnail and handle repair",
+    "texture lifetime and absence of flicker"
+  ]
+}

@@ -49,7 +49,7 @@ If you are using an AI assistant, start with [AI_START_PROMPT.md](AI_START_PROMP
 
 | Path | Contents |
 | --- | --- |
-| `source/pc/frame_app/` | Our native dashboard and device monitors. Upstream overlay code is acquired separately. |
+| `source/pc/frame_app/` | Our native dashboard, project authored OpenVR/EGL overlay and device monitors. |
 | `source/pc/radio/` | Protocol, diagnostics, session control and tracker firmware tooling. |
 | `source/pc/radio/ram/` | Roy game and service modules, loader, runtime and recovery logic. |
 | `source/historical-original210/` | The protected historical Roy source, separate from newer copies. |
@@ -62,7 +62,7 @@ If you are using an AI assistant, start with [AI_START_PROMPT.md](AI_START_PROMP
 | `tools/` | Offline package checks, catalog queries and diff verification. |
 | `verification/` | Hash manifests, review findings, exclusions and validation limits. |
 
-There are 135 selected source files. Private calibration values were removed, personal device identifiers were replaced, and three legacy C candidates deliberately refuse compilation until their identity configuration is reviewed. Historical tests with unreviewed recorded fixtures are listed exclusions. This is not a fully reproducible build environment or a turnkey release.
+There are 136 selected source files. Private calibration values were removed, personal device identifiers were replaced, and three legacy C candidates deliberately refuse compilation until their identity configuration is reviewed. Historical tests with unreviewed recorded fixtures are listed exclusions. This is not a fully reproducible build environment or a turnkey release.
 
 No PICO or Valve firmware images, SDKs, native vendor libraries, decompilations, private calibration, raw captures or credentials are included. You obtain permitted copies of the necessary external inputs yourself. Firmware diffs require the exact matching stock image. Instructions and old experiments do not authorize a new hardware operation.
 

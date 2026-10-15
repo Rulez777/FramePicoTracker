@@ -2,7 +2,7 @@
 
 ## Reproducible offline setup
 
-Resolve missing imports against the exported source, document Python and native dependency versions, and produce component build instructions. Do not assume the broad historical requirements are a lockfile. The native UI needs json-c as well as its other listed libraries. Fetch third party code only into a separate development checkout with upstream notices intact.
+Resolve missing imports against the exported source, document Python and native dependency versions, and produce component build instructions. Do not assume the broad historical requirements are a lockfile. The native UI needs json-c, EGL and desktop OpenGL as well as its other listed libraries. Fetch third party code only into a separate development checkout with upstream notices intact.
 
 ## Source export configuration
 

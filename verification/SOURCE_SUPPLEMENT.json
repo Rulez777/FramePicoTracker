@@ -198,9 +198,10 @@
       "source_root": "pico",
       "original_path": "pc/frame_app/main.cpp",
       "original_sha256": "f4802ab88b738a3a87d524734c92c8c167d29d29f616e0d8fee98152b1d308d0",
-      "bundled_sha256": "de8428b4fcc69d13f2ad1913d15b7ebfd84c45f55b2a36782a3566a550c67956",
+      "bundled_sha256": "e4b144e3a2de3501e70dbd1467c3a326f975cd9fc1a7cc6debbdde8e8f70ad2a",
       "changes": [
-        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance",
+        "Replaced fetched overlay helper with project OpenVR/EGL implementation; build no longer downloads dependencies"
       ],
       "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
       "hardware_executed": false
@@ -1594,21 +1595,10 @@
       "source_root": "publication",
       "original_path": "scripts/build_frame_app.sh",
       "original_sha256": "47f16d10f4558f452b610bafe755c214e76930b625f412796dda1be1fabe0fb2",
-      "bundled_sha256": "80973e3dea97a7a9a0bef1cf593a847a3e3ad8e5b37b8b09f6568d48976a15c8",
+      "bundled_sha256": "635b8ac50343bf26084c7d73b2e26d8798eec5b9870ced783f64844ec56a3a99",
       "changes": [
-        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
-      ],
-      "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
-      "hardware_executed": false
-    },
-    {
-      "path": "scripts/prepare_overlay_dependency.py",
-      "source_root": "publication",
-      "original_path": "scripts/prepare_overlay_dependency.py",
-      "original_sha256": "a031256d5b6b1db48c3f18921a6fabd5acc4525d77a44f7a3b182329c073cb15",
-      "bundled_sha256": "e99ab95d8ef5ce45493bbbd25b3c76ac1d2953b45746558050b241ada98abc95",
-      "changes": [
-        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
+        "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance",
+        "Replaced fetched overlay helper with project OpenVR/EGL implementation; build no longer downloads dependencies"
       ],
       "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
       "hardware_executed": false
@@ -1623,6 +1613,30 @@
         "Publication added SPDX GPL-3.0-or-later and project attribution notice; original hashes remain provenance"
       ],
       "provenance": "Project implementation candidate; third-party/vendor trees excluded; no blanket license grant",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/frame_app/frame_overlay.cpp",
+      "source_root": "publication-new",
+      "original_path": "pc/frame_app/frame_overlay.cpp",
+      "original_sha256": "8229ee26230405be9039dbbc5a508b2b6feb76eb85049d8adad390e723de17cc",
+      "bundled_sha256": "b3bc6b5f35ff21d45d1a2632746d3fb815b5f469814768f044fad7fabf5e85f6",
+      "changes": [
+        "New project authored OpenVR/EGL wrapper; not derived from upstream implementation source"
+      ],
+      "provenance": "Authored for this repository using public API interfaces",
+      "hardware_executed": false
+    },
+    {
+      "path": "pc/frame_app/frame_overlay.h",
+      "source_root": "publication-new",
+      "original_path": "pc/frame_app/frame_overlay.h",
+      "original_sha256": "5a083dfb635cf1f3ea493582ec90e875f7d03699a8b2ec30844d3b6659c1f58e",
+      "bundled_sha256": "5a083dfb635cf1f3ea493582ec90e875f7d03699a8b2ec30844d3b6659c1f58e",
+      "changes": [
+        "New project authored OpenVR/EGL wrapper; not derived from upstream implementation source"
+      ],
+      "provenance": "Authored for this repository using public API interfaces",
       "hardware_executed": false
     }
   ],
@@ -2309,5 +2323,8 @@
     }
   ],
   "scope": "Text implementation source only. Original binaries, calibration, captures and tests with unreviewed fixtures are excluded. Source packaging is not hardware approval.",
-  "not_a_clean_machine_build": true
+  "not_a_clean_machine_build": true,
+  "removed_dependencies": [
+    "scripts/prepare_overlay_dependency.py and fetched frame-mic-tuner implementation"
+  ]
 }

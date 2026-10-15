@@ -3,7 +3,7 @@
   "do_not_publish": false,
   "date": "2026-10-15",
   "distribution_scope": "English documentation, selected project-authored source, metadata, stock-relative differences and offline utilities; no vendor/patched firmware or native listings",
-  "bundled_source_files": 135,
+  "bundled_source_files": 136,
   "full_build_tested": false,
   "hardware_actions": false,
   "stock_diff_variants": 24,

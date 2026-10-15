@@ -1,6 +1,6 @@
 {
-  "source_files": 135,
-  "python_syntax_files": 99,
+  "source_files": 136,
+  "python_syntax_files": 98,
   "calibration_defaults_rejected": true,
   "explicit_synthetic_geometry_accepted": true,
   "test_method": "AST-extracted dataclass guard checks with stdlib stubs; full module import not tested because audit interpreter lacks numpy",
@@ -11,5 +11,6 @@
     "pc/radio/ram/roy_ram_rx.c",
     "pc/radio/ram/roy_ram_station_link.c",
     "pc/radio/ram/roy_ram_station_three.c"
-  ]
+  ],
+  "note": "Previous calibration guards unchanged. Dependency preparation script removed; new overlay object compile recorded separately in OVERLAY_REPLACEMENT.json."
 }

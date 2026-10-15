@@ -9,3 +9,7 @@ Additional findings were resolved: camera spline numeric defaults were removed a
 Two concrete issues were corrected before inclusion: private factory LED geometry was removed with fail-closed construction, and private identity/address literals were replaced with explicit non-working placeholders without removing comparison gates. Original files remain unchanged.
 
 Known limits: broad requirements are not lockfiles; third-party overlay/OpenVR and vendor runtime inputs are separately acquired; the native build script needs json-c linkage review; test fixtures and several captured-payload/binary-analysis utilities remain listed exclusions. Missing implementation dependencies must be resolved explicitly in the separate development checkout.
+
+## Overlay dependency removal
+
+The public source now uses project authored OpenVR/EGL desktop OpenGL code, replacing the previously fetched helper. Older Vulkan and upstream revision references are historical. See [replacement build evidence](OVERLAY_REPLACEMENT.json) and [runtime validation checklist](../docs/OVERLAY_BACKEND.md). Strict Linux ARM64 object compilation passed. The full application link and Frame runtime remain untested.

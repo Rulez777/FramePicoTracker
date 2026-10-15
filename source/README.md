@@ -2,7 +2,7 @@
 
 This folder contains the selected project-authored implementation, not vendor SDK code or a firmware distribution. Read [the exact file and exclusion manifest](../verification/SOURCE_SUPPLEMENT.json). Each file has its original path/hash, bundled hash and any sanitization changes. The historical [source index](../catalog/SOURCE_CODE_INDEX.json) remains broader than this supplement.
 
-Included components: native dashboard and monitors, Python diagnostics and transport, camera/timing/geometry/fusion, pose output and native driver source, Roy SRAM game/service C modules, loader/runtime and recovery logic, offline patch-generation scripts, requirements and two publication build scripts. Their presence is not proof of working full-body tracking or authorization to run device-facing tools.
+Included components: native dashboard and monitors, Python diagnostics and transport, camera/timing/geometry/fusion, pose output and native driver source, Roy SRAM game/service C modules, loader/runtime and recovery logic, offline patch-generation scripts, requirements and the publication build script. Their presence is not proof of working full-body tracking or authorization to run device-facing tools.
 
 ## Roy variants
 
@@ -26,7 +26,7 @@ All files were normalized to UTF-8 and LF; compare original and bundled hashes t
 
 Copy this source folder into a separate development checkout before installing dependencies, fetching upstream code or building. Keep this verified handoff unchanged. Follow [quick setup](../QUICK_SETUP.md) and [build notes](../docs/SOFTWARE_AND_BUILD.md).
 
-`pc/requirements.txt` records broad historical minimums, not a reproducible dependency lock. Optional packages and system libraries remain component-specific. Native UI additionally includes `json-c/json.h` and needs json-c development headers/link flags. The historical `scripts/build_frame_app.sh` lacks explicit json-c pkg-config flags; review and add those flags in your development checkout if required by your toolchain. It fetches the pinned overlay dependency, so do not execute it as an offline verification command. Third-party notices must accompany separately obtained dependencies.
+`pc/requirements.txt` records broad historical minimums, not a reproducible dependency lock. Optional packages and system libraries remain component-specific. The current native build links Cairo, libcurl, json-c, EGL, desktop OpenGL and the separately supplied OpenVR runtime. Set `OPENVR_INCLUDE_DIR` and optionally `OPENVR_LIB_DIR`, then run `bash scripts/build_frame_app.sh` in a separate source checkout. It does not fetch upstream overlay code. The project authored EGL wrapper is a new replacement, not hardware validated. See `docs/OVERLAY_BACKEND.md` in the repository root for its validation boundaries.
 
 No clean-machine full build has been demonstrated. Configuration files, profile approvals, clocks, private calibration and recorded datasets are obtained/prepared separately. Offline patch generators write images only in your private development area. Packaging them does not waive the firmware-only-as-diff rule for this handoff.
 

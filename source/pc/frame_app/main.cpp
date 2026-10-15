@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-3.0-or-later
  * Copyright (C) 2026 L8OLOOE and contributors. See CREDITS.md and NOTICE.md.
  */
-#include "vendor/vr_overlay.h"
+#include "frame_overlay.h"
 #include <cairo/cairo.h>
 #include <curl/curl.h>
 #include <atomic>
@@ -61,12 +61,13 @@ int main(int argc,char** argv){
     VrOverlay overlay;std::string error;
     if(overlay.connect(1200,700,error)!=VrOverlay::ConnectResult::Ok){fprintf(stderr,"%s\n",error.c_str());return 1;}
     std::vector<unsigned char> rgba(1200*700*4),thumb(128*128*4,255);
-    overlay.submitThumbnail(thumb.data(),128);overlay.showPanel();
+    if(!overlay.submitThumbnail(thumb.data(),128)){fprintf(stderr,"Could not submit dashboard thumbnail\n");overlay.shutdown();curl_global_cleanup();close(lock);return 1;}
+    overlay.showPanel();
     auto* surface=cairo_image_surface_create(CAIRO_FORMAT_ARGB32,1200,700);auto* c=cairo_create(surface);
     std::string state="Connecting to diagnostic agent...",result="";
     std::future<std::string> pending=std::async(std::launch::async,api,std::string("/status"));
     bool recordRequest=false;auto refresh=std::chrono::steady_clock::now();
-    bool savedPreview=false;
+    bool savedPreview=false,uiFailed=false;
     double mouseX=-1,mouseY=-1;
     std::string queuedRoute;
     std::vector<std::string> updateRoutes;
@@ -139,10 +140,12 @@ int main(int argc,char** argv){
             cairo_surface_write_to_png(surface,"/home/steamos/pico-ram-work/frame-pico-ui-preview.png");savedPreview=true;
         }
         for(size_t i=0;i<rgba.size();i+=4){rgba[i]=pixels[i+2];rgba[i+1]=pixels[i+1];rgba[i+2]=pixels[i];rgba[i+3]=pixels[i+3];}
-        overlay.submitPanel(rgba.data());
-        if(overlay.ensureOverlay()==OverlayRepair::Repaired){overlay.submitThumbnail(thumb.data(),128);overlay.submitPanel(rgba.data());}
+        auto repair=overlay.ensureOverlay();
+        if(repair==OverlayRepair::Failed){fprintf(stderr,"Dashboard overlay unavailable\n");uiFailed=true;break;}
+        if(repair==OverlayRepair::Repaired && !overlay.submitThumbnail(thumb.data(),128)){fprintf(stderr,"Could not restore dashboard thumbnail\n");uiFailed=true;break;}
+        if(!overlay.submitPanel(rgba.data())){fprintf(stderr,"Could not submit dashboard panel\n");uiFailed=true;break;}
         std::this_thread::sleep_for(std::chrono::milliseconds(100));
     }
     if(pending.valid())pending.wait();
-    cairo_destroy(c);cairo_surface_destroy(surface);overlay.shutdown();curl_global_cleanup();close(lock);return 0;
+    cairo_destroy(c);cairo_surface_destroy(surface);overlay.shutdown();curl_global_cleanup();close(lock);return uiFailed?1:0;
 }

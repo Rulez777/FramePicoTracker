@@ -32,7 +32,7 @@
   {
     "path": "BUILD_STATUS.json",
     "bytes": 926,
-    "sha256": "d83687febf57f933032ac5d31a92757c4fbcea30441c8a3eab319059ee152d9e"
+    "sha256": "5874940bcddaf3db9dbbe67298da630605939e811b9d4b5c90fccd85b9892d89"
   },
   {
     "path": "catalog/ASSET_REGISTER.json",
@@ -72,7 +72,7 @@
   {
     "path": "catalog/SOURCE_CODE_INDEX.json",
     "bytes": 834911,
-    "sha256": "e57471c0f042554926f7948c39ccc8a62e20a836e486f4b84738f61182eeef1b"
+    "sha256": "0b83b56335fe99c715703d5a01410234b9d52b094949b6392c077570bab0eb58"
   },
   {
     "path": "CONTRIBUTING.md",
@@ -81,8 +81,8 @@
   },
   {
     "path": "CREDITS.md",
-    "bytes": 3037,
-    "sha256": "b44f5e779ff6435112b36d5204561ccd090114386b3c466a964858d60c55e4c4"
+    "bytes": 3176,
+    "sha256": "fab306093ea1c2fb52a343bc405bb4618b5cd5458887d4f41fa97e3388bdd960"
   },
   {
     "path": "docs/ACQUISITION.md",
@@ -101,8 +101,8 @@
   },
   {
     "path": "docs/CONTRIBUTION_TASKS.md",
-    "bytes": 1974,
-    "sha256": "a03c09ed2952eb1582a3fc71854bec02804069010ae77a0d1e7cfc04b3e9e114"
+    "bytes": 1998,
+    "sha256": "006b4724b9cdc981aa86a37ff65132906e6d255a0d8ae307309bef16edeb3d16"
   },
   {
     "path": "docs/COVERAGE.md",
@@ -150,6 +150,11 @@
     "sha256": "6cc71646ebfe0e49cde801ee64aced7cdb212fabe05d4d9a3676d75f45fa7265"
   },
   {
+    "path": "docs/OVERLAY_BACKEND.md",
+    "bytes": 2716,
+    "sha256": "5be73fe38c2925c41d639ca2a8e4314a71e1ee2d4c1a46aade69e4d76a26ea0a"
+  },
+  {
     "path": "docs/PUBLIC_STATUS.md",
     "bytes": 3797,
     "sha256": "2eaa68e05eaf593d332ba92944a54a11b368e2f5b49e441cf42b296608e2f259"
@@ -171,8 +176,8 @@
   },
   {
     "path": "docs/SOFTWARE_AND_BUILD.md",
-    "bytes": 5380,
-    "sha256": "ab2bde5dd4aec6a7a71ffa36560ebc8a1e9346889b11c825300735c9cb6ff501"
+    "bytes": 5626,
+    "sha256": "82b6b7a9ea52441f478c5cda4f59effea56315acba50f6d5155e413af1b1f6be"
   },
   {
     "path": "docs/SUPERSESSION.md",
@@ -437,7 +442,7 @@
   {
     "path": "FROZEN_HANDOFF.md",
     "bytes": 1778,
-    "sha256": "29ce342fd0255044864b964e3aa5056410253e3c335c47e25ae944f6b31af2ff"
+    "sha256": "ad18a71e3b60ab2bae627119a557b2a337f4b22c4129a5600274bc28f59d9f3c"
   },
   {
     "path": "LICENSE",
@@ -451,13 +456,13 @@
   },
   {
     "path": "QUICK_SETUP.md",
-    "bytes": 10403,
-    "sha256": "67adf102ec34b267409e9b4735aec6a7e6da69bf2347c320e9c3466b4ca0ebfb"
+    "bytes": 10500,
+    "sha256": "6be726dc5ab2fb739e5a9725bf59cbfa11a47fc715350b1d5e263696fecf8ff2"
   },
   {
     "path": "README.md",
-    "bytes": 8407,
-    "sha256": "a005cce8823582ce1e47e9408282bff4c5d70881fc36b72eaa939b73fe580703"
+    "bytes": 8398,
+    "sha256": "dfb32c838d9b85edbaa1d6275ada5d02987f7a05edce1974bb5bbd2f1dff44f5"
   },
   {
     "path": "research/INDEX.md",
@@ -4775,6 +4780,16 @@
     "sha256": "2929646510825afecc20e986709caa7d0538a00c1ebb1bac2a7f5f86e1fcace6"
   },
   {
+    "path": "source/pc/frame_app/frame_overlay.cpp",
+    "bytes": 9539,
+    "sha256": "b3bc6b5f35ff21d45d1a2632746d3fb815b5f469814768f044fad7fabf5e85f6"
+  },
+  {
+    "path": "source/pc/frame_app/frame_overlay.h",
+    "bytes": 1050,
+    "sha256": "5a083dfb635cf1f3ea493582ec90e875f7d03699a8b2ec30844d3b6659c1f58e"
+  },
+  {
     "path": "source/pc/frame_app/FramePicoTracker.desktop",
     "bytes": 225,
     "sha256": "e4b9758dc08b1d21c11c3262685fd7ba4ff047de9534d3781fb678f9871fecdb"
@@ -4786,8 +4801,8 @@
   },
   {
     "path": "source/pc/frame_app/main.cpp",
-    "bytes": 9660,
-    "sha256": "de8428b4fcc69d13f2ad1913d15b7ebfd84c45f55b2a36782a3566a550c67956"
+    "bytes": 10082,
+    "sha256": "e4b144e3a2de3501e70dbd1467c3a326f975cd9fc1a7cc6debbdde8e8f70ad2a"
   },
   {
     "path": "source/pc/frame_app/tracking_watch.cpp",
@@ -5361,18 +5376,13 @@
   },
   {
     "path": "source/README.md",
-    "bytes": 4893,
-    "sha256": "b3a4bdf5a4ef4a161829ebe53e639328681cb8dc4e8f01e06e54f1077349d80c"
+    "bytes": 4911,
+    "sha256": "ede7f39b6c1da0cfe53525464ca61cd62fa688db7212f3a023fb918a2cfa7cf7"
   },
   {
     "path": "source/scripts/build_frame_app.sh",
-    "bytes": 608,
-    "sha256": "80973e3dea97a7a9a0bef1cf593a847a3e3ad8e5b37b8b09f6568d48976a15c8"
-  },
-  {
-    "path": "source/scripts/prepare_overlay_dependency.py",
-    "bytes": 1371,
-    "sha256": "e99ab95d8ef5ce45493bbbd25b3c76ac1d2953b45746558050b241ada98abc95"
+    "bytes": 825,
+    "sha256": "635b8ac50343bf26084c7d73b2e26d8798eec5b9870ced783f64844ec56a3a99"
   },
   {
     "path": "START_HERE.md",
@@ -5435,6 +5445,11 @@
     "sha256": "388a39b624c1ac6986005c27f2ab3675854faf8451f17e2fd1f35ef92bbd1c2c"
   },
   {
+    "path": "verification/OVERLAY_REPLACEMENT.json",
+    "bytes": 991,
+    "sha256": "84f7adaebdccd50a378ef5adb8c221f76204b313c4e59c2fd6a1b2ba96a9d1a2"
+  },
+  {
     "path": "verification/PUBLICATION_ASSETS.json",
     "bytes": 395,
     "sha256": "4a0287431c92fd754e339fdb7bb8a7cc35df029f7631deb7c1bf2d30e2ec0aae"
@@ -5451,8 +5466,8 @@
   },
   {
     "path": "verification/SOURCE_EXPORT_CHECKS.json",
-    "bytes": 538,
-    "sha256": "658d690b0c190b76925a085161ed70aba93cbd4e8894449399364067dd091deb"
+    "bytes": 705,
+    "sha256": "561b8afc5fca6daa5cfa115908840897509fe00dac5cca372ce943c601988adf"
   },
   {
     "path": "verification/SOURCE_POINTER_UPDATES.json",
@@ -5461,13 +5476,13 @@
   },
   {
     "path": "verification/SOURCE_REVIEW.md",
-    "bytes": 2250,
-    "sha256": "d2ed36412d1a08d0bfa2bfbf0daacebe883cf78308efce3466e251d37532233f"
+    "bytes": 2691,
+    "sha256": "7cc9bf2f195659cc714dbac0a432ccefac16227808ac4b8631381dc643c9773a"
   },
   {
     "path": "verification/SOURCE_SUPPLEMENT.json",
-    "bytes": 116077,
-    "sha256": "0a56baac8bd5760214aef66279238ed234a2697b7c1c011f2c0a2935a74876b6"
+    "bytes": 116956,
+    "sha256": "1109a9e2e08244b37e16acd6c3d7051fe1e2839d3b6904161a555ab20d24dd11"
   },
   {
     "path": "verification/TRANSLATION_CHECKS.json",
