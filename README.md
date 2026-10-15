@@ -66,7 +66,7 @@ There are 135 selected source files. Private calibration values were removed, pe
 
 No PICO or Valve firmware images, SDKs, native vendor libraries, decompilations, private calibration, raw captures or credentials are included. You obtain permitted copies of the necessary external inputs yourself. Firmware diffs require the exact matching stock image. Instructions and old experiments do not authorize a new hardware operation.
 
-## A note from me
+## Who Framed Pico Tracker?
 
 <img src="assets/author-avatar.png" alt="L8OLOOE's VRChat character" width="160" align="right">
 
