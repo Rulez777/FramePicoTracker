@@ -166,8 +166,8 @@
   },
   {
     "path": "docs/ROY_AND_COEXISTENCE.md",
-    "bytes": 4341,
-    "sha256": "c80049b525b9612dded8d1d70ae6baf41991ba4f2789510e2c6b6bde73a9c2e1"
+    "bytes": 6147,
+    "sha256": "e9aec99a0b026df2bdd8350b824d457ea33c77465908e8ba646437c5e8380f0e"
   },
   {
     "path": "docs/SOFTWARE_AND_BUILD.md",
@@ -456,8 +456,8 @@
   },
   {
     "path": "README.md",
-    "bytes": 7958,
-    "sha256": "9c33fc91690773c4270aca531cd95e2280038723e429c89be3431d3ed11cba60"
+    "bytes": 8397,
+    "sha256": "ad9c826b0c41dc4b9e1489da3e7688208614706c4fbb59e2c38bb87b4d2fe1ed"
   },
   {
     "path": "research/INDEX.md",

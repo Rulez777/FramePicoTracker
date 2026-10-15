@@ -1,5 +1,16 @@
 # Onboard Roy, SRAM lifecycle and controller coexistence
 
+## Game and Service are different operating contracts
+
+| Flow | Roy and tracker behavior | Controller requirement and evidence boundary |
+| --- | --- | --- |
+| Service | The service Roy RAM variant supports maintenance and the separately authorized tracker OTA path. Update operations use tracker mode0. It drops the game BLE phase lock and uses service scheduling. | Keep the normal controllers powered off for the reviewed service procedure. This reduces competition for the shared radio and is a coexistence precondition, not a guarantee of interference free RF. |
+| Game | The host remotely requests tracker mode1 from the compatible custom tracker firmware, then requires fresh identity and nonce bound replies showing the actual mode, N and pending state. | Eventual gameplay must coexist with the controllers. A controller off bench run does not prove that capability. The recorded 393-v2 mode1/N2/pending0 result proves only its bounded radio mode check. |
+
+Roy's game/service module choice and the tracker's mode0/mode1 state are related but separate state machines. Loading a Roy module does not itself prove that the tracker changed mode. A request ACK is also insufficient; observe the actual applied state and preserve the mode lease and cleanup gates.
+
+Here mode1 changes the custom tracker's operating timing/cadence to the Frame research configuration. It does not mean setting the tracker to the same RF carrier frequency as the headset, and it does not by itself establish phase synchronization with camera exposure. RF channel selection, polling cadence, tracker timer phase, LED emission timing and camera exposure are separate quantities. Phase commands and measured camera clock mappings need their own proof. Stable optical identity and optical plus IMU tracking remain unfinished.
+
 Roy is the onboard Nordic radio path. Temporary executable SRAM is firmware-specific; preserving stock flash does not make an arbitrary debugger operation harmless. Record checkpoint/readback, MPU layout, code/data ranges, cache/trace controls, stock image hash and exact executable source before mutation. No external receiver satisfies the target.
 
 Original210: code2043bytes under2045byte limit, CODE0x2001151c/entry0x2001151d, DATA0x20010c18/2048bytes, existing executable MPU region0x20011000..0x20012000 and static MPU count3. Native code hash`63d319d4b424bc5a291558e41d9a740962b20eeb33dba77ba288d0c1d0480575`. This is the admitted single-peer build. Do not enlarge limits or substitute a similarly named later source.

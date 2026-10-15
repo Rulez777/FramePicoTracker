@@ -27,6 +27,8 @@ This repository brings together the implementation, the research history, negati
 
 There is no honest completion percentage. Several essential steps still need measured proof. This is beyond a protocol sketch, but it is still several major milestones away from a usable full body tracking system. See [the detailed status and milestones](docs/PUBLIC_STATUS.md).
 
+**Game and Service:** Service supports tracker maintenance and OTA with the controllers powered off, reducing competition for the shared Roy radio. Game remotely requests mode1 on compatible custom tracker firmware and checks the actual applied state. Mode1 changes operating cadence; it does not by itself prove LED and camera phase synchronization or working controller coexistence. [Exact mode contracts](docs/ROY_AND_COEXISTENCE.md).
+
 ## Start here
 
 1. Read [QUICK_SETUP.md](QUICK_SETUP.md). It separates what is included from the source, assets and configuration you still need.
