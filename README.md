@@ -5,6 +5,27 @@
 <p align="center"><strong>Research prototype · Community continuation welcome · Full body tracking is not working yet</strong></p>
 <p align="center"><a href="QUICK_SETUP.md">Start here</a> · <a href="docs/PUBLIC_STATUS.md">Current status</a> · <a href="docs/RESEARCH_TREE.md">Research map</a> · <a href="CONTRIBUTING.md">Continue the work</a> · <a href="CREDITS.md">Credits</a></p>
 
+## TL;DR
+
+**We have already communicated with real PICO trackers through Steam Frame's onboard radio, received real motion data and processed the headset's camera streams. The next challenge is turning those pieces into reliable body tracking.**
+
+Some measured milestones from the research:
+
+| Achievement | Recorded result |
+| --- | --- |
+| Service radio replies | **99.30% retained replies over 150 seconds**, with 7,187 validated replies from 7,238 completed transmissions. A stable 118 second window reached **99.98%**. |
+| Game radio transport | One historical run reached **99.53% CRC valid replies** while receiving **6,756 unique IMU samples**. |
+| Real motion data | A later run received **9,027 accepted IMU samples**. Gaps remained too large for continuous inertial fusion. |
+| Headset camera access | Captured and processed real streams from the headset's upper cameras. |
+| Camera timing | **1,618 measured frames**, with a median frame age of **66.8 ms** and a maximum of **85.1 ms** in the recorded camera timing test. |
+| Remote mode control | A bounded **150 second** Game test verified fresh replies showing the requested tracker mode actually applied. |
+
+These results come from different experiments and configurations. They are milestones, not a claim that everything works together. See [the current status](docs/PUBLIC_STATUS.md) for the conditions and remaining work.
+
+The goal is affordable body tracking on Steam Frame using inexpensive PICO trackers and the radio already inside the headset. More people should be able to bring their whole body into VR without an expensive tracking setup. If that is something you want to help build, there is real work here to continue.
+
+You do not have to start from zero. This repository includes **136 source files, 24 firmware diffs, an English research history and a continuation guide**, including the failed approaches and the questions still open.
+
 ## Why this exists
 
 PICO Swift trackers are relatively inexpensive. I wanted to make them useful for body tracking on Steam Frame through its onboard Roy radio, without an external receiver or a PICO headset acting as a live bridge. The eventual target is waist and both legs, together with the normal controllers, for applications such as VRChat.

@@ -2,8 +2,8 @@
   "verified": true,
   "files": 1100,
   "manifested_files": 1098,
-  "bytes": 61418972,
-  "local_links_checked": 44501,
+  "bytes": 61420891,
+  "local_links_checked": 44502,
   "allowlisted_extensions": [
     ".json",
     ".md",
@@ -50,8 +50,8 @@
     "public_edition_note": "Frozen handoff inventory/translation counts retained as provenance. 54 ledger entries from Hinata reference replace verbatim prose with links to attributed factual digest; IDs and original source locations retained. See PUBLICATION_CHANGES.json."
   },
   "errors": [],
-  "manifest_sha256": "ef870a8d91efeaadfdb3097bc5260ce111a6ba6cfc1dfdd21398a31435c9bd47",
-  "completed_utc": "2026-10-15T11:41:22.321006+00:00",
+  "manifest_sha256": "0f9e152355de4e2a4dee6f5ace0ce18a603edd79882ceaa92e05c8c232cbaa23",
+  "completed_utc": "2026-10-15T11:47:13.425812+00:00",
   "publication_edition": true,
   "approved_presentation_assets": 2,
   "full_build_tested": false
