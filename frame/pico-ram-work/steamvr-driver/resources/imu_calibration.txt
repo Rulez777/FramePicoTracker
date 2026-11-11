@@ -1,0 +1,4 @@
+# 00000000 = generic PICO Swift line used for any tracker without its own line (axes and gyro scale are the same design; bias is learned at rest).
+# chip R(body<-imu) gyro_rad_per_lsb bias offset_ns period_ns ; r13b hand-rotation calibration 2026-10-27
+# 2026-10-29: period 4939977.6 (Python path) -> 6009708.0 ns measured on the native radio path; the old value aged every IMU stamp until the driver treated the IMU as dead.
+00000000 0.029344 -0.997278 -0.067645 0.999552 0.029678 -0.003942 0.005939 -0.067499 0.997702 0.00213814104 14 -4 3 -3000000 4940000.0

@@ -1,0 +1,8 @@
+{
+  "jsonid": "input_profile",
+  "controller_type": "vive_tracker_waist",
+  "device_class": "TrackedDeviceClass_GenericTracker",
+  "resource_root": "frametrackers",
+  "input_bindingui_mode": "none",
+  "input_source": {}
+}

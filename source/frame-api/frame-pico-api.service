@@ -1,0 +1,12 @@
+[Unit]
+Description=Frame Pico Tracker local application API
+
+[Service]
+Type=simple
+WorkingDirectory=/home/steamos/pico-ram-work
+ExecStart=/home/steamos/pico-ram-work/frame_api/frame_debug_agent
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=default.target

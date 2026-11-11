@@ -1,0 +1,25 @@
+# Authored tracker housing, metres, Y up. No vendor model assets.
+mtllib frame_tracker.mtl
+o frame_tracker
+v -0.025 -0.012 -0.025
+v 0.025 -0.012 -0.025
+v 0.025 0.012 -0.025
+v -0.025 0.012 -0.025
+v -0.025 -0.012 0.025
+v 0.025 -0.012 0.025
+v 0.025 0.012 0.025
+v -0.025 0.012 0.025
+usemtl housing
+f 1 4 3
+f 1 3 2
+f 5 6 7
+f 5 7 8
+f 1 2 6
+f 1 6 5
+f 4 8 7
+f 4 7 3
+f 1 5 8
+f 1 8 4
+usemtl tab
+f 2 3 7
+f 2 7 6

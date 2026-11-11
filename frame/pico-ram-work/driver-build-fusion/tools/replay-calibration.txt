@@ -1,0 +1,2 @@
+# 00000000 = generic PICO Swift line used for any tracker without its own line (axes and gyro scale are the same design; bias is learned at rest).
+00000000 0.006401 -0.999743 -0.021744 0.998708 0.007487 -0.050267 0.050417 -0.021394 0.998499 0.00198673888 14 -4 3 -3000000 6009708.0

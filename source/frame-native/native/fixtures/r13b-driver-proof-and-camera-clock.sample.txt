@@ -1,0 +1,36 @@
+{"t_ns":29340449519507,"raw_to_standing":[1,0,0,0,0,1,0,1.60000002,0,0,1,0],"devices":[{"index":0,"kind":1,"chip_id":0,"role":0,"connected":true,"valid":true,"result":200,"matrix":[0.0358705334,0.998369694,0.0443964601,0.0681063607,-0.954684138,0.0210993793,0.296871722,1.57258344,0.295451045,-0.0530335233,0.95388478,-0.0983106643]},{"index":1,"kind":3,"chip_id":2712847316,"role":0,"connected":false,"valid":false,"result":201,"matrix":[1,0,0,0,0,1,0,0,0,0,1,0]}]}
+{"t_ns":29340459899458,"raw_to_standing":[1,0,0,0,0,1,0,1.60000002,0,0,1,0],"devices":[{"index":0,"kind":1,"chip_id":0,"role":0,"connected":true,"valid":true,"result":200,"matrix":[0.0358998366,0.998372316,0.044314865,0.0681052059,-0.954661608,0.0211477317,0.296940744,1.57259715,0.295520306,-0.0529658049,0.953867078,-0.0983078033]},{"index":1,"kind":3,"chip_id":2712847316,"role":0,"connected":false,"valid":false,"result":201,"matrix":[1,0,0,0,0,1,0,0,0,0,1,0]}]}
+{"t_ns":29340470037953,"raw_to_standing":[1,0,0,0,0,1,0,1.60000002,0,0,1,0],"devices":[{"index":0,"kind":1,"chip_id":0,"role":0,"connected":true,"valid":true,"result":200,"matrix":[0.0359557867,0.998371422,0.0442877151,0.0681032985,-0.954646289,0.0212067831,0.296985686,1.57261217,0.295562863,-0.052957423,0.953854322,-0.0983017981]},{"index":1,"kind":3,"chip_id":2712847316,"role":0,"connected":false,"valid":false,"result":201,"matrix":[1,0,0,0,0,1,0,0,0,0,1,0]}]}
+{"t_ns":29340480212907,"raw_to_standing":[1,0,0,0,0,1,0,1.60000002,0,0,1,0],"devices":[{"index":0,"
+====
+{
+  "version": 1,
+  "boot_id": "48b3bb5a-b0be-43f4-884c-d009167659b3",
+  "verified": true,
+  "source_domain": "CLOCK_MONOTONIC_RAW",
+  "offset_ns": 0,
+  "uncertainty_ns": 500000,
+  "method": "Station start: RAW uniquely causal over live recording; RAW-to-MONO bridged per conversion",
+  "dataset": "/home/steamos/.config/openvr/config/cv/xrservice/datasets/Deckard_2026-10-27_21-04-03.dataset",
+  "samples": 361,
+  "causal_fraction": {
+    "raw": 1.0,
+    "mono": 0.0,
+    "boottime": 0.0
+  },
+  "domain_basis": "RAW causal now; uniquely proven for XRService on boot a7b75755",
+  "difference_bounds_ns": {
+    "raw": [
+      25718848,
+      43621920
+    ],
+    "mono": [
+      -1006892886,
+      -989004504
+    ],
+    "boottime": [
+      5554744526973,
+      5554762414678
+    ]
+  }
+}

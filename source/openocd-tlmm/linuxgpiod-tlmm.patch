@@ -1,0 +1,133 @@
+--- src/jtag/drivers/linuxgpiod.c.orig	2026-10-31 15:53:28.338140226 +0100
++++ src/jtag/drivers/linuxgpiod.c	2026-10-31 16:01:43.971330732 +0100
+@@ -375,8 +375,96 @@
+ 	return ERROR_OK;
+ }
+ 
++/*
++ * PICO 2026-10-31: memory-mapped fast path for Qualcomm TLMM (Steam Frame, SM8650, base 0xf100000).
++ * The lines stay requested through libgpiod (kernel ownership, GPIO function); only the SWCLK/SWDIO
++ * level and the SWDIO output enable are driven through the pin's own 4 KiB register tile:
++ * CFG at base + 0x1000*n (function bits 5:2 must be 0, GPIO_OE bit 9), IN_OUT at +4 (bit 0 in, bit 1 out).
++ * Enabled only by PICO_TLMM_BASE; PICO_TLMM_DELAY = register reads per half clock (settle time, default 2).
++ * Any failed check keeps the libgpiod path.
++ */
++#include <sys/mman.h>
++#include <fcntl.h>
++#include <unistd.h>
++#include <errno.h>
++#include <string.h>
++#include <stdlib.h>
++static volatile uint32_t *tlmm_cfg[2], *tlmm_io[2];	/* 0 = SWCLK, 1 = SWDIO */
++static void *tlmm_map[2];
++static bool tlmm_on;
++static unsigned int tlmm_delay = 2;
++
++static inline void tlmm_settle(void)
++{
++	for (unsigned int i = 0; i < tlmm_delay; ++i)
++		(void)*tlmm_io[0];
++}
++
++static void tlmm_unmap(void)
++{
++	for (int k = 0; k < 2; ++k) {
++		if (tlmm_map[k])
++			munmap(tlmm_map[k], 0x1000);
++		tlmm_map[k] = NULL;
++		tlmm_cfg[k] = NULL;
++		tlmm_io[k] = NULL;
++	}
++	tlmm_on = false;
++}
++
++
++static void tlmm_setup(void)
++{
++	const char *b = getenv("PICO_TLMM_BASE");
++	if (!b)
++		return;
++	const char *d = getenv("PICO_TLMM_DELAY");
++	if (d)
++		tlmm_delay = strtoul(d, NULL, 0);
++	const unsigned long base = strtoul(b, NULL, 0);
++	int fd = open("/dev/mem", O_RDWR | O_SYNC);
++	if (fd < 0) {
++		LOG_WARNING("TLMM fast path: /dev/mem: %s; keeping libgpiod", strerror(errno));
++		return;
++	}
++	const int idx[2] = { ADAPTER_GPIO_IDX_SWCLK, ADAPTER_GPIO_IDX_SWDIO };
++	for (int k = 0; k < 2; ++k) {
++		const unsigned int n = adapter_gpio_config[idx[k]].gpio_num;
++		void *m = mmap(NULL, 0x1000, PROT_READ | PROT_WRITE, MAP_SHARED, fd, (off_t)(base + 0x1000UL * n));
++		if (m == MAP_FAILED) {
++			LOG_WARNING("TLMM fast path: mmap gpio %u: %s; keeping libgpiod", n, strerror(errno));
++			close(fd);
++			tlmm_unmap();
++			return;
++		}
++		tlmm_map[k] = m;
++		tlmm_cfg[k] = (volatile uint32_t *)m;
++		tlmm_io[k] = (volatile uint32_t *)((char *)m + 4);
++	}
++	close(fd);
++	for (int k = 0; k < 2; ++k) {
++		const uint32_t cfg = *tlmm_cfg[k], io = *tlmm_io[k];
++		const int lib = linuxgpiod_line_get_value(idx[k]);
++		LOG_INFO("TLMM fast path: gpio %u cfg 0x%08x io 0x%08x libgpiod %d",
++			adapter_gpio_config[idx[k]].gpio_num, cfg, io, lib);
++		if (((cfg >> 2) & 0xf) != 0 || (k == 0 && !((cfg >> 9) & 1)) || (lib >= 0 && (int)(io & 1) != lib)) {
++			LOG_WARNING("TLMM fast path: register check failed (function/OE/level); keeping libgpiod");
++			tlmm_unmap();
++			return;
++		}
++	}
++	if (getenv("PICO_TLMM_PROBE")) {
++		LOG_INFO("TLMM fast path: probe only (PICO_TLMM_PROBE), keeping libgpiod");
++		tlmm_unmap();
++		return;
++	}
++	tlmm_on = true;
++	LOG_INFO("TLMM fast path on: base 0x%lx, settle reads %u", base, tlmm_delay);
++}
++
+ static int linuxgpiod_swdio_read(void)
+ {
++	if (tlmm_on) { tlmm_settle(); return (int)(*tlmm_io[1] & 1); }
+ 	int retval;
+ 
+ 	retval = linuxgpiod_line_get_value(ADAPTER_GPIO_IDX_SWDIO);
+@@ -390,6 +478,7 @@
+ 
+ static void linuxgpiod_swdio_drive(bool is_output)
+ {
++	if (tlmm_on) { if (is_output) { *tlmm_io[1] = 2u; *tlmm_cfg[1] = *tlmm_cfg[1] | (1u << 9); } else { *tlmm_cfg[1] = *tlmm_cfg[1] & ~(1u << 9); } tlmm_settle(); last_stored = false; swdio_input = !is_output; return; }
+ 	int retval;
+ 
+ 	if (is_output) {
+@@ -449,6 +538,7 @@
+ 
+ static int linuxgpiod_swd_write(int swclk, int swdio)
+ {
++	if (tlmm_on) { if (!swdio_input && (!last_stored || swdio != last_swdio)) *tlmm_io[1] = swdio ? 2u : 0u; if (!last_stored || swclk != last_swclk) { tlmm_settle(); *tlmm_io[0] = swclk ? 2u : 0u; tlmm_settle(); } last_swdio = swdio; last_swclk = swclk; last_stored = true; return ERROR_OK; }
+ 	int retval;
+ 
+ 	if (!swdio_input) {
+@@ -569,6 +659,7 @@
+ 
+ static int linuxgpiod_quit(void)
+ {
++	tlmm_unmap();
+ 	LOG_DEBUG("linuxgpiod_quit");
+ 	for (int i = 0; i < ADAPTER_GPIO_IDX_NUM; ++i)
+ 		helper_release(i);
+@@ -738,6 +829,9 @@
+ 			|| helper_get_line(ADAPTER_GPIO_IDX_LED) != ERROR_OK)
+ 		goto out_error;
+ 
++	if (transport_is_swd())
++		tlmm_setup();
++
+ 	return ERROR_OK;
+ 
+ out_error:

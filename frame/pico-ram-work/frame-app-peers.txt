@@ -1,0 +1,1 @@
+# Trackers paired to this Frame: CHIP SLOT SERIAL, one per line. Written by pair-tracker.sh.

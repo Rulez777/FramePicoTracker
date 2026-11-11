@@ -1,0 +1,13 @@
+# Reviewed candidate A only; admission is not authorization.
+c5a7860c6f7ec94518b9f546f6e51b26dfa3c3792ff7170ff2b6280c20ada064
+
+# Alpha 1.1 rev12 and diagnostic10 rev7 rollback (normal schema-2 Service admission).
+47d5aa2167ad574922259ee6c9ae19e3d227a54981203400c08a7d5fb0853a4a
+040b304d33e200785bb04ad4b2c0d8730f75d97e4798691530ac2d79b247376d
+
+# Alpha 1.2 rev12: offline verified candidate; admission is not hardware authorization.
+57ca7ec138e06c70b8d9ed035fdd3e9aae12be01a036a734082714f52116d9c7
+
+
+# Alpha 1.3 rev12; offline admission, not hardware authorization.
+bad0a210b00ddd80ba6898c7b10cdbb2e4b7e7345c18aca0ac02d699ac4ca915

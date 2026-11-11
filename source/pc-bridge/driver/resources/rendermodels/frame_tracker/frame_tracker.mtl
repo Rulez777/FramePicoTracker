@@ -1,0 +1,8 @@
+newmtl housing
+Ka 0.05 0.05 0.05
+Kd 0.12 0.14 0.16
+Ks 0.2 0.2 0.2
+Ns 30
+newmtl tab
+Ka 0.2 0.05 0
+Kd 1 0.3 0.02

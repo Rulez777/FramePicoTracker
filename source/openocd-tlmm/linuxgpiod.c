@@ -1,0 +1,860 @@
+// SPDX-License-Identifier: GPL-2.0-or-later
+/*
+ * Bitbang driver for Linux GPIO descriptors through libgpiod
+ * Copyright (C) 2020 Antonio Borneo <borneo.antonio@gmail.com>
+ *
+ * Largely based on sysfsgpio driver
+ * Copyright (C) 2012 by Creative Product Design, marc @ cpdesign.com.au
+ * Copyright (C) 2014 by Jean-Christian de Rivaz <jc@eclis.ch>
+ * Copyright (C) 2014 by Paul Fertser <fercerpav@gmail.com>
+ */
+
+#ifdef HAVE_CONFIG_H
+#include "config.h"
+#endif
+
+#include <gpiod.h>
+#include <jtag/adapter.h>
+#include <jtag/interface.h>
+#include <transport/transport.h>
+#include "bitbang.h"
+
+/*
+ * In case of libgpiod v1, use as much as possible API from v2 plus
+ * the dummy wrappers below.
+ */
+#if HAVE_LIBGPIOD_V1
+
+#define GPIOD_LINE_DIRECTION_INPUT      GPIOD_LINE_REQUEST_DIRECTION_INPUT
+#define GPIOD_LINE_DIRECTION_OUTPUT     GPIOD_LINE_REQUEST_DIRECTION_OUTPUT
+
+#define GPIOD_LINE_VALUE_INACTIVE       0
+#define GPIOD_LINE_VALUE_ACTIVE         1
+
+#define GPIOD_LINE_DRIVE_PUSH_PULL      0
+#define GPIOD_LINE_DRIVE_OPEN_DRAIN     GPIOD_LINE_REQUEST_FLAG_OPEN_DRAIN
+#define GPIOD_LINE_DRIVE_OPEN_SOURCE    GPIOD_LINE_REQUEST_FLAG_OPEN_SOURCE
+
+#define GPIOD_LINE_BIAS_DISABLED        GPIOD_LINE_REQUEST_FLAG_BIAS_DISABLE
+#define GPIOD_LINE_BIAS_PULL_UP         GPIOD_LINE_REQUEST_FLAG_BIAS_PULL_UP
+#define GPIOD_LINE_BIAS_PULL_DOWN       GPIOD_LINE_REQUEST_FLAG_BIAS_PULL_DOWN
+
+struct gpiod_line_settings {
+	int direction;
+	int value;
+	int drive;
+	int bias;
+	int active_low;
+};
+
+static struct gpiod_line_settings *gpiod_line_settings_new(void)
+{
+	struct gpiod_line_settings *rv;
+
+	rv = calloc(sizeof(struct gpiod_line_settings), 1);
+	if (!rv)
+		return NULL;
+
+	return rv;
+}
+
+static void gpiod_line_settings_free(struct gpiod_line_settings *settings)
+{
+	free(settings);
+}
+
+static int gpiod_line_settings_set_direction(struct gpiod_line_settings *settings,
+	int direction)
+{
+	settings->direction = direction;
+
+	return 0;
+}
+
+static int gpiod_line_settings_set_output_value(struct gpiod_line_settings *settings,
+	int value)
+{
+	settings->value = value;
+
+	return 0;
+}
+
+static int gpiod_line_settings_set_drive(struct gpiod_line_settings *settings, int drive)
+{
+	settings->drive = drive;
+
+	return 0;
+}
+
+static void gpiod_line_settings_set_active_low(struct gpiod_line_settings *settings,
+	bool active_low)
+{
+	if (active_low)
+		settings->active_low = GPIOD_LINE_REQUEST_FLAG_ACTIVE_LOW;
+}
+
+#ifdef HAVE_LIBGPIOD1_FLAGS_BIAS
+
+static int gpiod_line_settings_set_bias(struct gpiod_line_settings *settings, int bias)
+{
+	settings->bias = bias;
+
+	return 0;
+}
+
+#else /* HAVE_LIBGPIOD1_FLAGS_BIAS */
+
+static int gpiod_line_settings_set_bias(struct gpiod_line_settings *settings, int bias)
+{
+	if (bias == GPIOD_LINE_BIAS_DISABLED)
+		return 0;
+
+	LOG_WARNING("linuxgpiod: ignoring request for pull-%s: not supported by libgpiod v%s",
+				(bias == GPIOD_LINE_BIAS_PULL_UP) ? "up" : "down",
+				gpiod_version_string());
+
+	return 0;
+}
+
+#endif /* HAVE_LIBGPIOD1_FLAGS_BIAS */
+
+struct gpiod_line_config {
+	unsigned int gpio_num;
+	struct gpiod_line_settings *line_settings;
+};
+
+static struct gpiod_line_config *gpiod_line_config_new(void)
+{
+	struct gpiod_line_config *rv;
+
+	rv = calloc(sizeof(struct gpiod_line_config), 1);
+	if (!rv)
+		return NULL;
+
+	return rv;
+}
+
+static void gpiod_line_config_free(struct gpiod_line_config *config)
+{
+	free(config);
+}
+
+static int gpiod_line_config_add_line_settings(struct gpiod_line_config *config,
+	const unsigned int *offsets, size_t num_offsets, struct gpiod_line_settings *settings)
+{
+	assert(num_offsets == 1);
+
+	config->gpio_num = *offsets;
+	config->line_settings = settings;
+
+	return 0;
+}
+
+struct gpiod_request_config {
+	const char *consumer;
+};
+
+static struct gpiod_request_config *gpiod_request_config_new(void)
+{
+	struct gpiod_request_config *rv;
+
+	rv = calloc(sizeof(struct gpiod_request_config), 1);
+	if (!rv)
+		return NULL;
+
+	return rv;
+}
+
+static void gpiod_request_config_free(struct gpiod_request_config *config)
+{
+	free(config);
+}
+
+static void gpiod_request_config_set_consumer(struct gpiod_request_config *config,
+	const char *consumer)
+{
+	config->consumer = consumer;
+}
+
+struct gpiod_line_request {
+	struct gpiod_line *gpio_line;
+	struct gpiod_chip *chip;
+	struct gpiod_request_config *req_cfg;
+	struct gpiod_line_config *line_cfg;
+};
+
+static struct gpiod_line_request *gpiod_chip_request_lines(struct gpiod_chip *chip,
+	struct gpiod_request_config *req_cfg, struct gpiod_line_config *line_cfg)
+{
+	struct gpiod_line_request *line_req;
+	int rv, flags = 0;
+
+	assert(req_cfg);
+
+	line_req = calloc(sizeof(struct gpiod_line_request), 1);
+	if (!line_req)
+		return NULL;
+
+	line_req->gpio_line = gpiod_chip_get_line(chip, line_cfg->gpio_num);
+	if (!line_req->gpio_line) {
+		free(line_req);
+		return NULL;
+	}
+
+	/* remember stuff in case we need to reconfigure later */
+	line_req->chip = chip;
+	line_req->req_cfg = req_cfg;
+	line_req->line_cfg = line_cfg;
+
+	flags |= line_cfg->line_settings->drive;
+	flags |= line_cfg->line_settings->bias;
+	flags |= line_cfg->line_settings->active_low;
+
+	struct gpiod_line_request_config config = {
+		.consumer = line_req->req_cfg->consumer,
+		.request_type = line_cfg->line_settings->direction,
+		.flags = flags,
+	};
+
+	rv = gpiod_line_request(line_req->gpio_line, &config, line_cfg->line_settings->value);
+	if (rv < 0) {
+		gpiod_line_release(line_req->gpio_line);
+		free(line_req);
+		return NULL;
+	}
+
+	return line_req;
+}
+
+static int gpiod_line_request_get_value(struct gpiod_line_request *request, __attribute__((unused)) unsigned int offset)
+{
+	return gpiod_line_get_value(request->gpio_line);
+}
+
+static int gpiod_line_request_set_value(struct gpiod_line_request *request, __attribute__((unused)) unsigned int offset, int value)
+{
+	return gpiod_line_set_value(request->gpio_line, value);
+}
+
+static void gpiod_line_request_release(struct gpiod_line_request *request)
+{
+	gpiod_line_release(request->gpio_line);
+	free(request);
+}
+
+static int gpiod_line_request_reconfigure_lines(struct gpiod_line_request *request,
+												struct gpiod_line_config *line_cfg)
+{
+	int rv, flags = 0;
+
+	/* in libgpiod v1 we have to release the line and re-aquire it */
+	gpiod_line_release(request->gpio_line);
+	request->gpio_line = gpiod_chip_get_line(request->chip, request->line_cfg->gpio_num);
+	if (!request->gpio_line)
+		return -1;
+
+	flags |= line_cfg->line_settings->drive;
+	flags |= line_cfg->line_settings->bias;
+	flags |= line_cfg->line_settings->active_low;
+
+	struct gpiod_line_request_config config = {
+		.consumer = request->req_cfg->consumer,
+		.request_type = line_cfg->line_settings->direction,
+		.flags = flags,
+	};
+
+	rv = gpiod_line_request(request->gpio_line, &config, line_cfg->line_settings->value);
+	if (rv < 0)
+		return -1;
+
+	/* remember updated line_cfg */
+	request->line_cfg = line_cfg;
+	return 0;
+}
+
+#endif /* HAVE_LIBGPIOD_V1 */
+
+static struct gpiod_chip *gpiod_chip[ADAPTER_GPIO_IDX_NUM] = {};
+static struct gpiod_line_settings *gpiod_line_settings[ADAPTER_GPIO_IDX_NUM] = {};
+static struct gpiod_line_config *gpiod_line_config[ADAPTER_GPIO_IDX_NUM] = {};
+static struct gpiod_line_request *gpiod_line_req[ADAPTER_GPIO_IDX_NUM] = {};
+
+static int last_swclk;
+static int last_swdio;
+static bool last_stored;
+static bool swdio_input;
+
+static const struct adapter_gpio_config *adapter_gpio_config;
+
+/* Helper to get/set a single line */
+static int linuxgpiod_line_get_value(enum adapter_gpio_config_index idx)
+{
+	return gpiod_line_request_get_value(gpiod_line_req[idx],
+				adapter_gpio_config[idx].gpio_num);
+}
+
+static int linuxgpiod_line_set_value(enum adapter_gpio_config_index idx, int value)
+{
+	return gpiod_line_request_set_value(gpiod_line_req[idx],
+				adapter_gpio_config[idx].gpio_num,
+				value);
+}
+
+/*
+ * Helper function to determine if gpio config is valid
+ *
+ * Assume here that there will be less than 10000 gpios per gpiochip, and less
+ * than 1000 gpiochips.
+ */
+static bool is_gpio_config_valid(enum adapter_gpio_config_index idx)
+{
+	return adapter_gpio_config[idx].chip_num < 1000
+		&& adapter_gpio_config[idx].gpio_num < 10000;
+}
+
+/* Bitbang interface read of TDO */
+static bb_value_t linuxgpiod_read(void)
+{
+	int retval;
+
+	retval = linuxgpiod_line_get_value(ADAPTER_GPIO_IDX_TDO);
+	if (retval < 0) {
+		LOG_WARNING("reading tdo failed");
+		return 0;
+	}
+
+	return retval ? BB_HIGH : BB_LOW;
+}
+
+/*
+ * Bitbang interface write of TCK, TMS, TDI
+ *
+ * Seeing as this is the only function where the outputs are changed,
+ * we can cache the old value to avoid needlessly writing it.
+ */
+static int linuxgpiod_write(int tck, int tms, int tdi)
+{
+	static int last_tck;
+	static int last_tms;
+	static int last_tdi;
+
+	static int first_time;
+
+	int retval;
+
+	if (!first_time) {
+		last_tck = !tck;
+		last_tms = !tms;
+		last_tdi = !tdi;
+		first_time = 1;
+	}
+
+	if (tdi != last_tdi) {
+		retval = linuxgpiod_line_set_value(ADAPTER_GPIO_IDX_TDI, tdi);
+		if (retval < 0)
+			LOG_WARNING("writing tdi failed");
+	}
+
+	if (tms != last_tms) {
+		retval = linuxgpiod_line_set_value(ADAPTER_GPIO_IDX_TMS, tms);
+		if (retval < 0)
+			LOG_WARNING("writing tms failed");
+	}
+
+	/* write clk last */
+	if (tck != last_tck) {
+		retval = linuxgpiod_line_set_value(ADAPTER_GPIO_IDX_TCK, tck);
+		if (retval < 0)
+			LOG_WARNING("writing tck failed");
+	}
+
+	last_tdi = tdi;
+	last_tms = tms;
+	last_tck = tck;
+
+	return ERROR_OK;
+}
+
+/*
+ * PICO 2026-10-31: memory-mapped fast path for Qualcomm TLMM (Steam Frame, SM8650, base 0xf100000).
+ * The lines stay requested through libgpiod (kernel ownership, GPIO function); only the SWCLK/SWDIO
+ * level and the SWDIO output enable are driven through the pin's own 4 KiB register tile:
+ * CFG at base + 0x1000*n (function bits 5:2 must be 0, GPIO_OE bit 9), IN_OUT at +4 (bit 0 in, bit 1 out).
+ * Enabled only by PICO_TLMM_BASE; PICO_TLMM_DELAY = register reads per half clock (settle time, default 2).
+ * Any failed check keeps the libgpiod path.
+ */
+#include <sys/mman.h>
+#include <fcntl.h>
+#include <unistd.h>
+#include <errno.h>
+#include <string.h>
+#include <stdlib.h>
+static volatile uint32_t *tlmm_cfg[2], *tlmm_io[2];	/* 0 = SWCLK, 1 = SWDIO */
+static void *tlmm_map[2];
+static bool tlmm_on;
+static unsigned int tlmm_delay = 2;
+
+static inline void tlmm_settle(void)
+{
+	for (unsigned int i = 0; i < tlmm_delay; ++i)
+		(void)*tlmm_io[0];
+}
+
+static void tlmm_unmap(void)
+{
+	for (int k = 0; k < 2; ++k) {
+		if (tlmm_map[k])
+			munmap(tlmm_map[k], 0x1000);
+		tlmm_map[k] = NULL;
+		tlmm_cfg[k] = NULL;
+		tlmm_io[k] = NULL;
+	}
+	tlmm_on = false;
+}
+
+
+static void tlmm_setup(void)
+{
+	const char *b = getenv("PICO_TLMM_BASE");
+	if (!b)
+		return;
+	const char *d = getenv("PICO_TLMM_DELAY");
+	if (d)
+		tlmm_delay = strtoul(d, NULL, 0);
+	const unsigned long base = strtoul(b, NULL, 0);
+	int fd = open("/dev/mem", O_RDWR | O_SYNC);
+	if (fd < 0) {
+		LOG_WARNING("TLMM fast path: /dev/mem: %s; keeping libgpiod", strerror(errno));
+		return;
+	}
+	const int idx[2] = { ADAPTER_GPIO_IDX_SWCLK, ADAPTER_GPIO_IDX_SWDIO };
+	for (int k = 0; k < 2; ++k) {
+		const unsigned int n = adapter_gpio_config[idx[k]].gpio_num;
+		void *m = mmap(NULL, 0x1000, PROT_READ | PROT_WRITE, MAP_SHARED, fd, (off_t)(base + 0x1000UL * n));
+		if (m == MAP_FAILED) {
+			LOG_WARNING("TLMM fast path: mmap gpio %u: %s; keeping libgpiod", n, strerror(errno));
+			close(fd);
+			tlmm_unmap();
+			return;
+		}
+		tlmm_map[k] = m;
+		tlmm_cfg[k] = (volatile uint32_t *)m;
+		tlmm_io[k] = (volatile uint32_t *)((char *)m + 4);
+	}
+	close(fd);
+	for (int k = 0; k < 2; ++k) {
+		const uint32_t cfg = *tlmm_cfg[k], io = *tlmm_io[k];
+		const int lib = linuxgpiod_line_get_value(idx[k]);
+		LOG_INFO("TLMM fast path: gpio %u cfg 0x%08x io 0x%08x libgpiod %d",
+			adapter_gpio_config[idx[k]].gpio_num, cfg, io, lib);
+		if (((cfg >> 2) & 0xf) != 0 || (k == 0 && !((cfg >> 9) & 1)) || (lib >= 0 && (int)(io & 1) != lib)) {
+			LOG_WARNING("TLMM fast path: register check failed (function/OE/level); keeping libgpiod");
+			tlmm_unmap();
+			return;
+		}
+	}
+	if (getenv("PICO_TLMM_PROBE")) {
+		LOG_INFO("TLMM fast path: probe only (PICO_TLMM_PROBE), keeping libgpiod");
+		tlmm_unmap();
+		return;
+	}
+	tlmm_on = true;
+	LOG_INFO("TLMM fast path on: base 0x%lx, settle reads %u", base, tlmm_delay);
+}
+
+static int linuxgpiod_swdio_read(void)
+{
+	if (tlmm_on) { tlmm_settle(); return (int)(*tlmm_io[1] & 1); }
+	int retval;
+
+	retval = linuxgpiod_line_get_value(ADAPTER_GPIO_IDX_SWDIO);
+	if (retval < 0) {
+		LOG_WARNING("Fail read swdio");
+		return 0;
+	}
+
+	return retval;
+}
+
+static void linuxgpiod_swdio_drive(bool is_output)
+{
+	if (tlmm_on) { if (is_output) { *tlmm_io[1] = 2u; *tlmm_cfg[1] = *tlmm_cfg[1] | (1u << 9); } else { *tlmm_cfg[1] = *tlmm_cfg[1] & ~(1u << 9); } tlmm_settle(); last_stored = false; swdio_input = !is_output; return; }
+	int retval;
+
+	if (is_output) {
+		if (gpiod_line_req[ADAPTER_GPIO_IDX_SWDIO_DIR]) {
+			retval = linuxgpiod_line_set_value(ADAPTER_GPIO_IDX_SWDIO_DIR, 1);
+			if (retval < 0)
+				LOG_WARNING("Failed to set swdio_dir=1");
+		}
+
+		retval = gpiod_line_settings_set_direction(gpiod_line_settings[ADAPTER_GPIO_IDX_SWDIO],
+													GPIOD_LINE_DIRECTION_OUTPUT);
+		if (retval < 0)
+			LOG_WARNING("Failed to set new direction of swdio");
+
+		retval = gpiod_line_settings_set_output_value(gpiod_line_settings[ADAPTER_GPIO_IDX_SWDIO],
+														GPIOD_LINE_VALUE_ACTIVE);
+		if (retval < 0)
+			LOG_WARNING("Failed to set output value of swdio");
+
+		retval = gpiod_line_config_add_line_settings(gpiod_line_config[ADAPTER_GPIO_IDX_SWDIO],
+														&adapter_gpio_config[ADAPTER_GPIO_IDX_SWDIO].gpio_num, 1,
+														gpiod_line_settings[ADAPTER_GPIO_IDX_SWDIO]);
+		if (retval < 0)
+			LOG_WARNING("Failed to apply output configuration to swdio");
+
+		retval = gpiod_line_request_reconfigure_lines(gpiod_line_req[ADAPTER_GPIO_IDX_SWDIO],
+														gpiod_line_config[ADAPTER_GPIO_IDX_SWDIO]);
+		if (retval < 0)
+			LOG_WARNING("Failed to switch swdio to output");
+	} else {
+		retval = gpiod_line_settings_set_direction(gpiod_line_settings[ADAPTER_GPIO_IDX_SWDIO],
+														GPIOD_LINE_DIRECTION_INPUT);
+		if (retval < 0)
+			LOG_WARNING("Failed to switch swdio to output");
+
+		retval = gpiod_line_config_add_line_settings(gpiod_line_config[ADAPTER_GPIO_IDX_SWDIO],
+														&adapter_gpio_config[ADAPTER_GPIO_IDX_SWDIO].gpio_num, 1,
+														gpiod_line_settings[ADAPTER_GPIO_IDX_SWDIO]);
+		if (retval < 0)
+			LOG_WARNING("Failed to apply input configuration to swdio");
+
+		retval = gpiod_line_request_reconfigure_lines(gpiod_line_req[ADAPTER_GPIO_IDX_SWDIO],
+														gpiod_line_config[ADAPTER_GPIO_IDX_SWDIO]);
+		if (retval < 0)
+			LOG_WARNING("Failed to switch swdio to input");
+
+		if (gpiod_line_req[ADAPTER_GPIO_IDX_SWDIO_DIR]) {
+			retval = linuxgpiod_line_set_value(ADAPTER_GPIO_IDX_SWDIO_DIR, 0);
+			if (retval < 0)
+				LOG_WARNING("Failed to set swdio_dir=0");
+		}
+	}
+
+	last_stored = false;
+	swdio_input = !is_output;
+}
+
+static int linuxgpiod_swd_write(int swclk, int swdio)
+{
+	if (tlmm_on) { if (!swdio_input && (!last_stored || swdio != last_swdio)) *tlmm_io[1] = swdio ? 2u : 0u; if (!last_stored || swclk != last_swclk) { tlmm_settle(); *tlmm_io[0] = swclk ? 2u : 0u; tlmm_settle(); } last_swdio = swdio; last_swclk = swclk; last_stored = true; return ERROR_OK; }
+	int retval;
+
+	if (!swdio_input) {
+		if (!last_stored || swdio != last_swdio) {
+			retval = linuxgpiod_line_set_value(ADAPTER_GPIO_IDX_SWDIO, swdio);
+			if (retval < 0)
+				LOG_WARNING("Fail set swdio");
+		}
+	}
+
+	/* write swclk last */
+	if (!last_stored || swclk != last_swclk) {
+		retval = linuxgpiod_line_set_value(ADAPTER_GPIO_IDX_SWCLK, swclk);
+		if (retval < 0)
+			LOG_WARNING("Fail set swclk");
+	}
+
+	last_swdio = swdio;
+	last_swclk = swclk;
+	last_stored = true;
+
+	return ERROR_OK;
+}
+
+static int linuxgpiod_blink(int on)
+{
+	int retval;
+
+	if (!is_gpio_config_valid(ADAPTER_GPIO_IDX_LED))
+		return ERROR_OK;
+
+	retval = linuxgpiod_line_set_value(ADAPTER_GPIO_IDX_LED, on);
+	if (retval < 0)
+		LOG_WARNING("Fail set led");
+	return retval;
+}
+
+static struct bitbang_interface linuxgpiod_bitbang = {
+	.read = linuxgpiod_read,
+	.write = linuxgpiod_write,
+	.swdio_read = linuxgpiod_swdio_read,
+	.swdio_drive = linuxgpiod_swdio_drive,
+	.swd_write = linuxgpiod_swd_write,
+	.blink = linuxgpiod_blink,
+};
+
+/*
+ * Bitbang interface to manipulate reset lines SRST and TRST
+ *
+ * (1) assert or (0) deassert reset lines
+ */
+static int linuxgpiod_reset(int trst, int srst)
+{
+	int retval1 = 0, retval2 = 0;
+
+	LOG_DEBUG("linuxgpiod_reset");
+
+	/*
+	 * active low behavior handled by "adaptor gpio" command and
+	 * GPIOD_LINE_REQUEST_FLAG_ACTIVE_LOW flag when requesting the line.
+	 */
+	if (gpiod_line_req[ADAPTER_GPIO_IDX_SRST]) {
+		retval1 = linuxgpiod_line_set_value(ADAPTER_GPIO_IDX_SRST, srst);
+		if (retval1 < 0)
+			LOG_WARNING("set srst value failed");
+	}
+
+	if (gpiod_line_req[ADAPTER_GPIO_IDX_TRST]) {
+		retval2 = linuxgpiod_line_set_value(ADAPTER_GPIO_IDX_TRST, trst);
+		if (retval2 < 0)
+			LOG_WARNING("set trst value failed");
+	}
+
+	return ((retval1 < 0) || (retval2 < 0)) ? ERROR_FAIL : ERROR_OK;
+}
+
+static bool linuxgpiod_jtag_mode_possible(void)
+{
+	if (!is_gpio_config_valid(ADAPTER_GPIO_IDX_TCK))
+		return false;
+	if (!is_gpio_config_valid(ADAPTER_GPIO_IDX_TMS))
+		return false;
+	if (!is_gpio_config_valid(ADAPTER_GPIO_IDX_TDI))
+		return false;
+	if (!is_gpio_config_valid(ADAPTER_GPIO_IDX_TDO))
+		return false;
+	return true;
+}
+
+static bool linuxgpiod_swd_mode_possible(void)
+{
+	if (!is_gpio_config_valid(ADAPTER_GPIO_IDX_SWCLK))
+		return false;
+	if (!is_gpio_config_valid(ADAPTER_GPIO_IDX_SWDIO))
+		return false;
+	return true;
+}
+
+static inline void helper_release(enum adapter_gpio_config_index idx)
+{
+	if (gpiod_line_req[idx]) {
+		gpiod_line_request_release(gpiod_line_req[idx]);
+		gpiod_line_req[idx] = NULL;
+	}
+	if (gpiod_line_config[idx]) {
+		gpiod_line_config_free(gpiod_line_config[idx]);
+		gpiod_line_config[idx] = NULL;
+	}
+	if (gpiod_line_settings[idx]) {
+		gpiod_line_settings_free(gpiod_line_settings[idx]);
+		gpiod_line_settings[idx] = NULL;
+	}
+	if (gpiod_chip[idx]) {
+		gpiod_chip_close(gpiod_chip[idx]);
+		gpiod_chip[idx] = NULL;
+	}
+}
+
+static int linuxgpiod_quit(void)
+{
+	tlmm_unmap();
+	LOG_DEBUG("linuxgpiod_quit");
+	for (int i = 0; i < ADAPTER_GPIO_IDX_NUM; ++i)
+		helper_release(i);
+
+	return ERROR_OK;
+}
+
+static int helper_get_line(enum adapter_gpio_config_index idx)
+{
+	struct gpiod_request_config *req_cfg = NULL;
+	char chip_path[24];
+	int rv = 0;
+
+	if (!is_gpio_config_valid(idx))
+		return ERROR_OK;
+
+	snprintf(chip_path, sizeof(chip_path), "/dev/gpiochip%u", adapter_gpio_config[idx].chip_num);
+	gpiod_chip[idx] = gpiod_chip_open(chip_path);
+	if (!gpiod_chip[idx]) {
+		LOG_ERROR("Cannot open LinuxGPIOD chip %d for %s", adapter_gpio_config[idx].chip_num,
+			adapter_gpio_get_name(idx));
+		return ERROR_JTAG_INIT_FAILED;
+	}
+
+	gpiod_line_settings[idx] = gpiod_line_settings_new();
+	gpiod_line_config[idx] = gpiod_line_config_new();
+	req_cfg = gpiod_request_config_new();
+
+	if (!gpiod_line_settings[idx] || !gpiod_line_config[idx] || !req_cfg) {
+		LOG_ERROR("Cannot configure LinuxGPIOD line for %s", adapter_gpio_get_name(idx));
+		gpiod_request_config_free(req_cfg);
+		return ERROR_JTAG_INIT_FAILED;
+	}
+
+	gpiod_request_config_set_consumer(req_cfg, "OpenOCD");
+
+	switch (adapter_gpio_config[idx].init_state) {
+	case ADAPTER_GPIO_INIT_STATE_INPUT:
+		rv = gpiod_line_settings_set_direction(gpiod_line_settings[idx], GPIOD_LINE_DIRECTION_INPUT);
+		break;
+	case ADAPTER_GPIO_INIT_STATE_INACTIVE:
+		rv = gpiod_line_settings_set_direction(gpiod_line_settings[idx], GPIOD_LINE_DIRECTION_OUTPUT);
+		rv |= gpiod_line_settings_set_output_value(gpiod_line_settings[idx], GPIOD_LINE_VALUE_INACTIVE);
+		break;
+	case ADAPTER_GPIO_INIT_STATE_ACTIVE:
+		rv = gpiod_line_settings_set_direction(gpiod_line_settings[idx], GPIOD_LINE_DIRECTION_OUTPUT);
+		rv |= gpiod_line_settings_set_output_value(gpiod_line_settings[idx], GPIOD_LINE_VALUE_ACTIVE);
+		break;
+	}
+	if (rv < 0) {
+		LOG_ERROR("Error while configuring LinuxGPIOD line init state for %s", adapter_gpio_get_name(idx));
+		gpiod_request_config_free(req_cfg);
+		return ERROR_JTAG_INIT_FAILED;
+	}
+
+	switch (adapter_gpio_config[idx].drive) {
+	case ADAPTER_GPIO_DRIVE_MODE_PUSH_PULL:
+		rv = gpiod_line_settings_set_drive(gpiod_line_settings[idx], GPIOD_LINE_DRIVE_PUSH_PULL);
+		break;
+	case ADAPTER_GPIO_DRIVE_MODE_OPEN_DRAIN:
+		rv = gpiod_line_settings_set_drive(gpiod_line_settings[idx], GPIOD_LINE_DRIVE_OPEN_DRAIN);
+		break;
+	case ADAPTER_GPIO_DRIVE_MODE_OPEN_SOURCE:
+		rv = gpiod_line_settings_set_drive(gpiod_line_settings[idx], GPIOD_LINE_DRIVE_OPEN_SOURCE);
+		break;
+	}
+	if (rv < 0) {
+		LOG_ERROR("Error while configuring LinuxGPIOD line driving for %s", adapter_gpio_get_name(idx));
+		gpiod_request_config_free(req_cfg);
+		return ERROR_JTAG_INIT_FAILED;
+	}
+
+	switch (adapter_gpio_config[idx].pull) {
+	case ADAPTER_GPIO_PULL_NONE:
+		rv = gpiod_line_settings_set_bias(gpiod_line_settings[idx], GPIOD_LINE_BIAS_DISABLED);
+		break;
+	case ADAPTER_GPIO_PULL_UP:
+		rv = gpiod_line_settings_set_bias(gpiod_line_settings[idx], GPIOD_LINE_BIAS_PULL_UP);
+		break;
+	case ADAPTER_GPIO_PULL_DOWN:
+		rv = gpiod_line_settings_set_bias(gpiod_line_settings[idx], GPIOD_LINE_BIAS_PULL_DOWN);
+		break;
+	}
+	if (rv < 0) {
+		LOG_ERROR("Error while configuring LinuxGPIOD line biasing for %s", adapter_gpio_get_name(idx));
+		gpiod_request_config_free(req_cfg);
+		return ERROR_JTAG_INIT_FAILED;
+	}
+
+	gpiod_line_settings_set_active_low(gpiod_line_settings[idx], adapter_gpio_config[idx].active_low);
+
+	rv = gpiod_line_config_add_line_settings(gpiod_line_config[idx],
+												&adapter_gpio_config[idx].gpio_num, 1,
+												gpiod_line_settings[idx]);
+	if (rv < 0) {
+		LOG_ERROR("Error configuring gpio line %s", adapter_gpio_get_name(idx));
+		gpiod_request_config_free(req_cfg);
+		return ERROR_JTAG_INIT_FAILED;
+	}
+
+	gpiod_line_req[idx] = gpiod_chip_request_lines(gpiod_chip[idx], req_cfg, gpiod_line_config[idx]);
+
+	gpiod_request_config_free(req_cfg);
+
+	if (!gpiod_line_req[idx]) {
+		LOG_ERROR("Error requesting gpio line %s", adapter_gpio_get_name(idx));
+		return ERROR_JTAG_INIT_FAILED;
+	}
+
+	return ERROR_OK;
+}
+
+static int linuxgpiod_init(void)
+{
+	LOG_INFO("Linux GPIOD JTAG/SWD bitbang driver");
+
+	bitbang_interface = &linuxgpiod_bitbang;
+	adapter_gpio_config = adapter_gpio_get_config();
+
+	/*
+	 * Configure JTAG/SWD signals. Default directions and initial states are handled
+	 * by adapter.c and "adapter gpio" command.
+	 */
+
+	if (transport_is_jtag()) {
+		if (!linuxgpiod_jtag_mode_possible()) {
+			LOG_ERROR("Require tck, tms, tdi and tdo gpios for JTAG mode");
+			goto out_error;
+		}
+
+		if (helper_get_line(ADAPTER_GPIO_IDX_TDO) != ERROR_OK
+				|| helper_get_line(ADAPTER_GPIO_IDX_TDI) != ERROR_OK
+				|| helper_get_line(ADAPTER_GPIO_IDX_TCK) != ERROR_OK
+				|| helper_get_line(ADAPTER_GPIO_IDX_TMS) != ERROR_OK
+				|| helper_get_line(ADAPTER_GPIO_IDX_TRST) != ERROR_OK)
+			goto out_error;
+	}
+
+	if (transport_is_swd()) {
+		int retval1, retval2;
+		if (!linuxgpiod_swd_mode_possible()) {
+			LOG_ERROR("Require swclk and swdio gpio for SWD mode");
+			goto out_error;
+		}
+
+		/*
+		 * swdio and its buffer should be initialized in the order that prevents
+		 * two outputs from being connected together. This will occur if the
+		 * swdio GPIO is configured as an output while the external buffer is
+		 * configured to send the swdio signal from the target to the GPIO.
+		 */
+		if (adapter_gpio_config[ADAPTER_GPIO_IDX_SWDIO].init_state == ADAPTER_GPIO_INIT_STATE_INPUT) {
+			retval1 = helper_get_line(ADAPTER_GPIO_IDX_SWDIO);
+			retval2 = helper_get_line(ADAPTER_GPIO_IDX_SWDIO_DIR);
+		} else {
+			retval1 = helper_get_line(ADAPTER_GPIO_IDX_SWDIO_DIR);
+			retval2 = helper_get_line(ADAPTER_GPIO_IDX_SWDIO);
+		}
+		if (retval1 != ERROR_OK || retval2 != ERROR_OK)
+			goto out_error;
+
+		if (helper_get_line(ADAPTER_GPIO_IDX_SWCLK) != ERROR_OK)
+			goto out_error;
+	}
+
+	if (helper_get_line(ADAPTER_GPIO_IDX_SRST) != ERROR_OK
+			|| helper_get_line(ADAPTER_GPIO_IDX_LED) != ERROR_OK)
+		goto out_error;
+
+	if (transport_is_swd())
+		tlmm_setup();
+
+	return ERROR_OK;
+
+out_error:
+	linuxgpiod_quit();
+
+	return ERROR_JTAG_INIT_FAILED;
+}
+
+static const char *const linuxgpiod_transport[] = { "swd", "jtag", NULL };
+
+static struct jtag_interface linuxgpiod_interface = {
+	.supported = DEBUG_CAP_TMS_SEQ,
+	.execute_queue = bitbang_execute_queue,
+};
+
+struct adapter_driver linuxgpiod_adapter_driver = {
+	.name = "linuxgpiod",
+	.transports = linuxgpiod_transport,
+
+	.init = linuxgpiod_init,
+	.quit = linuxgpiod_quit,
+	.reset = linuxgpiod_reset,
+
+	.jtag_ops = &linuxgpiod_interface,
+	.swd_ops = &bitbang_swd,
+};

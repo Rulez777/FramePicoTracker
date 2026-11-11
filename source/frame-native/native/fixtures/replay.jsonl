@@ -1,0 +1,9 @@
+{"event":"clock_probe","roy_cycles":0,"before_ns":0,"after_ns":0,"raw_before_ns":0,"raw_after_ns":0}
+{"event":"clock_probe","roy_cycles":6400000,"before_ns":100000000,"after_ns":100000000,"raw_before_ns":100000000,"raw_after_ns":100000000}
+{"event":"clock_probe","roy_cycles":12800000,"before_ns":200000000,"after_ns":200000000,"raw_before_ns":200000000,"raw_after_ns":200000000}
+{"event":"clock_probe","roy_cycles":19200000,"before_ns":300000000,"after_ns":300000000,"raw_before_ns":300000000,"raw_after_ns":300000000}
+{"event":"clock_probe","roy_cycles":25600000,"before_ns":400000000,"after_ns":400000000,"raw_before_ns":400000000,"raw_after_ns":400000000}
+{"event":"clock_probe","roy_cycles":32000000,"before_ns":500000000,"after_ns":500000000,"raw_before_ns":500000000,"raw_after_ns":500000000}
+{"sequence":10,"host_read_monotonic_ns":500000000,"roy_cycles":32000000,"source_chip_id":2712847316,"crc":0,"hardware_crc_valid":true,"partial":false,"channel":2,"profile_index":0,"dma_hex":"1602ff021200000000000000000000000000000000000013"}
+{"sequence":11,"host_read_monotonic_ns":550000000,"roy_cycles":35200000,"source_chip_id":2712847316,"crc":0,"hardware_crc_valid":true,"partial":false,"channel":2,"profile_index":0,"dma_hex":"1602ff021200000000000000000000000000000000000114"}
+{"sequence":12,"host_read_monotonic_ns":600000000,"roy_cycles":38400000,"source_chip_id":2712847316,"crc":0,"hardware_crc_valid":true,"partial":false,"channel":2,"profile_index":0,"dma_hex":"1602ff021200000000000000000000000000000000000215"}
